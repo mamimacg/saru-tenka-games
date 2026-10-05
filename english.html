@@ -1,0 +1,1770 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#171333"><title>サルの天下取り｜英語編 v1.1</title><style>:root{--ink:#171333;--pink:#ff74b4;--gold:#ffcf38;--blue:#4266f5;--white:#fffdf5}*{box-sizing:border-box}body{margin:0;background:#f6eee2;color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',sans-serif}button{font:inherit;cursor:pointer;touch-action:manipulation;color:inherit;font-weight:800;border:2px solid var(--ink);border-radius:12px;background:var(--white);padding:10px 14px;box-shadow:0 3px 0 var(--ink)}button:hover{filter:brightness(1.06)}button:active{transform:translateY(2px);box-shadow:none}button:disabled{cursor:default}button:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}[hidden]{display:none!important}#background,#fallback,#particles{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}#background,#fallback{z-index:-1}#fallback{display:none;inset:-50%;width:200%;height:200%}#particles{z-index:10}main{width:min(740px,100%);padding:16px 16px max(16px,env(safe-area-inset-bottom));margin:auto}header{display:flex;justify-content:space-between;align-items:center;gap:8px}header small,.eyebrow{font-size:12px;font-weight:900;letter-spacing:.06em}h1{font-size:23px;margin:2px 0}h2,p{margin:0}p{line-height:1.65}.settings{display:flex;gap:6px}.settings button{font-size:12px;min-height:36px;padding:7px}.journey{display:flex;align-items:center;gap:12px;background:var(--ink);color:#fff;border-radius:12px;margin:12px 0;padding:10px 14px}.journey strong{font-size:19px;color:var(--gold);white-space:nowrap}.journeyProgress{flex:1;min-width:0}.journeyProgress span{display:block;font-size:12px}.journey small{font-size:10px;max-width:62px;color:#dedbec}.meter{height:6px;border-radius:20px;overflow:hidden;background:#ffffff30;margin-top:5px}.meter i{display:block;height:100%;width:0;background:var(--gold);transition:width .5s}.ranks{display:flex;justify-content:space-between;margin:14px 0;font-size:13px;font-weight:800}.ranks span{background:#ffffffd9;padding:5px 10px;border-radius:30px}.ranks .current{background:var(--gold);outline:2px solid var(--ink)}.paper{background:var(--white);border:3px solid var(--ink);border-radius:20px;box-shadow:0 5px 0 var(--ink);padding:24px;margin-bottom:18px}.paper h2{font-size:28px;margin:10px 0}.paper p{font-size:16px}.primary,.secondary{display:block;width:100%;margin-top:12px;padding:14px}.primary{background:var(--gold);font-size:18px}.secondary{background:#ebeaff}.fine{font-size:12px!important;margin-top:14px;color:#595365}.hud{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:7px}.hud>div{display:flex;justify-content:center;gap:8px;align-items:center;background:var(--ink);color:white;padding:8px;border-radius:10px}.hud small{font-size:11px}.hud b{font-size:20px;color:var(--gold);font-variant-numeric:tabular-nums}.heat{background:#17133330;margin:7px 0 9px;height:5px;flex-shrink:0}.heat i{background:linear-gradient(90deg,var(--pink),var(--gold))}.questionMeta{display:flex;justify-content:space-between;gap:8px;font-size:12px;font-weight:800;flex-shrink:0}.question h2{font-family:Arial,sans-serif;font-size:clamp(24px,4vw,32px);line-height:1.65;margin:16px 0 12px;overflow-wrap:anywhere}.blank{border-bottom:3px solid var(--pink);color:var(--blue);padding:0 4px}.question #translation{font-size:14px;color:#595365}.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}.choices button{font-size:21px;min-height:64px;background:#e8edff;padding:10px 8px;overflow-wrap:anywhere}.answerDock{flex-shrink:0;position:relative;z-index:3;padding-bottom:4px}.answerDock .primary{margin:0;min-height:60px}.choices button.good{background:#97efb5}.choices button.bad{background:#ffc9d7}.choices button:disabled{opacity:1}.choices button.missOther{opacity:.55}#hintArea{margin-top:12px}#hintButton{border:1px solid #b9b1c8;box-shadow:none;font-size:12px;padding:7px 10px;color:#55476a;background:#f2edf8}#hintText{font-size:14px;color:#55476a;margin-top:8px;min-height:0}.clue{display:inline-block;transform-origin:center bottom;border-radius:4px}.clue.focused{color:#293eb4;background:#fff0a8;font-weight:800;box-shadow:0 2px 0 var(--gold);animation:hintPulse 1s ease both}@keyframes hintPulse{0%{transform:scale(1)}40%{transform:scale(1.17)}100%{transform:scale(1.06)}}.clue.focused{padding:0 2px;margin:0 1px}#feedback{border-top:2px dashed #cbc5d3;margin-top:16px;padding-top:12px}#verdict{font-size:21px}#rule{margin-top:8px;font-size:16px}#complete{font-size:15px;color:#28583c;background:#e2f6e7;padding:9px;border-radius:8px;margin-top:10px}.resultNumber{font-size:60px;font-weight:900;letter-spacing:-.06em;color:var(--blue)}.weakItem{border-top:1px solid #ddd;padding:12px 0;font-size:14px}.weakItem b{display:block}footer{font-size:12px;background:#ffffffdc;padding:12px;border-radius:12px}footer p{margin:12px 0}pre{white-space:pre-wrap;font-size:10px}#banner{position:fixed;top:25%;left:50%;transform:translate(-50%,-50%) rotate(-4deg);z-index:12;background:var(--gold);border:4px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:10px 15px;font-size:clamp(24px,6vw,42px);font-weight:1000;white-space:nowrap;pointer-events:none;opacity:0}#banner.show{animation:banner 1.3s both}@keyframes banner{0%{opacity:0;scale:.3}15%,75%{opacity:1;scale:1}100%{opacity:0;scale:1.05}}dialog{border:4px solid var(--ink);border-radius:24px;text-align:center;background:var(--gold);width:min(430px,90%);max-height:90dvh;color:var(--ink);padding:20px}dialog::backdrop{background:#171333cc}dialog h2{font-size:42px}dialog img{height:min(230px,35dvh);max-width:100%;object-fit:contain}dialog .primary{background:var(--white)}#roamer{position:fixed;width:65px;height:78px;pointer-events:none;z-index:5;will-change:transform;left:0;top:0}#saru{width:100%;height:100%;object-fit:cover;mask-image:radial-gradient(ellipse 49% 50%,black 62%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 49% 50%,black 62%,transparent 100%);transform-origin:50% 95%}.hop{animation:hop .55s}@keyframes hop{40%{transform:translateY(-16px) rotate(-6deg) scale(1.05)}}#mascotLane{height:66px;flex-shrink:0;position:relative;overflow:visible;display:flex;align-items:center;justify-content:center;margin:0 0 5px}#quote{font-size:12px;color:#7a6a8b;padding:4px 8px;background:#fffdf5cc;border-radius:12px;max-width:60%;text-align:center}body.playing{height:100dvh;overflow:hidden}body.playing main{height:100dvh;display:flex;flex-direction:column;padding-top:max(8px,env(safe-area-inset-top));padding-bottom:max(8px,env(safe-area-inset-bottom))}body.playing header{flex-shrink:0}body.playing header small{display:none}body.playing h1{font-size:18px}body.playing .journey{flex-shrink:0;margin:8px 0;padding:6px 10px}body.playing .journey strong{font-size:16px}body.playing .journey small{display:none}body.playing .ranks,body.playing footer{display:none}#play{flex:1;min-height:0;display:flex;flex-direction:column}.question{margin:0 0 4px;min-height:0;flex:1;display:flex;flex-direction:column;padding:16px}.reading{overflow-y:auto;overflow-x:hidden;flex:1;min-height:0;overscroll-behavior:contain;padding:0 5px 8px;scrollbar-width:thin}body.reduced *,body.reduced *::before{animation:none!important;transition:none!important}body.reduced .clue.focused{transform:none}@media(max-width:450px){main{padding:12px}.settings button{padding:6px;font-size:11px}header small{font-size:10px}h1{font-size:21px}.paper{padding:18px}.question{padding:12px}.question h2{font-size:25px}.choices button{font-size:19px}.hud>div{padding:7px 5px;gap:4px}.hud b{font-size:18px}.hud small{font-size:10px}.ranks{font-size:12px}.ranks span{padding:4px 8px}}@media(max-height:650px){body.playing .journey{margin:5px 0;padding:4px 8px}.question h2{font-size:22px;margin:9px 0}.question #translation{font-size:12px}#mascotLane{height:46px}#roamer{width:49px;height:59px}.choices button,.answerDock .primary{min-height:52px;padding:8px;font-size:17px}#hintArea{margin-top:7px}.heat{margin:5px 0}.question{padding:10px}.hud>div{padding:5px}.settings button{min-height:30px}}@media(max-width:350px){.hud small{display:none}body.playing h1{font-size:16px}.settings button{font-size:10px}.question h2{font-size:23px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+
+#quote{position:absolute;width:calc(50% - 40px);max-width:none;left:0;line-height:1.4}
+/* v0.4: real pose atlases, short teaching bubble, brisk feedback. */
+.shortTitle{display:none}#roamer{width:94px;height:102px;overflow:hidden;filter:drop-shadow(0 3px 2px #17133318)}#saru{width:100%;height:100%;object-fit:contain;mask-image:none;-webkit-mask-image:none;transform-origin:center}#mascotLane{height:96px;margin-bottom:5px}#quote{font-size:13px}#mascotLane.teaching #quote{width:auto;max-width:none;font-size:clamp(15px,3.7vw,21px);font-weight:900;line-height:1.4;background:#fff0a8;border:2px solid var(--ink);box-shadow:0 3px 0 #17133320;color:var(--ink);padding:9px 10px;border-radius:14px;text-align:left;overflow-wrap:anywhere}#mascotLane.correct #quote{background:#d6f7bf}#mascotLane.wrong #quote{background:#fff0a8}#feedback{margin-top:12px;padding-top:10px}#verdict{font-size:18px}#explain{margin-top:8px}#explain summary{font-size:13px;cursor:pointer;color:#55476a;padding:5px 0}#evoSaru{width:220px;height:240px;max-height:40dvh;max-width:100%;object-fit:contain}#next{position:relative;overflow:hidden}.answerClue{animation:clueHit .38s ease-out both!important}@keyframes clueHit{0%{transform:scale(1)}40%{transform:scale(1.16);background:#ffdb57}100%{transform:scale(1.06)}}#roamer.hop{animation:roamerPop .4s ease}@keyframes roamerPop{45%{scale:1.13}}@media(max-height:650px){#mascotLane{height:84px}#roamer{width:84px;height:91px}#mascotLane.teaching #quote{font-size:15px;padding:7px}#evoSaru{height:180px;width:166px}}@media(max-width:450px){body.playing .longTitle{display:none}body.playing .shortTitle{display:inline}.settings{gap:4px}.settings button{font-size:10px;padding:5px}body.playing h1{font-size:17px}#mascotLane.teaching #quote{font-size:16px}}@media(max-width:350px){#mascotLane.teaching #quote{font-size:14px}body.playing h1{font-size:15px}}
+#mascotLane.teaching #quote{text-wrap:balance;line-break:strict}
+.missionBar{display:flex;align-items:center;gap:10px;margin:0 0 10px;flex-shrink:0}.missionBar>div{flex:1;min-width:0}.missionBar small{font-size:11px;margin-right:7px}.missionBar strong{font-size:21px;font-variant-numeric:tabular-nums}.missionBar .meter{background:#17133320;height:4px;margin-top:3px}.missionBar .meter i{background:var(--blue)}#cleanupBtn{font-size:12px;min-height:38px;padding:7px 10px;background:#e9e5ef}#cleanupBtn:disabled{cursor:default;box-shadow:none;opacity:.75}#cleanupBtn.ready{background:var(--gold);border-color:var(--ink)}body.playing .missionBar{margin-bottom:7px}.cleanup .question{border-color:#6b2bb1}.cleanup .hud>div{background:#41206e}.cleanup #combo{color:#fff09c}.cleanup #heatLabel{color:#7427a9;font-weight:1000}.cleanup .heat i{background:linear-gradient(90deg,#be6bff,#ff77b3,#ffcf38)}@media(max-height:650px){body.playing .missionBar{margin-bottom:5px}.missionBar strong{font-size:18px}#cleanupBtn{min-height:31px;padding:5px 7px;font-size:11px}.missionBar small{font-size:10px}body.playing .journey{margin:4px 0}#mascotLane{height:78px}}
+.hud>div:first-child{flex-direction:column;gap:0;padding:3px 5px}.hud b{white-space:nowrap}.hud>div:first-child small{white-space:nowrap}
+
+/* v1.0 story / dopa upgrade */
+.ghost{display:block;width:100%;margin-top:10px;padding:11px 14px;background:#fff7e7;font-size:14px}
+.coverHome{position:relative;overflow:hidden;text-align:center;padding:18px 24px 22px;background:linear-gradient(165deg,#fffdf5 0%,#fff5cf 50%,#ffe7f2 100%)}
+.coverHome::before,.coverHome::after{content:"";position:absolute;border-radius:50%;pointer-events:none;opacity:.65}.coverHome::before{width:160px;height:160px;background:#dce4ff;left:-70px;top:70px}.coverHome::after{width:130px;height:130px;background:#ffd7e9;right:-55px;top:155px}
+.coverBadge{position:absolute;z-index:4;right:14px;top:14px;background:#171333;color:#fff;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:900;box-shadow:0 2px 0 #ffcf38}.coverHero{height:170px;position:relative;display:grid;place-items:center;margin:-2px 0 -8px}.coverSun{position:absolute;width:145px;height:145px;border-radius:50%;background:#ffcf38;box-shadow:0 0 0 12px #fff7b9,0 0 0 18px #ff74b433}.coverHero img{position:relative;z-index:2;width:170px;height:160px;object-fit:contain;filter:drop-shadow(0 5px 0 #17133325)}.coverEyebrow{position:relative;z-index:2;color:#76556a}.coverTitle{position:relative;z-index:2;margin:2px 0 3px!important;line-height:1.04}.coverTitle span{display:block;font-size:clamp(25px,7vw,38px);letter-spacing:-.04em}.coverTitle b{display:inline-block;margin-top:4px;font-size:18px;background:#171333;color:#fff;border-radius:999px;padding:4px 15px;transform:rotate(-2deg)}.coverRibbon{position:relative;z-index:3;display:inline-block;margin:7px auto 5px;padding:7px 18px;background:#ff74b4;color:#fff;border:3px solid #171333;border-radius:12px;box-shadow:0 4px 0 #171333;font-weight:1000;font-size:22px;transform:rotate(1deg)}.coverCopy{position:relative;z-index:2;font-size:14px!important}.coverChips{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:center;gap:5px;margin:11px 0}.coverChips span{font-size:11px;font-weight:900;background:#fff;border:1.5px solid #171333;border-radius:999px;padding:4px 7px}.coverStart{position:relative;z-index:2}.coverFine{position:relative;z-index:2}
+.clearRibbon{text-align:center;background:linear-gradient(90deg,#ffcf38,#fff6b0,#ffcf38);border:3px solid #171333;border-radius:14px;padding:8px;font-size:23px;font-weight:1000;margin-bottom:13px;box-shadow:0 4px 0 #171333}.clearNext{background:#ffcf38!important}
+.startRibbon{cursor:pointer;font:inherit;width:auto;min-height:0;line-height:1.2;transition:transform .12s,filter .12s}.startRibbon:hover{filter:brightness(1.05)}.startRibbon:active{transform:translateY(2px) rotate(1deg);box-shadow:0 2px 0 #171333}.startRibbon:focus-visible{outline:4px solid #4266f5;outline-offset:4px}
+.rewardPanel{position:relative;overflow:hidden;text-align:center;margin:-4px 0 15px;padding:14px 12px 12px;border:3px solid #171333;border-radius:18px;background:linear-gradient(145deg,#fff7b8,#ffe1ef 52%,#dce8ff);box-shadow:0 5px 0 #171333}.rewardPanel::before,.rewardPanel::after{content:"✦";position:absolute;font-size:46px;color:#ffb900;opacity:.8;animation:rewardTwinkle 1.1s ease-in-out infinite alternate}.rewardPanel::before{left:10px;top:8px}.rewardPanel::after{right:10px;top:18px;animation-delay:.35s}.rewardPanel.cycleReward{background:linear-gradient(145deg,#ffe56c,#fff5bc 42%,#ffc8e3 75%,#d6e5ff)}.rewardPanel img{display:block;width:118px;height:122px;object-fit:contain;margin:0 auto -3px;filter:drop-shadow(0 5px 2px #17133333);animation:rewardBounce .7s cubic-bezier(.2,.9,.25,1)}.rewardPanel strong{display:block;font-size:clamp(26px,7vw,42px);line-height:1.05}.rewardPanel p{font-size:14px!important;font-weight:900;margin-top:6px}.rewardStars{font-size:28px;letter-spacing:5px;margin-top:3px;filter:drop-shadow(0 2px #fff)}@keyframes rewardBounce{0%{transform:scale(.65) translateY(14px);opacity:0}60%{transform:scale(1.12) translateY(-4px);opacity:1}100%{transform:scale(1)}}@keyframes rewardTwinkle{to{transform:scale(1.25) rotate(12deg);opacity:1}}
+body.playing{height:100vh;height:100dvh;min-height:-webkit-fill-available}body.playing main{height:100vh;height:100dvh;min-height:-webkit-fill-available}.reading{scroll-padding-top:8px}
+
+#castleDock{height:132px;flex:0 0 auto;border:2px solid #171333;border-radius:15px;overflow:hidden;background:linear-gradient(#dff3ff 0 58%,#d4efb6 58% 100%);position:relative;margin:0 0 7px;box-shadow:0 3px 0 #171333;transition:background .6s,border-color .6s}
+.castleDockHead{position:absolute;z-index:8;top:5px;left:7px;right:7px;display:flex;align-items:center;gap:7px;background:#fffdf5e8;border-radius:10px;padding:4px 7px;font-size:10px;box-shadow:0 1px 0 #17133355}.castleDockHead b{font-size:11px}.castleDockHead span{font-weight:1000;margin-left:auto}.castleDockHead small{max-width:52%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#5c5268;font-weight:800}
+#castleDockMount{position:absolute;inset:0;overflow:hidden}.castleStage{position:absolute;left:50%;bottom:0;width:270px;height:105px;transform:translateX(-50%);pointer-events:none}.castleStage img{position:absolute;left:0;bottom:0;width:100%;height:100%;object-fit:contain;opacity:0;transform:translateY(25px) scale(.92);transition:opacity .45s,transform .55s cubic-bezier(.2,.9,.2,1)}.castleStage img.on{opacity:1;transform:translateY(0) scale(1)}.castle2Stage{display:none;width:285px;height:110px}.castle2Stage.active{display:block}.castle1Stage.faded{filter:grayscale(.35) sepia(.2);opacity:.45}.castle1Stage.hiddenStage{display:none}#townGlow{position:absolute;inset:auto 0 0;height:34px;opacity:0;background:radial-gradient(ellipse at 50% 100%,#ffd05d99,transparent 65%);transition:opacity .5s}#townGlow.on{opacity:1}#dopaSaru{position:absolute;right:4px;bottom:0;width:62px;height:72px;object-fit:contain;opacity:0;transform:scale(.8);transition:.35s}#dopaSaru.on{opacity:1;transform:scale(1)}#castleDock.crisis{background:linear-gradient(#271b2b 0 58%,#4a2b22 58% 100%);border-color:#a5462f}#castleDock.crisis .castleDockHead{background:#2b1d2fe8;color:#ffd8c2}#castleDock.crisis .castleDockHead small{color:#ffd8c2}#castleDock.dawn{background:linear-gradient(180deg,#ffd9b0 0%,#fff0c8 40%,#eaf4ff 100%);border-color:#d78b48}#castleDock.dawn .castleDockHead{color:#5d321c}
+
+#lordPraise{position:fixed;z-index:72;left:50%;bottom:max(92px,calc(env(safe-area-inset-bottom) + 78px));width:min(520px,94vw);display:flex;align-items:center;gap:8px;pointer-events:none;opacity:0;transform:translate(-50%,22px) scale(.9);filter:drop-shadow(0 6px 2px #17133335)}#lordPraise img{width:78px;height:88px;object-fit:contain;flex:0 0 auto}#lordPraiseBubble{position:relative;flex:1;background:#fff7cf;border:3px solid #171333;border-radius:18px;padding:10px 13px;font-size:clamp(17px,4.5vw,24px);font-weight:1000;line-height:1.25;box-shadow:0 5px 0 #171333;text-align:center}#lordPraiseBubble::before{content:"";position:absolute;left:-13px;bottom:20px;border-width:10px 13px 10px 0;border-style:solid;border-color:transparent #171333 transparent transparent}#lordPraise.show{animation:lordPraisePop 1.15s ease both}@keyframes lordPraisePop{0%{opacity:0;transform:translate(-50%,28px) scale(.72) rotate(-2deg)}15%,72%{opacity:1;transform:translate(-50%,0) scale(1) rotate(0)}100%{opacity:0;transform:translate(-50%,-12px) scale(1.03)}}body.correctPunch main{animation:correctPunch .34s cubic-bezier(.2,.9,.25,1)}@keyframes correctPunch{0%{transform:scale(1)}32%{transform:scale(1.018)}68%{transform:scale(.995)}100%{transform:scale(1)}}body.correctPunch::after{content:"";position:fixed;inset:0;z-index:68;pointer-events:none;background:radial-gradient(circle at 50% 55%,#fff7a8bb 0 10%,#ffd65b55 24%,transparent 62%);animation:dopaFlash .38s ease-out both}@keyframes dopaFlash{0%{opacity:0}18%{opacity:1}100%{opacity:0}}
+.dopaDropImg{position:fixed;z-index:69;top:-50px;width:var(--size,26px);height:var(--size,26px);object-fit:contain;pointer-events:none;animation:dopaFall var(--dur,2s) linear forwards;filter:drop-shadow(0 2px 1px #17133333)}@keyframes dopaFall{to{transform:translate3d(var(--drift,0),calc(100vh + 90px),0) rotate(var(--spin,540deg));opacity:.85}}
+
+#storyOverlay{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:12px;background:#171333dc;backdrop-filter:blur(3px)}#storyOverlay[hidden]{display:none!important}.storyCard{position:relative;width:min(610px,96vw);max-height:94dvh;overflow:hidden;border:4px solid #171333;border-radius:25px;background:#fff9e7;color:#171333;box-shadow:0 13px 0 #09071c}.storyBg,.storyShade,.storyBurst{position:absolute;inset:0}.storyBg{background-size:cover;background-position:center}.storyShade{background:linear-gradient(180deg,#fff8deaa,#fff9e9ee 55%,#fff9e7 100%)}.storyBurst{pointer-events:none}.storyInner{position:relative;z-index:3;padding:17px 18px;text-align:center}.storyKicker{display:inline-block;background:#171333;color:#fff;border-radius:999px;padding:4px 11px;font-size:11px;font-weight:1000;letter-spacing:.06em}.storyInner h2{font-size:clamp(29px,7vw,48px);line-height:1.05;margin:9px 0 8px}.storyInner p{font-size:clamp(15px,3.7vw,19px);font-weight:800;line-height:1.55}.storyDuel{height:min(285px,44dvh);position:relative;display:flex;align-items:flex-end;justify-content:center;gap:2px;margin-top:4px}.storyDuel img{width:45%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 2px #17133335)}#storyVs{position:absolute;z-index:3;left:50%;top:45%;transform:translate(-50%,-50%) rotate(-7deg);font-size:clamp(25px,8vw,52px);font-weight:1000;color:#e84d44;text-shadow:0 3px #fff,0 5px #171333}.storyCard.crisis{background:#201b27;color:#fff}.storyCard.crisis .storyShade{background:linear-gradient(180deg,#190c14aa,#331919dd 70%,#171333 100%)}.storyCard.crisis h2{color:#ff9c76;text-shadow:0 2px #220b0b}.storyCard.dawn{background:linear-gradient(180deg,#ffe0b5,#fff9df);color:#171333}.storyCard.dawn .storyShade{background:linear-gradient(180deg,#ffd7a122,#fff8d6cc 67%,#fffaf0 100%)}.storyCard.dawn h2{color:#a44a12;text-shadow:0 2px #fff}
+#mascotLane.teaching #quote{width:auto;max-width:calc(100% - 105px);font-size:clamp(15px,3.8vw,20px);font-weight:900;line-height:1.35;background:#fff0a8;border:2px solid #171333;box-shadow:0 3px 0 #17133320;color:#171333;padding:8px 10px;border-radius:14px;text-align:left;overflow-wrap:anywhere}.hintFlash{animation:hintFlash .42s ease}@keyframes hintFlash{40%{transform:scale(1.03);color:#293eb4}}
+
+@media(max-width:450px){.coverHome{padding:14px 16px 18px}.coverHero{height:145px}.coverHero img{width:145px;height:138px}.coverSun{width:125px;height:125px}.coverRibbon{font-size:19px}.castleDockHead small{max-width:46%}.storyInner{padding:14px 12px}.storyDuel{height:min(240px,38dvh)}}
+@media(max-height:700px){#castleDock{height:96px}.castleStage{height:76px;width:210px}.castle2Stage{height:80px;width:220px}.castleDockHead small{display:none}#dopaSaru{width:48px;height:56px}.storyDuel{height:190px}.storyInner{padding:10px 12px}.storyInner h2{font-size:27px}.storyInner p{font-size:14px}#lordPraise{bottom:70px}#lordPraise img{width:62px;height:70px}#lordPraiseBubble{font-size:16px;padding:8px 10px}}
+</style></head><body>
+<div id="fallback"></div>
+<div id="storyOverlay" hidden aria-modal="true" role="dialog" aria-labelledby="storyTitle">
+  <section id="storyCard" class="storyCard">
+    <div id="storyBg" class="storyBg"></div><div class="storyShade"></div><div id="storyBurst" class="storyBurst"></div>
+    <div class="storyInner"><div id="storyKicker" class="storyKicker">天下取り物語</div><h2 id="storyTitle">物語</h2><p id="storyText"></p>
+      <div class="storyDuel"><img id="storyLeft" alt=""><div id="storyVs"></div><img id="storyRight" alt=""></div>
+      <button id="storyNext" class="primary">進む！</button>
+    </div>
+  </section>
+</div>
+<div id="lordPraise" aria-hidden="true"><img id="lordPraiseImg" alt="殿"><div id="lordPraiseBubble">よくやった！サル！</div></div>
+<canvas id="background"></canvas><canvas id="particles"></canvas>
+<main><header><div><small>ENGLISH × 天下取り</small><h1><span class="longTitle">サルの天下取り｜英語編</span><span class="shortTitle">サル英語</span></h1></div><div class="settings"><button id="autoBtn" aria-pressed="true">自動 ON</button><button id="sound" aria-pressed="true">音 ON</button><button id="motion" aria-pressed="false">演出 標準</button></div></header>
+<section class="journey"><strong id="rank">サル</strong><div class="journeyProgress"><span id="rankLine"></span><div class="meter"><i id="growth"></i></div></div><small id="saveInfo">端末内に保存</small></section>
+<section class="missionBar"><div><small>一巡まで</small><strong id="remainingBank">あと144問</strong><div class="meter"><i id="bankProgress"></i></div></div><button id="cleanupBtn" disabled>間違い 0 / 5</button></section>
+<nav class="ranks" aria-label="出世の道"><span>サル</span><span>武将</span><span>大名</span><span>関白</span><span>天下人</span></nav>
+<section id="home" class="paper home coverHome">
+<div class="coverBadge" id="cycleBadge">第1周・あと144問</div>
+<div class="coverHero"><div class="coverSun"></div><img src="assets/b9e4f42cacbf283d5c519c719bfe7a282834b7e27c78ffb9943ee9fd440d16d9.png" alt="サル" id="coverSaru"></div>
+<div class="eyebrow coverEyebrow">中3から挑む・準2級への文法</div>
+<h2 class="coverTitle"><span>サルの天下取り</span><b>英語編</b></h2>
+<button class="coverRibbon startRibbon" id="startRibbon" type="button" aria-label="2択で文法を取れ。ゲームをスタート">2択で文法を取れ！ <span aria-hidden="true">▶</span></button>
+<p class="coverCopy">日本語の意味に合う英文を完成させよう。<br><b>迷ったらサルがぷちヒント！</b> 正解するほど天下取りが進む！</p>
+<div class="coverChips"><span>🐵 ぷちヒント</span><span>🌸 1問目からドパ</span><span>🏯 城が育つ</span></div>
+<button class="primary coverStart" id="start">いざ、英語で天下取り！</button>
+<button id="weakStart" class="secondary" hidden>苦手をもう一度</button>
+<button id="resetHome" class="ghost">🔄 はじめから</button>
+<p id="deckInfo" class="fine"></p><p class="fine coverFine">v1.1 / 144問・24テーマ / 10問ずつ。サルのヒント＋殿の褒め＋天下取り物語。</p></section>
+<section id="play" hidden><div class="hud"><div><small id="phase">本陣</small><b id="counter">1 / 10</b></div><div><small>連続正解</small><b id="combo">0</b></div><div><small>お祭り得点</small><b id="score">0</b></div></div><div class="meter heat"><i id="heat"></i></div>
+<div id="castleDock" aria-label="正解で進む天下取り"><div class="castleDockHead"><b id="castleMode">🏯 天下への道</b><span id="castleDockText">0 / 144</span><small id="castleNextText">まずは殿と出会おう！</small></div><div id="castleDockMount"><div id="castle1Stage" class="castleStage castle1Stage"></div><div id="castle2Stage" class="castleStage castle2Stage"></div><div id="townGlow"></div><img id="dopaSaru" alt="喜ぶサル"></div></div>
+<div class="paper question"><div class="questionMeta"><span id="tag"></span><span id="heatLabel">祭り LV 1</span></div>
+<div class="reading" id="reading"><h2 id="sentence" lang="en"></h2><p id="translation"></p><div id="hintArea"><button id="hintButton">手がかりを見る</button><p id="hintText" aria-live="polite"></p></div>
+<section id="feedback" hidden aria-live="polite"><strong id="verdict"></strong><details id="explain"><summary>くわしく見る</summary><p id="rule"></p><p id="complete" lang="en"></p></details></section></div>
+<div id="mascotLane"><span id="quote" aria-live="polite">英語で、天下を取る。</span></div>
+<div class="answerDock"><div class="choices" id="choices"></div><button class="primary" id="next" hidden>次の問題へ</button></div></div></section>
+<section id="result" class="paper" hidden><div id="clearRibbon" class="clearRibbon" hidden>🏯 一 巡 制 覇 🏯</div><div id="resultReward" class="rewardPanel" aria-live="polite"><img id="rewardSaru" alt="喜ぶサル"><strong id="rewardTitle">本陣突破！</strong><div id="rewardStars" class="rewardStars" aria-hidden="true">★★★</div><p id="rewardText">ごほうび獲得！</p></div><div class="eyebrow">戦いの記録</div><h2 id="resultTitle"></h2><div class="resultNumber" id="resultNumber"></div><p id="resultText"></p><div id="weakness"></div><button id="resume" class="primary" hidden>元のステージに戻る</button><button class="primary" id="extra" hidden>フィーバー５問へ！</button><button class="primary" id="review" hidden>間違いを取り返す</button><button id="newCycle" class="primary clearNext" hidden>第2周へ！</button><button class="secondary" id="again">次の10問へ</button><button class="secondary" id="back">いったん休む</button><button id="resetResult" class="ghost">🔄 はじめから</button></section>
+<footer><details><summary>遊び方・原作クレジット</summary><p>間違いが5種類たまると「間違い消化ステージ」を解放。以後は残りが1問でも利用でき、正解した問題から消化します。同じ問題を何度間違えても1問として数えます。消化ステージは最大10問ずつ。プレイ途中で入った場合は終了後に元のステージへ戻れます。</p><p>通常プレイは本陣・フィーバー共通の順番で、一巡するまで同じ問題を出しません。「苦手をもう一度」「間違いを取り返す」は復習のため再出題します。約1.7秒でサルがぷちヒント、約3.6秒でもう一段強いヒントを表示。間違いには即座に要点を表示します。自動ONでは正解時だけ約1.35秒後に次へ進みます。手動でも表示できます。制限時間やヒント使用の減点はありません。</p><p>初回正解は成長 +10、復習で取り返すと +5。同じ問題の成長加点は1回の出陣で1度まで。速さによる加点はありません。お祭り得点は演出用で、習熟度ではありません。</p><p>本陣の初回正答率と復習結果は別集計。成長・弱点はこのブラウザ内だけに保存します。別端末には同期されません。全144問はオリジナルで、英検公式問題ではありません。正解すると殿に褒められながら出世し、城を築き、後半はサルが殿の志を継いで天下統一を目指します。</p><p>音楽・効果音・背景・粒子演出：<a href="https://github.com/grmchn/dopa-drill" target="_blank" rel="noopener">gear_machine / dopa-drill</a>（MIT）。原作の非公式改造版。独自のサルと英語問題を使用。</p><pre id="license">MIT License
+
+Copyright (c) 2026 gear_machine
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+
+Exceptions to the MIT License
+
+1. Character and logo (non-commercial fan works permitted)
+
+   The MIT License above does NOT apply to the mascot character &quot;Dopakichi&quot;
+   (ドパキチ) or to the &quot;Dopa Drill&quot; (ドパドリル) name and logo, including their
+   designs, shapes and likenesses as drawn in app/js/dopakichi.js,
+   docs/dopakichi.svg, app/icon.svg and the logo in app/index.html
+   (the &quot;Characters&quot;). Copyright (c) 2026 gear_machine.
+
+   You may, without asking, use the Characters for non-commercial purposes,
+   including fan art, fan fiction, illustrations, animations, videos, social
+   media posts, and non-commercial forks or modified versions of this game.
+
+   The following are not permitted without prior permission:
+   - commercial use, such as selling goods, artworks or products featuring
+     the Characters, or using them in paid products, services or advertising;
+   - using the Characters as the name, mascot or branding of another product
+     or service, or presenting your work as official;
+   - uses that are offensive, defamatory, or that harm the reputation of the
+     Characters or of this project.
+
+   Gameplay videos and live streams of this game are permitted, including on
+   platforms where the creator receives advertising or tipping revenue.
+
+   When a fan work or fork is published, please make clear that it is
+   unofficial. A Japanese summary of these terms is in README.md; if the two
+   differ, this English text prevails.
+
+2. Fonts
+
+   The fonts in app/fonts/ (Dela Gothic One, Zen Maru Gothic) are licensed under
+   the SIL Open Font License 1.1. See the OFL-*.txt files in that directory.
+</pre></details></footer>
+</main><div id="roamer" aria-hidden="true" hidden><canvas id="saru" width="240" height="260"></canvas></div><div id="banner" role="status"></div><dialog id="evolution"><div class="eyebrow">大 出 世</div><h2 id="newRank"></h2><canvas id="evoSaru" width="480" height="520" role="img" aria-label="出世したサル"></canvas><p id="evoQuote"></p><button class="primary" id="evoClose">さらに上を目指す！</button></dialog>
+<script>
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)); const rand=(a=0,b=1)=>a+Math.random()*(b-a); const pick=list=>list[Math.floor(Math.random()*list.length)];
+
+// Procedural audio engine: every sound is synthesized with Web Audio.
+// All sound goes through play(name, when, params). In live mode it is rendered
+// immediately; in capture mode it is only logged so that the exact same score
+// can be rendered offline (OfflineAudioContext) and muxed into a video.
+
+const midiHz = (m) => 440 * 2 ** ((m - 69) / 12);
+
+// ---------------------------------------------------------------- graph
+function makeGraph(ctx) {
+  const g = { ctx };
+  g.master = ctx.createGain();
+  g.master.gain.value = 0.72;
+  const comp = ctx.createDynamicsCompressor();
+  comp.threshold.value = -16; comp.knee.value = 10; comp.ratio.value = 3.2; comp.attack.value = 0.004; comp.release.value = 0.18;
+  const limit = ctx.createDynamicsCompressor();
+  limit.threshold.value = -2.5; limit.knee.value = 0; limit.ratio.value = 20; limit.attack.value = 0.001; limit.release.value = 0.06;
+  g.master.connect(comp); comp.connect(limit); limit.connect(ctx.destination);
+
+  g.drums = ctx.createGain(); g.drums.gain.value = 0.9; g.drums.connect(g.master);
+  g.duck = ctx.createGain(); g.duck.connect(g.master);
+  g.musicFilter = ctx.createBiquadFilter(); g.musicFilter.type = 'lowpass'; g.musicFilter.frequency.value = 18000; g.musicFilter.Q.value = 0.9;
+  g.musicFilter.connect(g.duck);
+  g.music = ctx.createGain(); g.music.gain.value = 0.8; g.music.connect(g.musicFilter);
+  g.sfx = ctx.createGain(); g.sfx.gain.value = 0.85; g.sfx.connect(g.master);
+
+  // Reverb from a generated stereo impulse response.
+  const len = Math.floor(ctx.sampleRate * 2.4);
+  const ir = ctx.createBuffer(2, len, ctx.sampleRate);
+  for (let ch = 0; ch < 2; ch++) {
+    const d = ir.getChannelData(ch);
+    for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / len) ** 2.6 * (i < 300 ? i / 300 : 1);
+  }
+  g.rev = ctx.createGain(); g.rev.gain.value = 0.42;
+  const conv = ctx.createConvolver(); conv.buffer = ir;
+  const revHp = ctx.createBiquadFilter(); revHp.type = 'highpass'; revHp.frequency.value = 260;
+  g.rev.connect(revHp); revHp.connect(conv); conv.connect(g.master);
+
+  // Dotted-eighth delay (retimed by the engine when the tempo changes).
+  g.dly = ctx.createGain(); g.dly.gain.value = 0.3;
+  g.delay = ctx.createDelay(2); g.delay.delayTime.value = 0.375;
+  const fb = ctx.createGain(); fb.gain.value = 0.36;
+  const dlp = ctx.createBiquadFilter(); dlp.type = 'lowpass'; dlp.frequency.value = 3200;
+  g.dly.connect(g.delay); g.delay.connect(dlp); dlp.connect(fb); fb.connect(g.delay); dlp.connect(g.master);
+
+  const nlen = ctx.sampleRate * 2;
+  g.noise = ctx.createBuffer(1, nlen, ctx.sampleRate);
+  const nd = g.noise.getChannelData(0);
+  for (let i = 0; i < nlen; i++) nd[i] = Math.random() * 2 - 1;
+  return g;
+}
+
+// ---------------------------------------------------------------- helpers
+function env(g, t, { a = 0.005, peak = 1, d = 0.2, s = 0, hold = 0, r = 0.1 } = {}) {
+  const gain = g.ctx.createGain();
+  const p = gain.gain;
+  p.setValueAtTime(0.0001, t);
+  p.linearRampToValueAtTime(peak, t + a);
+  if (s > 0) {
+    p.setTargetAtTime(peak * s, t + a, d / 3);
+    p.setValueAtTime(peak * s, t + a + hold);
+    p.exponentialRampToValueAtTime(0.0001, t + a + hold + r);
+  } else {
+    p.exponentialRampToValueAtTime(0.0001, t + a + d);
+  }
+  return gain;
+}
+function osc(g, type, f, t, stop, detune = 0) {
+  const o = g.ctx.createOscillator();
+  o.type = type; o.frequency.setValueAtTime(f, t); o.detune.value = detune;
+  o.start(t); o.stop(stop);
+  return o;
+}
+function noise(g, t, stop) {
+  const n = g.ctx.createBufferSource();
+  n.buffer = g.noise; n.loop = true;
+  n.start(t, Math.random() * 1.5); n.stop(stop);
+  return n;
+}
+function filt(g, type, f, q = 0.7) {
+  const b = g.ctx.createBiquadFilter();
+  b.type = type; b.frequency.value = f; b.Q.value = q;
+  return b;
+}
+function pan(g, v) {
+  const p = g.ctx.createStereoPanner ? g.ctx.createStereoPanner() : g.ctx.createGain();
+  if (p.pan) p.pan.value = v;
+  return p;
+}
+function send(g, node, rev = 0, dly = 0) {
+  if (rev) { const s = g.ctx.createGain(); s.gain.value = rev; node.connect(s); s.connect(g.rev); }
+  if (dly) { const s = g.ctx.createGain(); s.gain.value = dly; node.connect(s); s.connect(g.dly); }
+}
+
+// ---------------------------------------------------------------- instruments
+const SYNTH = {
+  kick(g, t, { v = 1 }) {
+    const o = osc(g, 'sine', 170, t, t + 0.5);
+    o.frequency.exponentialRampToValueAtTime(48, t + 0.11);
+    o.frequency.exponentialRampToValueAtTime(38, t + 0.4);
+    const e = env(g, t, { a: 0.002, peak: 1.05 * v, d: 0.42 });
+    o.connect(e); e.connect(g.drums);
+    const n = noise(g, t, t + 0.02); const hp = filt(g, 'highpass', 2500); const ne = env(g, t, { a: 0.001, peak: 0.35 * v, d: 0.015 });
+    n.connect(hp); hp.connect(ne); ne.connect(g.drums);
+  },
+  clap(g, t, { v = 1 }) {
+    for (let i = 0; i < 3; i++) {
+      const tt = t + i * 0.011;
+      const n = noise(g, tt, tt + 0.25); const bp = filt(g, 'bandpass', 1350, 0.9);
+      const e = env(g, tt, { a: 0.001, peak: (i === 2 ? 0.75 : 0.45) * v, d: i === 2 ? 0.2 : 0.03 });
+      n.connect(bp); bp.connect(e); e.connect(g.drums); send(g, e, 0.35);
+    }
+    const o = osc(g, 'triangle', 200, t, t + 0.1); const oe = env(g, t, { peak: 0.2 * v, d: 0.07 });
+    o.connect(oe); oe.connect(g.drums);
+  },
+  snare(g, t, { v = 0.6 }) {
+    const n = noise(g, t, t + 0.18); const bp = filt(g, 'bandpass', 1900, 0.6);
+    const e = env(g, t, { a: 0.001, peak: v, d: 0.12 });
+    n.connect(bp); bp.connect(e); e.connect(g.drums); send(g, e, 0.2);
+    const o = osc(g, 'triangle', 230, t, t + 0.08); const oe = env(g, t, { peak: v * 0.4, d: 0.05 });
+    o.connect(oe); oe.connect(g.drums);
+  },
+  hat(g, t, { v = 0.3, open = false }) {
+    const n = noise(g, t, t + (open ? 0.35 : 0.06)); const hp = filt(g, 'highpass', open ? 6500 : 8200);
+    const e = env(g, t, { a: 0.001, peak: v, d: open ? 0.26 : 0.035 });
+    const p = pan(g, open ? -0.15 : 0.25);
+    n.connect(hp); hp.connect(e); e.connect(p); p.connect(g.drums);
+  },
+  shaker(g, t, { v = 0.08 }) {
+    const n = noise(g, t, t + 0.08); const bp = filt(g, 'bandpass', 6200, 1.4);
+    const e = env(g, t, { a: 0.012, peak: v, d: 0.05 });
+    const p = pan(g, 0.35);
+    n.connect(bp); bp.connect(e); e.connect(p); p.connect(g.drums);
+  },
+  crash(g, t, { v = 0.5 }) {
+    const n = noise(g, t, t + 2.4); const hp = filt(g, 'highpass', 4200);
+    const e = env(g, t, { a: 0.002, peak: v, d: 2.2 });
+    n.connect(hp); hp.connect(e); e.connect(g.drums); send(g, e, 0.3);
+    const n2 = noise(g, t, t + 1.2); const bp = filt(g, 'bandpass', 9000, 3); const e2 = env(g, t, { peak: v * 0.5, d: 1.1 });
+    n2.connect(bp); bp.connect(e2); e2.connect(g.drums);
+  },
+  impact(g, t, { v = 1 }) {
+    const o = osc(g, 'sine', 90, t, t + 1.6);
+    o.frequency.exponentialRampToValueAtTime(28, t + 1.4);
+    const e = env(g, t, { a: 0.003, peak: 1.1 * v, d: 1.5 });
+    o.connect(e); e.connect(g.drums);
+    const n = noise(g, t, t + 1.2); const lp = filt(g, 'lowpass', 900); const ne = env(g, t, { peak: 0.6 * v, d: 1.0 });
+    lp.frequency.exponentialRampToValueAtTime(120, t + 1);
+    n.connect(lp); lp.connect(ne); ne.connect(g.drums); send(g, ne, 0.5);
+  },
+  riser(g, t, { dur = 2, v = 0.35 }) {
+    const n = noise(g, t, t + dur + 0.1); const bp = filt(g, 'bandpass', 300, 2.5);
+    bp.frequency.setValueAtTime(300, t); bp.frequency.exponentialRampToValueAtTime(7000, t + dur);
+    const e = g.ctx.createGain(); e.gain.setValueAtTime(0.0001, t); e.gain.exponentialRampToValueAtTime(v, t + dur); e.gain.linearRampToValueAtTime(0.0001, t + dur + 0.08);
+    n.connect(bp); bp.connect(e); e.connect(g.sfx); send(g, e, 0.4);
+    const o = osc(g, 'sawtooth', 180, t, t + dur + 0.1); o.frequency.exponentialRampToValueAtTime(1400, t + dur);
+    const lp = filt(g, 'lowpass', 2400); const oe = g.ctx.createGain();
+    oe.gain.setValueAtTime(0.0001, t); oe.gain.exponentialRampToValueAtTime(v * 0.25, t + dur); oe.gain.linearRampToValueAtTime(0.0001, t + dur + 0.08);
+    o.connect(lp); lp.connect(oe); oe.connect(g.sfx);
+  },
+  swoosh(g, t, { v = 0.3, up = true, dur = 0.35 }) {
+    const n = noise(g, t, t + dur + 0.05); const bp = filt(g, 'bandpass', up ? 500 : 5000, 1.8);
+    bp.frequency.exponentialRampToValueAtTime(up ? 5000 : 400, t + dur);
+    const e = env(g, t, { a: dur * 0.6, peak: v, d: dur * 0.4 });
+    const p = pan(g, 0); if (p.pan) { p.pan.setValueAtTime(up ? -0.7 : 0.7, t); p.pan.linearRampToValueAtTime(up ? 0.7 : -0.7, t + dur); }
+    n.connect(bp); bp.connect(e); e.connect(p); p.connect(g.sfx); send(g, e, 0.25);
+  },
+  bass(g, t, { m, dur = 0.2, v = 0.5 }) {
+    const f = midiHz(m);
+    const o1 = osc(g, 'sawtooth', f, t, t + dur + 0.15); const o2 = osc(g, 'square', f / 2, t, t + dur + 0.15);
+    const lp = filt(g, 'lowpass', 180, 6);
+    lp.frequency.setValueAtTime(180, t); lp.frequency.exponentialRampToValueAtTime(1100, t + 0.02); lp.frequency.exponentialRampToValueAtTime(260, t + dur);
+    const e = env(g, t, { a: 0.004, peak: v, d: dur, s: 0.6, hold: dur * 0.6, r: 0.08 });
+    const m2 = g.ctx.createGain(); m2.gain.value = 0.5;
+    o1.connect(lp); o2.connect(m2); m2.connect(lp); lp.connect(e); e.connect(g.music);
+  },
+  pad(g, t, { notes, dur = 2, v = 0.08, bright = 900 }) {
+    const e = env(g, t, { a: 0.35, peak: v, d: 0.4, s: 0.85, hold: dur, r: 0.6 });
+    const lp = filt(g, 'lowpass', bright, 0.8);
+    lp.connect(e); e.connect(g.music); send(g, e, 0.5);
+    for (const m of notes) for (const dt of [-9, 9]) {
+      const o = osc(g, 'sawtooth', midiHz(m), t, t + dur + 1.2, dt);
+      o.connect(lp);
+    }
+  },
+  pluck(g, t, { m, v = 0.2, dur = 0.5, pan: pv = 0 }) {
+    const f = midiHz(m);
+    const o = osc(g, 'sine', f, t, t + dur + 0.1); const o2 = osc(g, 'sine', f * 4, t, t + 0.12);
+    const e = env(g, t, { a: 0.002, peak: v, d: dur }); const e2 = env(g, t, { a: 0.001, peak: v * 0.35, d: 0.06 });
+    const p = pan(g, pv);
+    o.connect(e); o2.connect(e2); e2.connect(p); e.connect(p); p.connect(g.music); send(g, e, 0.3);
+  },
+  arp(g, t, { m, v = 0.08 }) {
+    const o = osc(g, 'square', midiHz(m), t, t + 0.25);
+    const lp = filt(g, 'lowpass', 3800, 2); lp.frequency.setValueAtTime(3800, t); lp.frequency.exponentialRampToValueAtTime(700, t + 0.14);
+    const e = env(g, t, { a: 0.002, peak: v, d: 0.16 });
+    const p = pan(g, Math.sin(m * 1.7) * 0.5);
+    o.connect(lp); lp.connect(e); e.connect(p); p.connect(g.music); send(g, e, 0.15, 0.55);
+  },
+  stab(g, t, { notes, v = 0.12, dur = 0.2 }) {
+    const lp = filt(g, 'lowpass', 5200, 1.2); lp.frequency.setValueAtTime(5200, t); lp.frequency.exponentialRampToValueAtTime(900, t + dur + 0.1);
+    const e = env(g, t, { a: 0.003, peak: v, d: dur + 0.1 });
+    lp.connect(e); e.connect(g.music); send(g, e, 0.35, 0.2);
+    for (const m of notes) for (const dt of [-18, -7, 0, 7, 18]) {
+      const o = osc(g, 'sawtooth', midiHz(m), t, t + dur + 0.25, dt);
+      o.connect(lp);
+    }
+  },
+  lead(g, t, { m, dur = 0.2, v = 0.1 }) {
+    const f = midiHz(m);
+    const o1 = osc(g, 'sawtooth', f, t, t + dur + 0.2, -6); const o2 = osc(g, 'square', f, t, t + dur + 0.2, 6);
+    const lfo = osc(g, 'sine', 5.5, t, t + dur + 0.2); const lg = g.ctx.createGain(); lg.gain.value = 9;
+    lfo.connect(lg); lg.connect(o1.detune); lg.connect(o2.detune);
+    const lp = filt(g, 'lowpass', 3400, 1);
+    const e = env(g, t, { a: 0.008, peak: v, d: 0.1, s: 0.7, hold: dur, r: 0.12 });
+    o1.connect(lp); o2.connect(lp); lp.connect(e); e.connect(g.music); send(g, e, 0.3, 0.35);
+  },
+  choir(g, t, { notes, dur = 2, v = 0.06 }) {
+    const out = env(g, t, { a: 0.5, peak: v, d: 0.5, s: 0.9, hold: dur, r: 0.8 });
+    out.connect(g.music); send(g, out, 0.7);
+    for (const fq of [[730, 6], [1090, 7], [2440, 9]]) {
+      const bp = filt(g, 'bandpass', fq[0], fq[1]); const fg = g.ctx.createGain(); fg.gain.value = fq[0] === 730 ? 1.3 : 0.7;
+      bp.connect(fg); fg.connect(out);
+      for (const m of notes) { const o = osc(g, 'sawtooth', midiHz(m), t, t + dur + 1.5, (m % 5) * 4 - 8); o.connect(bp); }
+    }
+  },
+  bell(g, t, { m, v = 0.2, dur = 1.1, pan: pv = 0 }) {
+    const f = midiHz(m);
+    const car = osc(g, 'sine', f, t, t + dur + 0.1);
+    const mod = osc(g, 'sine', Math.min(20000, f * 3.5), t, t + dur + 0.1);
+    const mg = g.ctx.createGain(); mg.gain.setValueAtTime(f * 2.2, t); mg.gain.exponentialRampToValueAtTime(f * 0.1, t + dur * 0.6);
+    mod.connect(mg); mg.connect(car.frequency);
+    const e = env(g, t, { a: 0.002, peak: v, d: dur });
+    const p = pan(g, pv);
+    car.connect(e); e.connect(p); p.connect(g.sfx); send(g, e, 0.35, 0.3);
+  },
+  // ---- voices for the unlockable songs (id041, id043) ----
+  chip(g, t, { m, dur = 0.14, v = 0.08, pan: pv = 0 }) {
+    const o = osc(g, 'square', midiHz(m), t, t + dur + 0.05);
+    const e = env(g, t, { a: 0.002, peak: v, d: 0.05, s: 0.6, hold: dur, r: 0.03 });
+    const p = pan(g, pv);
+    o.connect(e); e.connect(p); p.connect(g.music); send(g, e, 0.08, 0.25);
+  },
+  tri(g, t, { m, dur = 0.2, v = 0.35 }) {
+    const o = osc(g, 'triangle', midiHz(m), t, t + dur + 0.05);
+    const e = env(g, t, { a: 0.002, peak: v, d: 0.05, s: 0.8, hold: dur, r: 0.04 });
+    o.connect(e); e.connect(g.music);
+  },
+  noiseHat(g, t, { v = 0.12 }) {
+    const n = noise(g, t, t + 0.06); const hp = filt(g, 'highpass', 6000, 0.7);
+    const e = env(g, t, { a: 0.001, peak: v, d: 0.04 });
+    n.connect(hp); hp.connect(e); e.connect(g.drums);
+  },
+  taiko(g, t, { v = 0.9, m = 45 }) {
+    const o = osc(g, 'sine', midiHz(m + 12), t, t + 0.7);
+    o.frequency.exponentialRampToValueAtTime(midiHz(m), t + 0.12);
+    const e = env(g, t, { a: 0.002, peak: v, d: 0.55 });
+    const n = noise(g, t, t + 0.12); const bp = filt(g, 'bandpass', 900, 0.8); const ne = env(g, t, { a: 0.001, peak: v * 0.35, d: 0.08 });
+    o.connect(e); e.connect(g.drums); n.connect(bp); bp.connect(ne); ne.connect(g.drums); send(g, e, 0.25);
+  },
+  kane(g, t, { v = 0.08 }) {
+    const hp = filt(g, 'highpass', 2500, 1); const e = env(g, t, { a: 0.001, peak: v, d: 0.22 });
+    for (const f of [1870, 2640, 3310]) { const o = osc(g, 'square', f, t, t + 0.3); o.connect(hp); }
+    hp.connect(e); e.connect(g.drums); send(g, e, 0.2);
+  },
+  shamisen(g, t, { m, v = 0.12, pan: pv = 0 }) {
+    const f = midiHz(m);
+    const o = osc(g, 'sawtooth', f * 1.01, t, t + 0.4); o.frequency.exponentialRampToValueAtTime(f, t + 0.05);
+    const hp = filt(g, 'highpass', 320, 0.7); const lp = filt(g, 'lowpass', 4200, 3);
+    lp.frequency.setValueAtTime(4200, t); lp.frequency.exponentialRampToValueAtTime(900, t + 0.2);
+    const e = env(g, t, { a: 0.001, peak: v, d: 0.28 }); const p = pan(g, pv);
+    o.connect(hp); hp.connect(lp); lp.connect(e); e.connect(p); p.connect(g.music); send(g, e, 0.25);
+  },
+  fue(g, t, { m, dur = 0.3, v = 0.09 }) {
+    const f = midiHz(m);
+    const o = osc(g, 'sine', f, t, t + dur + 0.25);
+    const lfo = osc(g, 'sine', 5, t, t + dur + 0.25); const lg = g.ctx.createGain(); lg.gain.value = 14;
+    lfo.connect(lg); lg.connect(o.detune);
+    const e = env(g, t, { a: 0.03, peak: v, d: 0.1, s: 0.85, hold: dur, r: 0.15 });
+    const n = noise(g, t, t + dur + 0.2); const bp = filt(g, 'bandpass', f * 2, 3); const ng = g.ctx.createGain(); ng.gain.value = 0.25;
+    o.connect(e); n.connect(bp); bp.connect(ng); ng.connect(e); e.connect(g.music); send(g, e, 0.45, 0.25);
+  },
+  brass(g, t, { notes, m, dur = 0.2, v = 0.1 }) {
+    const list = notes || [m];
+    const lp = filt(g, 'lowpass', 600, 1.4);
+    lp.frequency.setValueAtTime(500, t); lp.frequency.exponentialRampToValueAtTime(2800, t + 0.05); lp.frequency.exponentialRampToValueAtTime(1300, t + dur + 0.1);
+    const e = env(g, t, { a: 0.02, peak: v, d: 0.08, s: 0.75, hold: dur, r: 0.1 });
+    lp.connect(e); e.connect(g.music); send(g, e, 0.3);
+    for (const n of list) for (const dt of [-6, 6]) { const o = osc(g, 'sawtooth', midiHz(n), t, t + dur + 0.3, dt); o.connect(lp); }
+  },
+  tuba(g, t, { m, dur = 0.25, v = 0.4 }) {
+    const o = osc(g, 'square', midiHz(m), t, t + dur + 0.1); const lp = filt(g, 'lowpass', 420, 1);
+    const e = env(g, t, { a: 0.015, peak: v, d: 0.05, s: 0.8, hold: dur, r: 0.06 });
+    o.connect(lp); lp.connect(e); e.connect(g.music);
+  },
+  glock(g, t, { m, v = 0.12, pan: pv = 0 }) {
+    const f = midiHz(m);
+    const o = osc(g, 'sine', f, t, t + 0.9); const o2 = osc(g, 'sine', f * 2.76, t, t + 0.3);
+    const e = env(g, t, { a: 0.001, peak: v, d: 0.8 }); const e2 = env(g, t, { a: 0.001, peak: v * 0.4, d: 0.15 });
+    const p = pan(g, pv);
+    o.connect(e); o2.connect(e2); e.connect(p); e2.connect(p); p.connect(g.music); send(g, e, 0.3);
+  },
+  saw(g, t, { notes, m, dur = 0.2, v = 0.06, bright = 2600 }) {
+    const list = notes || [m];
+    const lp = filt(g, 'lowpass', bright, 0.9);
+    const e = env(g, t, { a: 0.004, peak: v, d: 0.08, s: 0.7, hold: dur, r: 0.12 });
+    lp.connect(e); e.connect(g.music); send(g, e, 0.35, 0.3);
+    for (const n of list) for (const dt of [-14, -5, 5, 14]) { const o = osc(g, 'sawtooth', midiHz(n), t, t + dur + 0.3, dt); o.connect(lp); }
+  },
+  sub(g, t, { m, dur = 0.3, v = 0.5 }) {
+    const o = osc(g, 'sine', midiHz(m + 12), t, t + dur + 0.1); o.frequency.exponentialRampToValueAtTime(midiHz(m), t + 0.05);
+    const e = env(g, t, { a: 0.003, peak: v, d: 0.05, s: 0.9, hold: dur, r: 0.08 });
+    o.connect(e); e.connect(g.music);
+  },
+  blip(g, t, { m, v = 0.16 }) {
+    const f = midiHz(m);
+    const o = osc(g, 'triangle', f * 1.02, t, t + 0.14); o.frequency.exponentialRampToValueAtTime(f, t + 0.03);
+    const o2 = osc(g, 'sine', f * 2, t, t + 0.06);
+    const e = env(g, t, { a: 0.001, peak: v, d: 0.11 }); const e2 = env(g, t, { a: 0.001, peak: v * 0.4, d: 0.03 });
+    o.connect(e); o2.connect(e2); e.connect(g.sfx); e2.connect(g.sfx); send(g, e, 0.12);
+  },
+  pop(g, t, { v = 0.16, f = 520 }) {
+    const o = osc(g, 'sine', f, t, t + 0.1); o.frequency.exponentialRampToValueAtTime(f * 2.4, t + 0.05);
+    const e = env(g, t, { a: 0.001, peak: v, d: 0.07 });
+    o.connect(e); e.connect(g.sfx);
+  },
+  thud(g, t, { v = 0.25 }) {
+    const o = osc(g, 'sine', 210, t, t + 0.12); o.frequency.exponentialRampToValueAtTime(90, t + 0.08);
+    const e = env(g, t, { a: 0.001, peak: v, d: 0.09 });
+    o.connect(e); e.connect(g.sfx);
+  },
+  boing(g, t, { v = 0.3 }) {
+    const o = osc(g, 'sine', 320, t, t + 0.6); o.frequency.setValueAtTime(320, t); o.frequency.exponentialRampToValueAtTime(140, t + 0.5);
+    const lfo = osc(g, 'sine', 16, t, t + 0.6); const lg = g.ctx.createGain(); lg.gain.setValueAtTime(90, t); lg.gain.exponentialRampToValueAtTime(8, t + 0.5);
+    lfo.connect(lg); lg.connect(o.frequency);
+    const e = env(g, t, { a: 0.003, peak: v, d: 0.55 });
+    o.connect(e); e.connect(g.sfx); send(g, e, 0.2);
+  },
+  bwomp(g, t, { v = 0.25 }) {
+    for (const [i, m] of [[0, 55], [0.16, 50]]) {
+      const o = osc(g, 'sawtooth', midiHz(m), t + i, t + i + 0.4); o.frequency.exponentialRampToValueAtTime(midiHz(m - 3), t + i + 0.3);
+      const lp = filt(g, 'lowpass', 1400, 4); lp.frequency.setValueAtTime(1400, t + i); lp.frequency.exponentialRampToValueAtTime(300, t + i + 0.3);
+      const e = env(g, t + i, { a: 0.005, peak: v, d: 0.3 });
+      o.connect(lp); lp.connect(e); e.connect(g.sfx);
+    }
+  },
+  whistle(g, t, { from = 600, to = 1500, dur = 0.25, v = 0.1 }) {
+    const o = osc(g, 'sine', from, t, t + dur + 0.05); o.frequency.exponentialRampToValueAtTime(to, t + dur);
+    const lfo = osc(g, 'sine', 7, t, t + dur + 0.05); const lg = g.ctx.createGain(); lg.gain.value = 18; lfo.connect(lg); lg.connect(o.frequency);
+    const e = env(g, t, { a: 0.02, peak: v, d: dur });
+    o.connect(e); e.connect(g.sfx); send(g, e, 0.2);
+  },
+  coin(g, t, { v = 0.1, m = 83 }) {
+    for (const [i, mm] of [[0, m], [0.07, m + 5]]) {
+      const o = osc(g, 'square', midiHz(mm), t + i, t + i + (i ? 0.35 : 0.08));
+      const e = env(g, t + i, { a: 0.001, peak: v, d: i ? 0.32 : 0.07 });
+      o.connect(e); e.connect(g.sfx); send(g, e, 0.15);
+    }
+  },
+  // Automation "instruments"
+  duck(g, t, { depth = 0.4, dur = 0.22 }) {
+    const p = g.duck.gain;
+    p.cancelScheduledValues(t); p.setValueAtTime(depth, t); p.setTargetAtTime(1, t + 0.01, dur / 3);
+  },
+  filter(g, t, { f = 18000, ramp = 0.3 }) {
+    const p = g.musicFilter.frequency;
+    p.cancelScheduledValues(t); p.setTargetAtTime(f, t, ramp / 3);
+  },
+  musicGain(g, t, { v = 0.8, ramp = 0.2 }) {
+    const p = g.music.gain;
+    p.cancelScheduledValues(t); p.setTargetAtTime(v, t, ramp / 3);
+  },
+  delayTime(g, t, { s }) { g.delay.delayTime.setTargetAtTime(s, t, 0.05); },
+};
+
+// ---------------------------------------------------------------- score
+const PROG = [
+  { root: 0, tones: [60, 64, 67], bass: 36 },
+  { root: 7, tones: [59, 62, 67], bass: 43 },
+  { root: 9, tones: [57, 60, 64], bass: 45 },
+  { root: 5, tones: [57, 60, 65], bass: 41 },
+];
+const HOOK = [
+  [76, null, 79, 84, 83, null, 79, null], [74, null, 79, 83, 81, null, 79, 74],
+  [76, null, 81, 84, 83, 81, 79, 76], [77, null, 81, 84, 86, 84, 81, 79],
+];
+const MARIMBA = [0, 1, 2, 1, 3, 2, 1, 2];
+
+// ---------------------------------------------------------------- unlockable songs (id041, id043)
+// Every song keeps the same growth as the original: a gentle layer first,
+// then kick, bass, claps, hats, arpeggio, stabs, a lead hook and a choir as
+// the level rises; the game's tempo, key changes and reach roll apply too.
+// Melodies are original.
+const chord = (root, q, bass) => ({ root, tones: q.map((x) => 60 + root + x).map((m) => (m > 67 ? m - 12 : m)), bass: 36 + ((root + 12) % 12) });
+const DRUMS = {
+  pop(e, s, bar, t, L) {
+    const kick = (L >= 3 && s % 4 === 0) || (L >= 1 && (s === 0 || s === 8));
+    if (kick) { e.play('kick', t, { v: L < 3 ? 0.65 : 0.95 }); e.kicks.push(t); if (L >= 6) e.play('duck', t, { depth: 0.35, dur: e.stepDur * 3 }); }
+    if (L >= 3 && (s === 4 || s === 12)) e.play('clap', t, { v: 0.8 });
+    if (L >= 4 && s % 4 === 2) e.play('hat', t, { v: 0.22, open: L >= 7 });
+    if (L >= 6 && s % 2 === 1) e.play('hat', t, { v: 0.08 });
+    if (L >= 5 && bar === 3 && s >= 12) e.play('snare', t, { v: 0.2 + (s - 12) * 0.1 });
+  },
+};
+const SONGS = {
+  chip: {
+    name: '8ビット', prog: [chord(0, [0, 4, 7]), chord(9, [0, 3, 7]), chord(5, [0, 4, 7]), chord(7, [0, 4, 7])],
+    hook: [[72, 76, 79, 76, 84, null, 79, 76], [72, 76, 81, 76, 79, null, 76, 72], [77, 81, 84, 81, 79, 77, 76, 74], [79, 83, 86, 83, 84, null, 79, null]],
+    step(e, s, bar, t, L, ch, k) {
+      if (L <= 7) e.play('tri', t, { m: ch.tones[[0, 1, 2, 1][(s >> 1) % 4]] + 12 + k, dur: e.stepDur * 0.8, v: 0.14 * (1 - L / 9) + 0.03 });
+      const kick = (L >= 3 && s % 4 === 0) || (L >= 1 && (s === 0 || s === 8));
+      if (kick) { e.play('kick', t, { v: L < 3 ? 0.55 : 0.8 }); e.kicks.push(t); }
+      if (L >= 3 && (s === 4 || s === 12)) e.play('snare', t, { v: 0.5 });
+      if (L >= 4 && s % 2 === 0) e.play('noiseHat', t, { v: s % 4 ? 0.1 : 0.06 });
+      if (L >= 2 && s % 2 === 0) e.play('tri', t, { m: ch.bass + k + (s % 4 ? 12 : 0), dur: e.stepDur * 1.5, v: 0.4 });
+      if (L >= 5) e.play('chip', t, { m: ch.tones[[0, 1, 2, 1][s % 4]] + 24 + k, dur: e.stepDur * 0.6, v: 0.045, pan: s % 2 ? 0.4 : -0.4 });
+      if (L >= 6 && (s === 2 || s === 10)) ch.tones.forEach((m) => e.play('chip', t, { m: m + 12 + k, dur: e.stepDur * 1.5, v: 0.03 }));
+      if (L >= 8 && s % 2 === 0) { const m = this.hook[bar][s / 2]; if (m) e.play('chip', t, { m: m + k, dur: e.stepDur * 1.6, v: 0.07 }); }
+      if (L >= 9 && s === 0) e.play('crash', t, { v: 0.25 });
+    },
+  },
+  matsuri: {
+    name: 'おまつり', prog: [chord(2, [0, 5, 7]), chord(2, [0, 3, 7]), chord(7, [0, 5, 7]), chord(9, [0, 3, 7])],
+    hook: [[74, 76, 79, null, 81, 79, 76, 74], [76, 79, 81, 83, 81, null, 79, 76], [79, 81, 83, 86, 83, 81, 79, null], [81, 79, 76, 74, 76, null, 74, null]],
+    step(e, s, bar, t, L, ch, k) {
+      if (s % 2 === 0 && L <= 7) e.play('shamisen', t, { m: ch.tones[[0, 2, 1, 2, 0, 1, 2, 1][(s >> 1) % 8]] + 12 + k, v: 0.14 * (1 - L / 10) + 0.03, pan: s % 4 ? 0.3 : -0.3 });
+      if (L >= 1 && (s === 0 || s === 8)) { e.play('taiko', t, { v: 0.9 }); e.kicks.push(t); }
+      if (L >= 3 && (s === 6 || s === 10 || s === 14)) { e.play('taiko', t, { v: 0.55, m: 50 }); }
+      if (L >= 1 && s % 4 === 2) e.play('kane', t, { v: 0.05 + 0.01 * L });
+      if (L >= 3 && (s === 4 || s === 12)) e.play('clap', t, { v: 0.7 });
+      if (L >= 2 && s % 4 === 0) e.play('bass', t, { m: ch.bass + k, dur: e.stepDur * 3, v: 0.4 });
+      if (L >= 5) e.play('shamisen', t, { m: ch.tones[s % 3] + 24 + k, v: 0.06, pan: s % 2 ? 0.5 : -0.5 });
+      if (L >= 6 && s % 8 === 4) e.play('stab', t, { notes: ch.tones.map((m) => m + 12 + k), v: 0.06 });
+      if (L >= 8 && s % 2 === 0) { const m = this.hook[bar][s / 2]; if (m) e.play('fue', t, { m: m + k, dur: e.stepDur * 1.8, v: 0.1 }); }
+      if (L >= 9 && s === 0) e.play('choir', t, { notes: ch.tones.map((m) => m + 12 + k), dur: e.stepDur * 15, v: 0.045 });
+      if (L >= 5 && bar === 3 && s >= 12) e.play('taiko', t, { v: 0.4 + (s - 12) * 0.12, m: 52 });
+    },
+  },
+  brass: {
+    name: 'ブラスバンド', prog: [chord(0, [0, 4, 7]), chord(5, [0, 4, 7]), chord(7, [0, 4, 7]), chord(0, [0, 4, 7])],
+    hook: [[67, null, 72, 74, 76, null, 72, null], [77, null, 76, 74, 72, null, 69, null], [71, 72, 74, 76, 77, 76, 74, 71], [72, null, 76, null, 79, null, 84, null]],
+    step(e, s, bar, t, L, ch, k) {
+      if (s % 2 === 0 && L <= 7) e.play('glock', t, { m: ch.tones[[0, 1, 2, 1][(s >> 1) % 4]] + 24 + k, v: 0.1 * (1 - L / 9) + 0.03, pan: s % 4 ? 0.3 : -0.3 });
+      const kick = (L >= 3 && s % 4 === 0) || (L >= 1 && (s === 0 || s === 8));
+      if (kick) { e.play('kick', t, { v: L < 3 ? 0.6 : 0.85 }); e.kicks.push(t); }
+      if (L >= 3 && (s === 4 || s === 12)) e.play('snare', t, { v: 0.45 });
+      if (L >= 4 && (s === 14 || s === 15)) e.play('snare', t, { v: 0.2 });
+      if (L >= 4 && s % 4 === 2) e.play('hat', t, { v: 0.14 });
+      if (L >= 2 && s % 4 === 0) e.play('tuba', t, { m: ch.bass + k + (s % 8 ? 7 : 0), dur: e.stepDur * 1.6, v: 0.42 });
+      if (L >= 5 && s % 2 === 0) e.play('glock', t, { m: ch.tones[(s >> 1) % 3] + 24 + k, v: 0.05 });
+      if (L >= 6 && s % 4 === 2) e.play('brass', t, { notes: ch.tones.map((m) => m + 12 + k), dur: e.stepDur * 0.9, v: 0.07 });
+      if (L >= 8 && s % 2 === 0) { const m = this.hook[bar][s / 2]; if (m) e.play('brass', t, { m: m + k, dur: e.stepDur * 1.7, v: 0.1 }); }
+      if (L >= 9 && s === 0) e.play('crash', t, { v: 0.3 });
+    },
+  },
+  electro: {
+    name: 'エレクトロ', prog: [chord(9, [0, 3, 7]), chord(5, [0, 4, 7]), chord(0, [0, 4, 7]), chord(7, [0, 4, 7])],
+    hook: [[81, null, 76, 81, 84, null, 83, 81], [77, null, 72, 77, 81, null, 79, 77], [76, null, 72, 76, 79, 81, 79, 76], [79, null, 74, 79, 83, 84, 86, null]],
+    step(e, s, bar, t, L, ch, k) {
+      if (s % 2 === 0 && L <= 7) e.play('pluck', t, { m: ch.tones[[0, 2, 1, 2][(s >> 1) % 4]] + 12 + k, v: 0.13 * (1 - L / 9) + 0.03, dur: 0.3, pan: s % 4 ? 0.35 : -0.35 });
+      const kick = (L >= 2 && s % 4 === 0) || (L >= 1 && (s === 0 || s === 8));
+      if (kick) { e.play('kick', t, { v: 0.95 }); e.kicks.push(t); if (L >= 4) e.play('duck', t, { depth: 0.45, dur: e.stepDur * 3 }); }
+      if (L >= 3 && (s === 4 || s === 12)) e.play('clap', t, { v: 0.75 });
+      if (L >= 4 && s % 4 === 2) e.play('hat', t, { v: 0.2, open: true });
+      if (L >= 5 && s % 2 === 1) e.play('hat', t, { v: 0.07 });
+      if (L >= 2 && s % 4 === 2) e.play('sub', t, { m: ch.bass + k, dur: e.stepDur * 1.6, v: 0.45 });
+      if (L >= 5) e.play('saw', t, { m: ch.tones[[0, 1, 2, 1, 0, 2, 1, 2][s % 8]] + 24 + k, dur: e.stepDur * 0.5, v: 0.03, bright: 1800 + 200 * L });
+      if (L >= 6 && (s === 0 || s === 6 || s === 12)) e.play('saw', t, { notes: ch.tones.map((m) => m + 12 + k), dur: e.stepDur * 1.2, v: 0.04 });
+      if (L >= 8 && s % 2 === 0) { const m = this.hook[bar][s / 2]; if (m) e.play('lead', t, { m: m + k, dur: e.stepDur * 1.5, v: 0.075 }); }
+      if (L >= 9 && s === 0) e.play('pad', t, { notes: ch.tones.map((m) => m + 12 + k), dur: e.stepDur * 15, v: 0.06, bright: 3000 });
+      if (L >= 5 && bar === 3 && s >= 8) e.play('snare', t, { v: 0.12 + (s - 8) * 0.06 });
+    },
+  },
+};
+void DRUMS;
+
+class AudioEngine {
+  constructor({ capture = false } = {}) {
+    this.capture = capture;
+    this.log = [];
+    this.ctx = null;
+    this.g = null;
+    this.muted = false;
+    this.level = 0;
+    this.key = 0;
+    this.bpm = 112;
+    this.reach = false;
+    this.reachStart = 0;
+    this.playing = false;
+    this.step = 0;
+    this.nextTime = 0;
+    this.kicks = [];
+    this.beats = [];
+    this.combo = 0;
+    this.volume = 1;
+    this.song = 'classic';
+  }
+  setSong(key) { this.song = SONGS[key] ? key : 'classic'; }
+  get prog() { return this.song !== 'classic' ? SONGS[this.song].prog : PROG; }
+
+  unlock() {
+    if (this.capture) return;
+    if (!this.ctx) {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      this.ctx = new AC({ latencyHint: 'interactive' });
+      this.g = makeGraph(this.ctx);
+      this.g.master.gain.value = this.muted ? 0 : 0.72 * this.volume;
+    }
+    if (this.ctx.state === 'suspended') this.ctx.resume();
+  }
+
+  now() { return this.capture ? performance.now() / 1000 : (this.ctx ? this.ctx.currentTime : performance.now() / 1000); }
+
+  play(name, when, p = {}) {
+    if (this.capture) { this.log.push([name, when, p]); return; }
+    if (!this.ctx || !this.g) return;
+    try { SYNTH[name](this.g, Math.max(when, this.ctx.currentTime), p); } catch (e) { console.warn(name, e); }
+  }
+
+  setMuted(m) {
+    this.muted = m;
+    if (this.g) this.g.master.gain.setTargetAtTime(m ? 0 : 0.72 * this.volume, this.ctx.currentTime, 0.03);
+  }
+
+  setVolume(v) {
+    this.volume = Math.max(0, Math.min(1, v));
+    this.setMuted(this.muted);
+  }
+
+  get stepDur() { return 60 / this.bpm / 4; }
+
+  startMusic() {
+    if (this.playing) return;
+    this.playing = true;
+    this.step = 0;
+    this.nextTime = this.now() + 0.06;
+  }
+  stopMusic() { this.playing = false; }
+
+  setLevel(level, bpm) {
+    this.level = level;
+    if (bpm) this.bpm = bpm;
+    this.play('delayTime', this.now(), { s: this.stepDur * 3 });
+  }
+
+  // Jump the sequencer onto a downbeat right now (used for drops).
+  downbeat() {
+    this.step = Math.ceil(this.step / 16) * 16;
+    this.nextTime = this.now() + 0.01;
+  }
+
+  update() {
+    if (!this.playing) return;
+    const horizon = this.now() + 0.12;
+    if (this.nextTime < this.now() - 0.25) this.nextTime = this.now() + 0.02;
+    while (this.nextTime < horizon) {
+      this.scheduleStep(this.step, this.nextTime);
+      this.nextTime += this.stepDur;
+      this.step += 1;
+    }
+  }
+
+  chord(step = this.step) { return this.prog[Math.floor(step / 16) % 4]; }
+
+  scheduleStep(step, t) {
+    const s = step % 16;
+    const bar = Math.floor(step / 16) % 4;
+    const L = this.level;
+    const k = this.key;
+    const ch = this.prog[bar];
+    if (s % 4 === 0) this.beats.push({ t, beat: Math.floor(step / 4) });
+    if (this.beats.length > 64) this.beats.shift();
+    if (this.kicks.length > 64) this.kicks.shift();
+
+    if (this.reach) {
+      const el = Math.min(1, (t - this.reachStart) / 2.5);
+      this.play('snare', t, { v: 0.12 + 0.5 * el });
+      if (el > 0.5 && s % 2 === 1) this.play('snare', t + this.stepDur / 2, { v: 0.1 + 0.4 * el });
+      if (s % 8 === 0) { this.play('kick', t, { v: 0.8 }); this.kicks.push(t); }
+      if (s === 0) this.play('pad', t, { notes: this.prog[1].tones.map((m) => m + k), dur: this.stepDur * 16, v: 0.08, bright: 700 + 1400 * el });
+      if (s % 4 === 0) this.play('bass', t, { m: this.prog[1].bass + k, dur: this.stepDur * 3, v: 0.4 });
+      return;
+    }
+    if (this.song !== 'classic') {
+      const song = SONGS[this.song];
+      song.step(this, s, bar, t, L, ch, k);
+      if (s === 0) this.play('pad', t, { notes: ch.tones.map((m) => m + k), dur: this.stepDur * 15, v: 0.03 + 0.03 * Math.min(L, 8) / 8, bright: 600 + 200 * L });
+      return;
+    }
+
+    // Marimba arpeggio: the gentle "educational" layer, fades as the show grows.
+    if (s % 2 === 0 && L <= 7) {
+      const idx = MARIMBA[(s / 2) % 8];
+      const m = idx === 3 ? ch.tones[0] + 12 : ch.tones[idx];
+      this.play('pluck', t, { m: m + 12 + k, v: 0.16 * (1 - L / 9), dur: 0.45, pan: idx % 2 ? 0.3 : -0.3 });
+    }
+    this.play('shaker', t, { v: (s % 2 ? 0.06 : 0.035) * (0.6 + L / 12) });
+    if (s === 0) this.play('pad', t, { notes: ch.tones.map((m) => m + k), dur: this.stepDur * 15, v: 0.05 + 0.035 * Math.min(L, 8) / 8, bright: 650 + 260 * L });
+
+    const kick = (L >= 3 && s % 4 === 0) || (L >= 1 && (s === 0 || s === 8));
+    if (kick) {
+      this.play('kick', t, { v: L < 3 ? 0.65 : 0.95 });
+      this.kicks.push(t); if (this.kicks.length > 64) this.kicks.shift();
+      if (L >= 6) this.play('duck', t, { depth: 0.35, dur: this.stepDur * 3 });
+    }
+    if (L >= 2) {
+      if (L >= 7 && s % 2 === 0) this.play('bass', t, { m: ch.bass + k + (s % 4 ? 12 : 0), dur: this.stepDur * 1.6, v: 0.42 });
+      else if (L < 7 && s % 4 === 0) this.play('bass', t, { m: ch.bass + k, dur: this.stepDur * 3, v: 0.45 });
+    }
+    if (L >= 3 && (s === 4 || s === 12)) this.play('clap', t, { v: 0.8 });
+    if (L >= 4 && s % 4 === 2) this.play('hat', t, { v: 0.22, open: L >= 7 });
+    if (L >= 6 && s % 2 === 1) this.play('hat', t, { v: 0.08 });
+    if (L >= 5) {
+      const pattern = [0, 1, 2, 3, 2, 1, 2, 3];
+      const i = pattern[s % 8];
+      const m = i === 3 ? ch.tones[0] + 12 : ch.tones[i];
+      this.play('arp', t, { m: m + 12 + (s >= 8 && L >= 8 ? 12 : 0) + k, v: 0.06 });
+    }
+    if (L >= 6 && s % 4 === 2) this.play('stab', t, { notes: ch.tones.map((m) => m + 12 + k), v: 0.075 });
+    if (L >= 8 && s % 2 === 0) {
+      const m = HOOK[bar][s / 2];
+      if (m) this.play('lead', t, { m: m + k, dur: this.stepDur * 1.7, v: 0.075 });
+    }
+    if (L >= 9 && s === 0) this.play('choir', t, { notes: ch.tones.map((m) => m + 12 + k), dur: this.stepDur * 15, v: 0.05 });
+    if (L >= 9 && s === 0 && bar === 0) this.play('crash', t, { v: 0.3 });
+    if (L >= 5 && bar === 3 && s >= 12) this.play('snare', t, { v: 0.2 + (s - 12) * 0.1 });
+  }
+
+  // Beat info for visuals: phase within the current beat and a kick pulse.
+  pulse(t = this.now()) {
+    let kp = 0;
+    for (let i = this.kicks.length - 1; i >= 0; i--) {
+      if (this.kicks[i] <= t) { kp = Math.exp(-(t - this.kicks[i]) * 9); break; }
+    }
+    let phase = 0; let beat = 0;
+    for (let i = this.beats.length - 1; i >= 0; i--) {
+      if (this.beats[i].t <= t) { phase = (t - this.beats[i].t) / (this.stepDur * 4); beat = this.beats[i].beat; break; }
+    }
+    return { kick: kp, phase: Math.min(1, phase), beat };
+  }
+
+  // ------------------------------------------------------------ sound effects
+  tone(i) { const ch = this.chord(); return ch.tones[i % 3] + 12 * Math.floor(i / 3) + this.key; }
+
+  keyTap(combo) { this.play('blip', this.now(), { m: Math.min(96, this.tone(combo) + 12), v: 0.13 }); }
+  grab() { this.play('pop', this.now(), { v: 0.1, f: 480 + Math.random() * 120 }); }
+  place() { this.play('thud', this.now(), { v: 0.12 }); }
+  erase() { this.play('swoosh', this.now(), { v: 0.18, up: false, dur: 0.18 }); }
+
+  correct(combo, E) {
+    const t = this.now();
+    const base = Math.min(96, this.tone(combo) + 12);
+    this.play('bell', t, { m: base, v: 0.15 + 0.08 * E, dur: 0.9 });
+    this.play('bell', t + 0.06, { m: base + 7, v: 0.1 + 0.06 * E, dur: 0.8, pan: 0.3 });
+    if (E > 0.3) this.play('bell', t + 0.12, { m: base + 12, v: 0.08 + 0.06 * E, dur: 0.9, pan: -0.3 });
+    if (E > 0.55) { this.play('coin', t + 0.02, { v: 0.05 + 0.04 * E, m: 83 + this.key }); this.play('crash', t, { v: 0.12 * E }); }
+  }
+
+  clear(E) {
+    const t = this.now();
+    const ch = this.chord();
+    const root = ch.tones[0] + this.key;
+    const arp = [0, 4, 7, 12, 16, 19, 24];
+    const n = 3 + Math.round(E * 4);
+    for (let i = 0; i < n; i++) this.play('bell', t + i * 0.055, { m: root + 12 + arp[i], v: 0.12 + 0.05 * E, dur: 1.2, pan: (i % 2 ? 1 : -1) * 0.4 });
+    this.play('pluck', t, { m: root, v: 0.2, dur: 0.8 });
+    if (E > 0.2) this.play('stab', t, { notes: [root, root + 4, root + 7, root + 12].map((m) => m + 12), v: 0.08 + 0.08 * E, dur: 0.35 });
+    if (E > 0.35) { this.play('crash', t, { v: 0.25 + 0.25 * E }); this.play('kick', t, { v: 0.9 }); }
+    if (E > 0.55) {
+      this.play('impact', t, { v: 0.5 + 0.4 * E });
+      const fan = [7, 12, 16, 19, 24];
+      fan.forEach((m, i) => this.play('lead', t + 0.08 + i * 0.07, { m: root + 12 + m, dur: i === 4 ? 0.5 : 0.06, v: 0.08 }));
+      this.play('duck', t, { depth: 0.3, dur: 0.6 });
+    }
+    if (E > 0.8) {
+      for (let i = 0; i < 8; i++) this.play('coin', t + 0.1 + i * 0.05, { v: 0.05, m: 79 + this.key + (i % 3) * 5 });
+      this.play('choir', t, { notes: [root + 12, root + 16, root + 19, root + 24], dur: 1.2, v: 0.07 });
+    }
+  }
+
+  wrong(E) {
+    const t = this.now();
+    // Comic, not punishing: a springy boing, light ducking, no "fail" horn.
+    this.play('boing', t, { v: 0.22 + 0.12 * E });
+    this.play('duck', t, { depth: 0.22, dur: 0.25 });
+  }
+
+  setReach(on) {
+    if (on === this.reach) return;
+    this.reach = on;
+    const t = this.now();
+    if (on) {
+      this.reachStart = t;
+      this.play('filter', t, { f: 900, ramp: 0.4 });
+      this.play('riser', t, { dur: 2.6, v: 0.22 });
+      this.play('swoosh', t, { v: 0.25, up: true, dur: 0.4 });
+    } else {
+      this.play('filter', t, { f: 18000, ramp: 0.05 });
+    }
+  }
+
+  reachHit(E) {
+    const t = this.now();
+    this.play('impact', t, { v: 1 });
+    this.play('crash', t, { v: 0.6 });
+    this.play('kick', t, { v: 1 });
+    const root = this.chord().tones[0] + this.key;
+    this.play('stab', t, { notes: [root, root + 4, root + 7, root + 12, root + 16].map((m) => m + 12), v: 0.18, dur: 0.6 });
+    this.play('choir', t, { notes: [root + 12, root + 16, root + 19, root + 24], dur: 1.6, v: 0.08 });
+    this.downbeat();
+  }
+
+  cutin() { this.play('swoosh', this.now(), { v: 0.22, up: true, dur: 0.3 }); }
+  jump(h = 1) { this.play('whistle', this.now(), { from: 500, to: 900 + 700 * h, dur: 0.18 + 0.1 * h, v: 0.07 }); }
+  land() { this.play('thud', this.now(), { v: 0.14 }); }
+  clapHands() { const t = this.now(); this.play('clap', t, { v: 0.35 }); }
+  unit(E) {
+    const t = this.now();
+    this.play('bell', t, { m: 84 + this.key, v: 0.2, dur: 1.4 });
+    this.play('bell', t + 0.12, { m: 91 + this.key, v: 0.18, dur: 1.6 });
+    for (let i = 0; i < 5; i++) this.play('coin', t + 0.05 + i * 0.06, { v: 0.05, m: 84 + i * 2 + this.key });
+    if (E > 0.5) this.play('crash', t, { v: 0.25 });
+  }
+  jingle() {
+    const t = this.now();
+    [60, 64, 67, 72, 76].forEach((m, i) => this.play('pluck', t + i * 0.08, { m: m + 12, v: 0.22, dur: 0.6 }));
+    this.play('bell', t + 0.42, { m: 96, v: 0.14, dur: 1.4 });
+  }
+  finale() {
+    const t = this.now();
+    const root = this.chord().tones[0] + this.key;
+    this.play('impact', t, { v: 1.1 });
+    this.play('crash', t, { v: 0.7 });
+    this.play('choir', t, { notes: [root + 12, root + 16, root + 19, root + 24, root + 28], dur: 3, v: 0.1 });
+    this.play('stab', t, { notes: [root, root + 4, root + 7, root + 12].map((m) => m + 12), v: 0.2, dur: 0.9 });
+    [0, 4, 7, 12, 16, 19, 24, 28, 31].forEach((m, i) => this.play('bell', t + 0.2 + i * 0.06, { m: root + 24 + m, v: 0.1, dur: 1.4, pan: (i % 2 ? 0.5 : -0.5) }));
+    for (let i = 0; i < 14; i++) this.play('coin', t + 0.3 + i * 0.05, { v: 0.045, m: 79 + (i % 4) * 4 + this.key });
+    this.downbeat();
+  }
+  tick(last) { this.play('blip', this.now(), { m: last ? 96 : 84, v: 0.14 }); }
+  gong() {
+    const t = this.now();
+    this.play('impact', t, { v: 0.9 });
+    this.play('bell', t, { m: 48 + this.key, v: 0.3, dur: 3 });
+    this.play('crash', t, { v: 0.5 });
+  }
+}
+
+// Render a captured log offline and return a 16-bit PCM WAV ArrayBuffer.
+async function renderLog(log, { start = 0, duration, sampleRate = 48000 } = {}) {
+  const ctx = new OfflineAudioContext(2, Math.ceil(sampleRate * duration), sampleRate);
+  const g = makeGraph(ctx);
+  for (const [name, when, p] of log) {
+    const t = when - start;
+    if (t < -0.5 || t > duration) continue;
+    try { SYNTH[name](g, Math.max(0, t), p); } catch (e) { console.warn('render', name, e); }
+  }
+  const buf = await ctx.startRendering();
+  return toWav(buf);
+}
+
+function toWav(buf) {
+  const ch = buf.numberOfChannels; const len = buf.length; const sr = buf.sampleRate;
+  const out = new ArrayBuffer(44 + len * ch * 2);
+  const v = new DataView(out);
+  const w = (o, s) => { for (let i = 0; i < s.length; i++) v.setUint8(o + i, s.charCodeAt(i)); };
+  w(0, 'RIFF'); v.setUint32(4, 36 + len * ch * 2, true); w(8, 'WAVE'); w(12, 'fmt ');
+  v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, ch, true); v.setUint32(24, sr, true);
+  v.setUint32(28, sr * ch * 2, true); v.setUint16(32, ch * 2, true); v.setUint16(34, 16, true); w(36, 'data'); v.setUint32(40, len * ch * 2, true);
+  const data = []; for (let c = 0; c < ch; c++) data.push(buf.getChannelData(c));
+  let o = 44;
+  for (let i = 0; i < len; i++) for (let c = 0; c < ch; c++) { const s = Math.max(-1, Math.min(1, data[c][i])); v.setInt16(o, s < 0 ? s * 0x8000 : s * 0x7fff, true); o += 2; }
+  return out;
+}
+
+
+// Canvas 2D particle layer: paper confetti, stars, sparks, coins, fireworks,
+// streamers, mini Dopakichi sprites and floating score text.
+
+const COLORS = ['#ff7ab6', '#3b6bff', '#ffd23f', '#3fdcb0', '#a77bff', '#ff5a4f', '#ffffff'];
+const PAPER = ['#ff7ab6', '#3b6bff', '#ffd23f', '#ffffff', '#3fdcb0'];
+const INK = '#1b1d4d';
+const SPRITES = new Map();
+
+class FX {
+  constructor(canvas, max = 400) {
+    this.max = max;
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+    this.parts = [];
+    this.reduced = false;
+    this.motion = 1;
+    // Unlockable particle theme (id041, id042): replaces part of the confetti.
+    this.theme = null;
+    this.sprites = []; // Original mascot removed; caller supplies the Saru images.
+  }
+  resize() {
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    const w = Math.round(innerWidth * dpr); const h = Math.round(innerHeight * dpr);
+    if (this.canvas.width !== w || this.canvas.height !== h) { this.canvas.width = w; this.canvas.height = h; }
+    this.dpr = dpr;
+  }
+  add(p) {
+    if (this.parts.length >= this.max) this.parts.splice(0, 1 + Math.floor(this.max * 0.02));
+    p.age = 0;
+    this.parts.push(p);
+    return p;
+  }
+  scale(n) { return this.reduced ? Math.min(4, Math.ceil(n * 0.1)) : Math.round(n * (0.15 + 0.85 * this.motion)); }
+  themed(kind) { return kind === 'confetti' && this.theme && Math.random() < 0.65 ? this.theme : kind; }
+
+  burst(x, y, { count = 20, speed = 420, kinds = ['confetti'], up = 0, spread = Math.PI * 2, angle = -Math.PI / 2, colors = PAPER, size = 1, gravity = 1, life = 1 } = {}) {
+    const n = this.scale(count);
+    for (let i = 0; i < n; i++) {
+      const kind = this.themed(pick(kinds));
+      const a = angle + (Math.random() - 0.5) * spread;
+      const v = speed * rand(0.35, 1);
+      const p = { kind, x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - up, rot: rand(0, 6.28), vr: rand(-12, 12), flip: rand(0, 6.28), vf: rand(6, 16), color: pick(colors), size: size * rand(0.7, 1.3), life: rand(1.4, 2.6), g: 900 * gravity, drag: 0.8 };
+      if (kind === 'spark') { p.life = rand(0.35, 0.7); p.g = 300 * gravity; p.drag = 2.4; p.color = pick(['#fff', '#ffe98a', '#ffd23f', '#ff9ccc']); }
+      if (kind === 'star') { p.life = rand(0.8, 1.4); p.g = 500 * gravity; p.drag = 1.6; p.color = pick(['#ffd23f', '#fff', '#ff9ccc', '#8fd3ff']); }
+      if (kind === 'coin') { p.life = rand(1.4, 2.2); p.g = 1300 * gravity; p.drag = 0.4; }
+      if (kind === 'mini') { p.life = rand(1.6, 2.4); p.g = 900 * gravity; p.drag = 0.5; p.sprite = pick(this.sprites); p.vr = rand(-6, 6); p.size = size * rand(0.8, 1.2); }
+      if (kind === 'heart') { p.life = rand(1, 1.6); p.g = -80; p.drag = 1.8; p.color = pick(['#ff3f8e', '#ff7ab6']); }
+      THEME_INIT[kind] && THEME_INIT[kind](p);
+      p.life *= life;
+      this.add(p);
+    }
+  }
+  ring(x, y, { color = '#fff', radius = 90, width = 8, life = 0.45 } = {}) { this.add({ kind: 'ring', x, y, vx: 0, vy: 0, color, radius, width, life, g: 0, drag: 0 }); }
+  text(x, y, str, { color = '#fff', size = 22, life = 1.1, vy = -90 } = {}) { this.add({ kind: 'text', x, y, vx: 0, vy, str, color, size, life, g: 0, drag: 1.2 }); }
+  puff(x, y, n = 6) {
+    for (let i = 0; i < this.scale(n); i++) this.add({ kind: 'puff', x: x + rand(-14, 14), y: y - rand(0, 6), vx: rand(-140, 140), vy: rand(-60, -10), size: rand(6, 12), life: rand(0.35, 0.6), g: 0, drag: 5, color: '#fff' });
+  }
+  fireworks(W, H, n = 3, top = 0.1, bottom = 0.45) {
+    for (let i = 0; i < this.scale(n); i++) {
+      const tx = rand(W * 0.12, W * 0.88); const ty = rand(H * top, H * bottom);
+      this.add({ kind: 'shell', x: tx + rand(-30, 30), y: H + 20, vx: 0, vy: 0, tx, ty, t0: i * 0.14, life: 3, g: 0, drag: 0, color: pick(COLORS.slice(0, 6)) });
+    }
+  }
+  streamers(W, H, n = 6) {
+    for (let i = 0; i < this.scale(n); i++) {
+      const left = i % 2 === 0;
+      const x = left ? -10 : W + 10; const y = rand(H * 0.05, H * 0.4);
+      const a = left ? rand(-1.1, -0.35) : Math.PI - rand(-1.1, -0.35);
+      const v = rand(700, 1100);
+      this.add({ kind: 'streamer', x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: rand(2.2, 3), g: 700, drag: 1.1, color: pick(COLORS.slice(0, 5)), trail: [], w: rand(6, 10), phase: rand(0, 6) });
+    }
+  }
+  rain(W, n = 60, { kinds = ['confetti'] } = {}) {
+    for (let i = 0; i < this.scale(n); i++) {
+      const kind = this.themed(pick(kinds));
+      const p = { kind, x: rand(0, W), y: rand(-160, -10), vx: rand(-60, 60), vy: rand(60, 260), rot: rand(0, 6), vr: rand(-8, 8), flip: rand(0, 6), vf: rand(5, 12), color: pick(PAPER), size: rand(0.8, 1.3), life: rand(2.5, 4), g: 120, drag: 0.6 };
+      if (kind === 'mini') { p.sprite = pick(this.sprites); p.size = rand(0.6, 1.1); p.g = 260; }
+      THEME_INIT[kind] && THEME_INIT[kind](p);
+      this.add(p);
+    }
+  }
+
+  update(dt) {
+    const H = innerHeight + 200;
+    for (const p of this.parts) {
+      p.age += dt;
+      if (p.kind === 'shell') {
+        if (p.age < p.t0) continue;
+        const k = clamp((p.age - p.t0) / 0.55);
+        const ease = 1 - (1 - k) ** 3;
+        p.x = p.x + (p.tx - p.x) * Math.min(1, dt * 8);
+        p.y = innerHeight + 20 + (p.ty - innerHeight - 20) * ease;
+        if (k >= 1 && !p.done) {
+          p.done = true; p.life = 0;
+          const col = p.color; const n = 46;
+          for (let i = 0; i < this.scale(n); i++) {
+            const a = (i / n) * Math.PI * 2; const v = rand(260, 330);
+            this.add({ kind: 'spark', x: p.tx, y: p.ty, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: rand(0.9, 1.3), g: 160, drag: 1.3, color: i % 3 ? col : '#fff', size: 1.3 });
+          }
+          this.ring(p.tx, p.ty, { color: col, radius: 120, width: 6, life: 0.5 });
+          if (this.onPop) this.onPop(p.tx, p.ty);
+        }
+        continue;
+      }
+      const drag = Math.exp(-p.drag * dt);
+      p.vx *= drag; p.vy = p.vy * drag + p.g * dt;
+      p.x += p.vx * dt; p.y += p.vy * dt;
+      if (p.rot !== undefined) p.rot += (p.vr || 0) * dt;
+      if (p.flip !== undefined) p.flip += (p.vf || 0) * dt;
+      if (p.trail) { p.trail.push({ x: p.x, y: p.y }); if (p.trail.length > 18) p.trail.shift(); }
+      if (p.y > H) p.life = 0;
+    }
+    this.parts = this.parts.filter((p) => p.age < p.life || (p.kind === 'shell' && !p.done));
+  }
+
+  sprite(key, w, h, paint) {
+    let spr = SPRITES.get(key);
+    if (!spr) {
+      const cv = document.createElement('canvas');
+      const pad = 4; const k = 2;
+      cv.width = Math.ceil((w + pad * 2) * k); cv.height = Math.ceil((h + pad * 2) * k);
+      const c = cv.getContext('2d');
+      c.scale(k, k); c.translate(pad + w / 2, pad + h / 2);
+      paint(c);
+      spr = { cv, w: w + pad * 2, h: h + pad * 2 };
+      SPRITES.set(key, spr);
+    }
+    return spr;
+  }
+
+  stamp(spr, x, y, rot, sx, sy, alpha) {
+    const c = this.ctx; const d = this.dpr;
+    const cos = Math.cos(rot); const sin = Math.sin(rot);
+    c.globalAlpha = alpha;
+    c.setTransform(cos * sx * d, sin * sx * d, -sin * sy * d, cos * sy * d, x * d, y * d);
+    c.drawImage(spr.cv, -spr.w / 2, -spr.h / 2, spr.w, spr.h);
+  }
+
+  draw() {
+    this.resize();
+    const c = this.ctx; const dpr = this.dpr;
+    c.setTransform(1, 0, 0, 1, 0, 0);
+    c.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    const sparks = [];
+    for (const p of this.parts) {
+      if (p.kind === 'shell') continue;
+      const k = p.age / p.life;
+      const fade = Math.max(0, k > 0.75 ? 1 - (k - 0.75) / 0.25 : 1);
+      switch (p.kind) {
+        case 'confetti': {
+          const spr = this.sprite(`cf${p.color}`, 11, 7, (g) => { g.fillStyle = p.color; g.fillRect(-5.5, -3.5, 11, 7); g.strokeStyle = INK; g.lineWidth = 1.4; g.strokeRect(-5.5, -3.5, 11, 7); });
+          this.stamp(spr, p.x, p.y, p.rot, p.size, p.size * Math.cos(p.flip), fade); break;
+        }
+        case 'spark': sparks.push(p); break;
+        case 'star': {
+          const spr = this.sprite(`st${p.color}`, 20, 20, (g) => {
+            g.beginPath();
+            for (let i = 0; i < 10; i++) { const r = i % 2 ? 4.5 : 10; const a = (i / 10) * Math.PI * 2 - Math.PI / 2; g.lineTo(Math.cos(a) * r, Math.sin(a) * r); }
+            g.closePath(); g.fillStyle = p.color; g.fill(); g.strokeStyle = INK; g.lineWidth = 2; g.lineJoin = 'round'; g.stroke();
+          });
+          const s = 0.9 * p.size * (k < 0.15 ? k / 0.15 : 1);
+          this.stamp(spr, p.x, p.y, p.rot, s, s, fade); break;
+        }
+        case 'coin': {
+          const spr = this.sprite('coin', 24, 24, (g) => {
+            g.beginPath(); g.arc(0, 0, 11, 0, 7); g.fillStyle = '#ffd23f'; g.fill(); g.lineWidth = 2.4; g.strokeStyle = INK; g.stroke();
+            g.beginPath(); g.arc(0, 0, 6.8, 0, 7); g.strokeStyle = '#e59b00'; g.lineWidth = 2; g.stroke();
+          });
+          this.stamp(spr, p.x, p.y, 0, p.size * Math.cos(p.flip), p.size, fade); break;
+        }
+        case 'heart': {
+          const spr = this.sprite(`ht${p.color}`, 28, 24, (g) => {
+            const s = 10; g.beginPath(); g.moveTo(0, s * 0.8);
+            g.bezierCurveTo(-s * 1.4, -s * 0.1, -s * 0.8, -s * 1.2, 0, -s * 0.45);
+            g.bezierCurveTo(s * 0.8, -s * 1.2, s * 1.4, -s * 0.1, 0, s * 0.8);
+            g.fillStyle = p.color; g.fill(); g.strokeStyle = INK; g.lineWidth = 2; g.stroke();
+          });
+          this.stamp(spr, p.x, p.y, Math.sin(p.age * 5) * 0.3, p.size, p.size, fade); break;
+        }
+        case 'mini': {
+          if (!p.sprite.complete) break;
+          const s = 64 * p.size;
+          const spr = this.sprite(`mini${this.sprites.indexOf(p.sprite)}`, 64, 60, (g) => { g.drawImage(p.sprite, -32, -30, 64, 60); });
+          this.stamp(spr, p.x, p.y, p.rot, s / 64, s / 64, fade); break;
+        }
+        case 'ring': {
+          const r = p.radius * (1 - (1 - k) ** 3);
+          c.setTransform(dpr, 0, 0, dpr, 0, 0);
+          c.globalAlpha = 1 - k;
+          c.beginPath(); c.arc(p.x, p.y, Math.max(0.1, r), 0, 7); c.strokeStyle = p.color; c.lineWidth = p.width * (1 - k) + 1; c.stroke();
+          break;
+        }
+        case 'text': {
+          const pop = k < 0.12 ? 0.6 + (k / 0.12) * 0.5 : k < 0.2 ? 1.1 - ((k - 0.12) / 0.08) * 0.1 : 1;
+          c.setTransform(dpr * pop, 0, 0, dpr * pop, p.x * dpr, p.y * dpr);
+          c.globalAlpha = fade;
+          c.font = `900 ${p.size}px "Dela Gothic One", "Zen Maru Gothic", sans-serif`;
+          c.textAlign = 'center'; c.textBaseline = 'middle';
+          c.lineWidth = p.size * 0.28; c.lineJoin = 'round'; c.strokeStyle = INK; c.strokeText(p.str, 0, 0);
+          c.fillStyle = p.color; c.fillText(p.str, 0, 0);
+          break;
+        }
+        case 'puff': {
+          c.setTransform(dpr, 0, 0, dpr, 0, 0);
+          c.globalAlpha = (1 - k) * 0.9;
+          c.beginPath(); c.arc(p.x, p.y, p.size * (1 + k * 1.5), 0, 7); c.fillStyle = '#fff'; c.fill(); c.strokeStyle = INK; c.lineWidth = 1.6; c.stroke();
+          break;
+        }
+        case 'streamer': {
+          if (p.trail.length < 2) break;
+          c.setTransform(dpr, 0, 0, dpr, 0, 0);
+          c.globalAlpha = fade;
+          c.lineCap = 'round'; c.lineJoin = 'round';
+          c.beginPath();
+          p.trail.forEach((q, i) => { const off = Math.sin(i * 0.8 + p.age * 12 + p.phase) * 5; if (i === 0) c.moveTo(q.x, q.y + off); else c.lineTo(q.x, q.y + off); });
+          c.strokeStyle = INK; c.lineWidth = p.w + 3; c.stroke();
+          c.strokeStyle = p.color; c.lineWidth = p.w; c.stroke();
+          break;
+        }
+        default: {
+          const draw = THEME_DRAW[p.kind];
+          if (draw) { const spr = draw(this, p); const wob = p.kind === 'petal' ? Math.cos(p.flip) : 1; this.stamp(spr, p.x, p.y, p.rot, p.size, p.size * wob, p.kind === 'bubble' ? fade * 0.9 : fade); }
+          break;
+        }
+      }
+    }
+    if (sparks.length) {
+      c.setTransform(dpr, 0, 0, dpr, 0, 0);
+      c.globalCompositeOperation = 'lighter';
+      c.lineCap = 'round';
+      for (const p of sparks) {
+        const k = p.age / p.life;
+        c.globalAlpha = Math.max(0, k > 0.75 ? 1 - (k - 0.75) / 0.25 : 1);
+        c.strokeStyle = p.color; c.lineWidth = 3 * (p.size || 1) * (1 - k * 0.6);
+        c.beginPath(); c.moveTo(p.x, p.y); c.lineTo(p.x - p.vx * 0.045, p.y - p.vy * 0.045); c.stroke();
+      }
+      c.globalCompositeOperation = 'source-over';
+    }
+    c.globalAlpha = 1;
+  }
+}
+
+// ---------------------------------------------------------------- particle themes (id041, id042)
+// Paper cut-outs with the same ink outline as the confetti.
+const THEME_INIT = {
+  note: (p) => { p.color = pick(['#ff7ab6', '#3b6bff', '#ffd23f', '#3fdcb0', '#a77bff']); p.vr = rand(-4, 4); p.g *= 0.7; },
+  petal: (p) => { p.color = pick(['#ffc2d9', '#ff9ccc', '#ffe3ef', '#fff']); p.g = 160; p.drag = 1.4; p.life *= 1.4; p.vf = rand(3, 7); },
+  bubble: (p) => { p.color = pick(['#bfeaff', '#d9f7ff', '#c8d7ff']); p.g = -120; p.drag = 1.8; p.vr = 0; p.size *= rand(0.8, 1.6); },
+  candy: (p) => { p.color = pick(['#ff7ab6', '#ffd23f', '#3fdcb0', '#8fb4ff', '#ff9a3c']); },
+  digit: (p) => { p.color = pick(['#ff7ab6', '#3b6bff', '#ffd23f', '#3fdcb0', '#a77bff']); p.str = String(Math.floor(Math.random() * 10)); p.vr = rand(-5, 5); },
+};
+const THEME_DRAW = {
+  note: (fx, p) => fx.sprite(`nt${p.color}`, 22, 26, (g) => {
+    g.lineJoin = 'round'; g.lineCap = 'round'; g.strokeStyle = INK; g.lineWidth = 2.2;
+    g.beginPath(); g.moveTo(3, 7); g.lineTo(3, -12); g.quadraticCurveTo(9, -9, 10, -3); g.stroke();
+    g.beginPath(); g.ellipse(-2, 7, 6, 4.6, -0.4, 0, 7); g.fillStyle = p.color; g.fill(); g.stroke();
+  }),
+  petal: (fx, p) => fx.sprite(`pt${p.color}`, 18, 16, (g) => {
+    g.beginPath(); g.moveTo(0, 7); g.bezierCurveTo(-9, 2, -8, -7, -2, -7); g.lineTo(0, -4); g.lineTo(2, -7); g.bezierCurveTo(8, -7, 9, 2, 0, 7);
+    g.fillStyle = p.color; g.fill(); g.strokeStyle = INK; g.lineWidth = 1.6; g.lineJoin = 'round'; g.stroke();
+  }),
+  bubble: (fx, p) => fx.sprite(`bb${p.color}`, 22, 22, (g) => {
+    g.beginPath(); g.arc(0, 0, 9.5, 0, 7); g.fillStyle = 'rgba(255,255,255,.35)'; g.fill(); g.strokeStyle = '#3b8fd6'; g.lineWidth = 1.8; g.stroke();
+    g.beginPath(); g.arc(-3.5, -3.5, 2.6, 0, 7); g.fillStyle = '#fff'; g.fill();
+  }),
+  candy: (fx, p) => fx.sprite(`cd${p.color}`, 30, 16, (g) => {
+    g.lineJoin = 'round'; g.strokeStyle = INK; g.lineWidth = 1.7; g.fillStyle = p.color;
+    for (const s of [-1, 1]) { g.beginPath(); g.moveTo(s * 6, 0); g.lineTo(s * 14, -6); g.lineTo(s * 14, 6); g.closePath(); g.fill(); g.stroke(); }
+    g.beginPath(); g.arc(0, 0, 7, 0, 7); g.fill(); g.stroke();
+    g.beginPath(); g.moveTo(-4, -3); g.quadraticCurveTo(0, 2, 4, -3); g.strokeStyle = '#fff'; g.lineWidth = 1.6; g.stroke();
+  }),
+  digit: (fx, p) => fx.sprite(`dg${p.color}${p.str}`, 20, 24, (g) => {
+    g.font = '400 22px "Dela Gothic One", sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+    g.lineWidth = 4; g.lineJoin = 'round'; g.strokeStyle = INK; g.strokeText(p.str, 0, 1); g.fillStyle = p.color; g.fillText(p.str, 0, 1);
+  }),
+};
+const PARTICLE_THEMES = Object.keys(THEME_DRAW);
+
+
+// Full-screen WebGL backdrop: sunburst rays that grow into a rainbow tunnel of
+// Dopakichi silhouettes. Falls back to a CSS conic gradient without WebGL.
+
+const VERT = `attribute vec2 p; void main(){ gl_Position = vec4(p, 0., 1.); }`;
+const FRAG = `precision highp float;
+uniform vec2 uRes; uniform vec2 uCenter; uniform float uTime, uE, uKick, uFlash, uReach, uHue, uTheme;
+vec3 hsv(float h, float s, float v){ vec3 k = clamp(abs(mod(h*6. + vec3(0.,4.,2.), 6.) - 3.) - 1., 0., 1.); return v * mix(vec3(1.), k, s); }
+float hash(vec2 c){ return fract(sin(dot(c, vec2(127.1, 311.7))) * 43758.5453); }
+mat2 rot(float a){ float c = cos(a), s = sin(a); return mat2(c, -s, s, c); }
+// Dopakichi head silhouette: a wide rounded head with large side ears.
+float dopa(vec2 p){ return length(p) - .24; }
+// Beat rings travelling outward (shared).
+float beatRings(float r, float t, float E){ return smoothstep(.35, .7, E) * smoothstep(0.035, 0., abs(fract(r * 2.4 - t * 0.8) - .5) - .45); }
+
+// 0: sunburst rays -> rainbow -> tunnel of Dopakichi faces.
+vec3 classic(vec2 p, float r, float a, float E, float t){
+  float nr = floor(mix(10., 20., clamp(E, 0., 1.)));
+  float tw = sin(r * 6. - t * 1.5) * 0.25 * smoothstep(.6, 1., E);
+  float rs = sin(a * nr + t * (0.12 + 0.55 * E) + tw);
+  float ray = smoothstep(-0.06, 0.06, rs);
+  float sat = smoothstep(.15, .75, E);
+  vec3 cA = mix(vec3(1., .975, .93), vec3(.24, .43, 1.), sat);
+  vec3 cB = mix(vec3(1., .93, .96), vec3(1., .5, .72), sat);
+  vec3 col = mix(cA, cB, ray);
+  float rb = smoothstep(.55, .95, E);
+  vec3 rain = hsv(fract(a / 6.2832 + t * 0.07 + r * 0.25 + uHue), .62, 1.);
+  col = mix(col, mix(rain, rain * .7 + .3, ray), rb * .75);
+  col = mix(col, vec3(1.), beatRings(r, t, E) * .55);
+  float tn = smoothstep(.82, 1.08, E);
+  if (tn > 0.001) {
+    vec2 uv = vec2(a / 6.2832 * 10., 0.32 / (r + .015) + t * (1.2 + .8 * max(0., E - 1.)));
+    vec2 cell = floor(uv); vec2 f = fract(uv) - .5;
+    f.x += .5 * mod(cell.y, 2.) - .25;
+    float d = dopa(vec2(f.x, -f.y) * 1.1);
+    vec3 sc = hsv(fract((cell.x * .11 + cell.y * .17) + t * .25 + uHue), .7, 1.);
+    float m = smoothstep(.015, -.015, d) * smoothstep(.02, .22, r);
+    float ol = smoothstep(.03, 0., abs(d + .012)) * smoothstep(.02, .22, r);
+    col = mix(col, sc, tn * m);
+    col = mix(col, vec3(.1, .11, .3), tn * ol * .8);
+  }
+  return col;
+}
+
+// 1: night sky: twinkling stars -> aurora -> warp through a star field.
+vec3 night(vec2 p, float r, float a, float E, float t){
+  vec3 col = mix(vec3(.06, .08, .25), vec3(.2, .13, .42), clamp(.5 - p.y, 0., 1.));
+  for (int i = 0; i < 2; i++) {
+    float sc = i == 0 ? 7. : 13.;
+    vec2 q = rot(t * .02 * (.4 + E) * (i == 0 ? 1. : -.6)) * p * sc;
+    vec2 c = floor(q); vec2 f = fract(q) - .5;
+    float h = hash(c + float(i) * 9.);
+    vec2 o = (vec2(hash(c + 1.7), hash(c + 3.1)) - .5) * .6;
+    float tw = .55 + .45 * sin(t * (2. + h * 3.) + h * 40.);
+    float s = smoothstep(.06 + .07 * h, 0., length(f - o)) * step(.5, h);
+    col += vec3(1., .96, .8) * s * tw * (i == 0 ? 1. : .6);
+  }
+  float au = smoothstep(.45, .8, E) * smoothstep(.3, 0., abs(p.y + .15 * sin(p.x * 3. + t * .6) - .12 * sin(t * .4)));
+  col += hsv(fract(p.x * .35 + t * .05 + uHue + .3), .55, 1.) * au * .55;
+  col = mix(col, vec3(.95, .9, 1.), beatRings(r, t, E) * .35);
+  float tn = smoothstep(.82, 1.08, E);
+  if (tn > 0.001) {
+    vec2 uv = vec2(a / 6.2832 * 48., .25 / (r + .02) + t * (2.5 + max(0., E - 1.) * 3.));
+    vec2 c = floor(uv); float h = hash(c);
+    float streak = step(.82, h) * smoothstep(.18, 0., abs(fract(uv.x) - .5)) * smoothstep(.0, .6, fract(uv.y)) * smoothstep(.02, .3, r);
+    col += hsv(fract(h * 3. + uHue), .35, 1.) * streak * tn * 1.2;
+  }
+  return col;
+}
+
+// 2: sea: caustics and rising bubbles -> a whirlpool of bubbles.
+vec3 sea(vec2 p, float r, float a, float E, float t){
+  vec3 col = mix(vec3(.55, .9, .95), vec3(.08, .35, .7), clamp(.5 + p.y * .9, 0., 1.));
+  float c = sin(p.x * 11. + t * .9) + sin(p.y * 9. - t * 1.2) + sin((p.x + p.y) * 7. + t * .6);
+  col += vec3(.9, 1., 1.) * smoothstep(1.6, 2.6, c) * .35;
+  vec2 q = p;
+  q = rot(smoothstep(.6, 1.1, E) * (1.5 - r) * 1.8 + t * .15 * smoothstep(.6, 1., E)) * q;
+  vec2 uv = q * 6. + vec2(0., t * (.25 + .8 * E));
+  vec2 cell = floor(uv); vec2 f = fract(uv) - .5;
+  float h = hash(cell);
+  f.x += sin(t * 2. + h * 20.) * .12;
+  float rad = .12 + .18 * h;
+  float d = length(f) - rad;
+  float bub = step(.45, h) * smoothstep(.04, 0., abs(d)) * smoothstep(.1, .25, E);
+  float shine = step(.45, h) * smoothstep(.05, 0., length(f - vec2(-rad * .4, -rad * .45)) - rad * .12);
+  col = mix(col, vec3(1.), (bub * .85 + shine) * smoothstep(.1, .3, E));
+  col = mix(col, vec3(.85, 1., 1.), beatRings(r, t, E) * .45);
+  float tn = smoothstep(.82, 1.08, E);
+  col = mix(col, hsv(fract(a / 6.2832 * 2. + r - t * .2 + uHue), .45, 1.), tn * .35 * smoothstep(.05, .4, r));
+  return col;
+}
+
+// 3: space: nebula, planets and warp lines -> a spinning rainbow galaxy.
+vec3 space(vec2 p, float r, float a, float E, float t){
+  vec3 col = vec3(.08, .04, .18);
+  float n = sin(p.x * 3. + t * .2) * sin(p.y * 4. - t * .15) + sin((p.x - p.y) * 5. + 1.3);
+  col += mix(vec3(.45, .1, .5), vec3(.1, .3, .7), .5 + .5 * sin(p.x * 2. + t * .1)) * smoothstep(-.2, 1.4, n) * .6;
+  vec2 q = p * 11.; vec2 cc = floor(q); float h = hash(cc);
+  col += vec3(1.) * step(.8, h) * smoothstep(.1, 0., length(fract(q) - .5)) * .8;
+  vec2 pl = p - vec2(-.42, -.28 + .02 * sin(t * .5));
+  float planet = smoothstep(.13, .12, length(pl));
+  float ringP = smoothstep(.012, 0., abs(length(pl * vec2(1., 3.2)) - .2)) * step(.0, -pl.y + .03 * pl.x + .0001) ;
+  col = mix(col, mix(vec3(1., .6, .75), vec3(1., .85, .45), pl.y * 3. + .5), planet);
+  col = mix(col, vec3(1., .95, .7), ringP * .9);
+  vec2 pm = p - vec2(.45, .3);
+  col = mix(col, vec3(.55, .8, 1.), smoothstep(.07, .065, length(pm)));
+  float warp = smoothstep(.3, .7, E) * step(.9, hash(vec2(floor(a * 30.), 1.))) * smoothstep(.0, .5, fract(r * 1.5 - t * (1. + E)));
+  col += vec3(.8, .9, 1.) * warp * .7;
+  float tn = smoothstep(.8, 1.08, E);
+  if (tn > 0.001) {
+    float arm = sin(a * 3. + log(r + .02) * 5. - t * (1.5 + max(0., E - 1.)));
+    col = mix(col, hsv(fract(log(r + .02) * .3 + t * .1 + uHue), .7, 1.), tn * smoothstep(.2, .9, arm) * smoothstep(.02, .15, r) * .85);
+  }
+  return col;
+}
+
+// 4: festival: red-white stripes and swinging paper lanterns -> spinning fans.
+vec3 festival(vec2 p, float r, float a, float E, float t){
+  float st = step(.5, fract((p.x - p.y) * 2.5 + t * .12 * (.4 + E)));
+  vec3 col = mix(vec3(1., .97, .92), mix(vec3(1., .86, .86), vec3(.93, .18, .25), smoothstep(.3, .8, E)), st * smoothstep(.1, .5, E));
+  // Lantern rows hang from strings at the top half of the screen.
+  vec2 uv = vec2(p.x * 5.5, p.y * 4.2 + 1.7);
+  vec2 cell = floor(uv); vec2 f = fract(uv) - .5;
+  float on = step(abs(cell.y - 1.), .5) * smoothstep(.12, .4, E);
+  float sw = sin(t * 1.8 + cell.x * 1.7) * .1 * (.4 + E);
+  f = rot(sw) * (f + vec2(0., .5)) - vec2(0., .5);
+  vec2 lq = f / vec2(.3, .36);
+  float body = smoothstep(1.03, .97, length(lq));
+  float cap = step(abs(f.x), .16) * step(.3, abs(f.y)) * step(abs(f.y), .43);
+  float rib = smoothstep(.06, 0., abs(fract(lq.y * 2.5) - .5) - .38) * body;
+  vec3 lc = mix(vec3(1., .22, .28), vec3(1., .88, .35), step(mod(cell.x, 3.), .5));
+  lc = mix(lc, lc * .72, rib) + vec3(1., .85, .5) * .35 * (1. - length(lq)) * (.6 + .4 * uKick);
+  col = mix(col, lc, body * on);
+  col = mix(col, vec3(.1, .08, .2), (cap + smoothstep(.07, 0., abs(length(lq) - 1.)) * body) * on);
+  col = mix(col, vec3(.1, .08, .2), step(abs(f.x), .012) * step(f.y, -.4) * on);
+  col = mix(col, vec3(1., .95, .6), beatRings(r, t, E) * .5);
+  float tn = smoothstep(.82, 1.08, E);
+  if (tn > .001) {
+    float fan = smoothstep(-.1, .1, sin(a * 12. - t * 2. + r * 4.)) * smoothstep(.02, .2, r);
+    col = mix(col, mix(hsv(fract(r * .6 + t * .12 + uHue), .75, 1.), vec3(1., .95, .85), fan * .6), tn * .8);
+  }
+  return col;
+}
+
+// 5: paper craft: wavy paper bands and polka dots -> spinning paper flowers.
+vec3 paper(vec2 p, float r, float a, float E, float t){
+  float w = p.y * 5. + sin(p.x * 4. + t * .6) * .35 * (.3 + E);
+  float band = floor(w);
+  vec3 pal[4];
+  pal[0] = vec3(1., .5, .72); pal[1] = vec3(.5, .66, 1.); pal[2] = vec3(1., .82, .3); pal[3] = vec3(.4, .88, .72);
+  int bi = int(mod(band, 4.));
+  vec3 bc = bi == 0 ? pal[0] : bi == 1 ? pal[1] : bi == 2 ? pal[2] : pal[3];
+  vec3 col = mix(vec3(1., .97, .92), bc, smoothstep(.08, .3, E));
+  col = mix(col, vec3(.1, .11, .3), smoothstep(.07, 0., abs(fract(w) - .03)) * .85 * smoothstep(.08, .3, E));
+  col = mix(col, col * .82, smoothstep(.2, 0., fract(w)) * smoothstep(.08, .3, E));
+  vec2 dq = rot(.3) * p * 9.; vec2 df = fract(dq) - .5;
+  col = mix(col, vec3(1.), smoothstep(.16, .13, length(df)) * smoothstep(.3, .6, E) * .7);
+  col = mix(col, vec3(1.), beatRings(r, t, E) * .4);
+  float tn = smoothstep(.8, 1.08, E);
+  if (tn > .001) {
+    vec2 uv = p * 3.2; vec2 c = floor(uv); vec2 f = (fract(uv) - .5) * rot(t * (hash(c) > .5 ? 1. : -1.) + hash(c) * 6.);
+    float fa = atan(f.y, f.x); float fr = length(f);
+    float petal = smoothstep(.02, -.02, fr - (.28 + .1 * cos(fa * 5.)));
+    col = mix(col, hsv(fract(hash(c) + t * .1 + uHue), .55, 1.), petal * tn);
+    col = mix(col, vec3(.1, .11, .3), smoothstep(.025, 0., abs(fr - (.28 + .1 * cos(fa * 5.)))) * tn * .8);
+    col = mix(col, vec3(1., .9, .4), smoothstep(.08, .06, fr) * tn);
+  }
+  return col;
+}
+
+void main(){
+  vec2 fc = vec2(gl_FragCoord.x, uRes.y - gl_FragCoord.y);
+  vec2 p = (fc - uCenter) / uRes.y;
+  float E = uE; float t = uTime;
+  p *= 1. - 0.06 * uKick * smoothstep(.35, .6, E);
+  float r = length(p); float a = atan(p.y, p.x);
+  vec3 col;
+  if (uTheme < .5) col = classic(p, r, a, E, t);
+  else if (uTheme < 1.5) col = night(p, r, a, E, t);
+  else if (uTheme < 2.5) col = sea(p, r, a, E, t);
+  else if (uTheme < 3.5) col = space(p, r, a, E, t);
+  else if (uTheme < 4.5) col = festival(p, r, a, E, t);
+  else col = paper(p, r, a, E, t);
+  col += vec3(1., .96, .85) * exp(-r * r * 14.) * (.25 + .6 * uKick * E) * (uTheme > .5 && uTheme < 1.5 || uTheme > 2.5 && uTheme < 3.5 ? .5 : 1.);
+  col = mix(col, col * vec3(.16, .12, .32), uReach * smoothstep(.08, .5, r));
+  col = mix(col, vec3(1.), clamp(uFlash, 0., 1.));
+  float alpha = smoothstep(.1, .3, E) * (.32 + .68 * smoothstep(.3, .62, E));
+  alpha = max(alpha, uReach * .88);
+  alpha = max(alpha, clamp(uFlash, 0., 1.));
+  gl_FragColor = vec4(col * alpha, alpha);
+}`;
+
+const THEMES = ['classic', 'night', 'sea', 'space', 'festival', 'paper'];
+const FALLBACK = [
+  'repeating-conic-gradient(from 0deg at 50% 50%, #3b6bff 0 9deg, #ff7ab6 9deg 18deg)',
+  'repeating-conic-gradient(from 0deg at 50% 50%, #1b1d4d 0 9deg, #3b2f7a 9deg 18deg)',
+  'repeating-conic-gradient(from 0deg at 50% 50%, #3aa7d8 0 9deg, #8fe3ef 9deg 18deg)',
+  'repeating-conic-gradient(from 0deg at 50% 50%, #14082e 0 9deg, #4a1f6e 9deg 18deg)',
+  'repeating-conic-gradient(from 0deg at 50% 50%, #ff4f5e 0 9deg, #fff1e0 9deg 18deg)',
+  'repeating-conic-gradient(from 0deg at 50% 50%, #ffb8d4 0 9deg, #c4d6ff 9deg 18deg)',
+];
+
+class Backdrop {
+  constructor(canvas, fallback) {
+    this.canvas = canvas;
+    this.fallback = fallback;
+    this.state = { E: 0, kick: 0, flash: 0, reach: 0, hue: 0, cx: 0, cy: 0, theme: 0 };
+    this.gl = null;
+    try { this.init(); } catch (e) { console.warn('webgl off', e); this.gl = null; }
+    if (!this.gl) { canvas.style.display = 'none'; fallback.style.display = 'block'; }
+  }
+  init() {
+    const gl = this.canvas.getContext('webgl', { antialias: false, premultipliedAlpha: true, alpha: true, powerPreference: 'high-performance' });
+    if (!gl) return;
+    const sh = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s)); return s; };
+    const prog = gl.createProgram();
+    gl.attachShader(prog, sh(gl.VERTEX_SHADER, VERT));
+    gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, FRAG));
+    gl.linkProgram(prog);
+    if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
+    gl.useProgram(prog);
+    const buf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+    const loc = gl.getAttribLocation(prog, 'p');
+    gl.enableVertexAttribArray(loc);
+    gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+    this.u = {};
+    for (const n of ['uRes', 'uCenter', 'uTime', 'uE', 'uKick', 'uFlash', 'uReach', 'uHue', 'uTheme']) this.u[n] = gl.getUniformLocation(prog, n);
+    this.gl = gl;
+    this.canvas.addEventListener('webglcontextlost', (e) => { e.preventDefault(); this.gl = null; this.canvas.style.display = 'none'; this.fallback.style.display = 'block'; });
+  }
+  resize() {
+    const dpr = Math.min(1.25, window.devicePixelRatio || 1);
+    const w = Math.round(innerWidth * dpr); const h = Math.round(innerHeight * dpr);
+    if (this.canvas.width !== w || this.canvas.height !== h) { this.canvas.width = w; this.canvas.height = h; }
+    this.dpr = dpr;
+  }
+  // Unlockable backgrounds (id041, id042); the CSS fallback gets matching colours.
+  setTheme(name) {
+    const i = Math.max(0, THEMES.indexOf(name));
+    this.state.theme = i;
+    this.fallback.style.background = FALLBACK[i];
+  }
+  render(t) {
+    const s = this.state;
+    if (!this.gl) {
+      const f = this.fallback;
+      f.style.opacity = String(Math.min(1, Math.max(s.reach * 0.8, (s.E - 0.12) * 2)));
+      f.style.transform = `rotate(${(t / 1000) * (8 + 40 * s.E)}deg) scale(${1 + s.kick * 0.04})`;
+      f.style.filter = s.E > 0.6 ? `hue-rotate(${(t / 20) % 360}deg)` : 'none';
+      return;
+    }
+    this.resize();
+    const gl = this.gl;
+    gl.viewport(0, 0, this.canvas.width, this.canvas.height);
+    gl.uniform2f(this.u.uRes, this.canvas.width, this.canvas.height);
+    gl.uniform2f(this.u.uCenter, s.cx * this.dpr, s.cy * this.dpr);
+    gl.uniform1f(this.u.uTime, t / 1000);
+    gl.uniform1f(this.u.uE, s.E);
+    gl.uniform1f(this.u.uKick, s.kick);
+    gl.uniform1f(this.u.uFlash, s.flash);
+    gl.uniform1f(this.u.uReach, s.reach);
+    gl.uniform1f(this.u.uHue, s.hue);
+    gl.uniform1f(this.u.uTheme, s.theme);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+}
+
+
+// Original English questions. Not official Eiken questions.
+const rows = [
+['使役','My mother made me ___ my room.','clean','to clean','母は私に部屋を掃除させた。','make + 人 + 動詞の原形。to は付けない。'],
+['使役','The teacher let us ___ our phones.','use','to use','先生は私たちが携帯を使うのを許した。','let + 人 + 動詞の原形。let の後も to は不要。'],
+['不定詞','I want something ___ after school.','to eat','eating','放課後に何か食べるものがほしい。','something to eat で「何か食べるもの」。不定詞が something を説明する。'],
+['不定詞','I went to the library ___ English.','to study','study','英語を勉強するために図書館へ行った。','目的「〜するために」は to + 動詞の原形で表す。'],
+['動名詞','He enjoys ___ soccer after school.','playing','to play','彼は放課後にサッカーをするのを楽しむ。','enjoy の目的語には動名詞（-ing）。enjoy to play とは言わない。'],
+['動名詞','She finished ___ the letter.','writing','to write','彼女は手紙を書き終えた。','finish + 動名詞で「〜し終える」。'],
+['前置詞＋動名詞','I am looking forward to ___ you again.','seeing','see','またあなたに会えるのを楽しみにしている。','look forward to の to は前置詞。後ろは名詞か動名詞。'],
+['前置詞＋動名詞','Thank you for ___ me.','helping','help','手伝ってくれてありがとう。','前置詞 for の後ろに動詞を置くときは -ing にする。'],
+['現在完了','I have known her ___ five years.','for','since','私は彼女と5年間の知り合いだ。','for + 期間。since の後ろは開始時点。'],
+['現在完了','I have lived here ___ 2021.','since','for','2021年からここに住んでいる。','since + 開始時点。2021 は期間ではなく年。'],
+['時・条件の節','If it ___ tomorrow, I will stay home.','rains','will rain','明日雨が降れば、家にいる。','条件を表す if 節では、未来のことも現在形。'],
+['時・条件の節','I will call you when I ___ home tonight.','get','will get','今夜帰宅したら電話する。','「〜するとき」を表す時の副詞節では未来のことも現在形。'],
+['受け身','This bridge ___ in 1990.','was built','built','この橋は1990年に建てられた。','橋は建てられる側。be 動詞 + 過去分詞で受け身。'],
+['受け身','English ___ in many countries.','is spoken','speaks','英語は多くの国で話されている。','英語は話される側。speak の過去分詞は spoken。'],
+['比較','This bag is ___ than that one.','more useful','most useful','このかばんはあれより役に立つ。','than と比べる形は比較級。useful は more useful。'],
+['比較','Ken is as ___ as his brother.','tall','taller','ケンは兄（弟）と同じくらい背が高い。','as + 原級 + as。間に比較級は置かない。'],
+['関係代名詞','I know a girl ___ can speak French.','who','which','私はフランス語を話せる女の子を知っている。','先行詞が人で、関係節の主語になるので who。'],
+['関係代名詞','This is a book ___ was written by my uncle.','which','who','これは叔父が書いた本だ。','先行詞が物で、関係節の主語になるので which。'],
+['間接疑問','Do you know where she ___?','lives','does live','彼女がどこに住んでいるか知っていますか。','間接疑問は疑問詞 + 主語 + 動詞。通常の疑問文の語順にしない。'],
+['間接疑問','Please tell me what time ___.','the train leaves','does the train leave','電車が何時に出るか教えてください。','tell me の目的語になる疑問節では、主語 + 動詞の順。'],
+['分詞の形容詞','I was very ___ by the news.','surprised','surprising','私はその知らせにとても驚いた。','驚かされた人の状態は surprised。surprising は驚かせる性質。'],
+['分詞の形容詞','The movie was so ___ that I watched it twice.','exciting','excited','その映画はとてもわくわくさせるので2度見た。','映画の「人をわくわくさせる」性質は exciting。'],
+['助動詞','You must ___ your homework today.','finish','to finish','今日宿題を終えなければならない。','助動詞 must の直後は動詞の原形。'],
+['助動詞','He can ___ very fast.','run','runs','彼はとても速く走れる。','主語が he でも can の後ろには三単現の s を付けない。'],
+['必要・禁止','You ___ come tomorrow. It is optional.','do not have to','must not','明日は来なくてもよい。任意だ。','do not have to は不要。must not は禁止なので optional と合わない。'],
+['必要・禁止','You ___ swim here. Swimming is forbidden.','must not','do not have to','ここで泳いではいけない。遊泳禁止だ。','禁止は must not。「する必要がない」と区別する。'],
+['疑問詞＋不定詞','Please show me how ___ this machine.','to use','use','この機械の使い方を教えてください。','how to + 動詞の原形で「〜する方法」。'],
+['疑問詞＋不定詞','I do not know what ___ next.','to do','doing','次に何をすべきか分からない。','what to do で「何をすべきか」。疑問詞 + to 不定詞。'],
+['形容詞・副詞','She speaks English ___.','well','good','彼女は英語を上手に話す。','動詞 speaks を修飾するのは副詞 well。good は形容詞。'],
+['形容詞・副詞','This soup tastes ___.','good','well','このスープはおいしい。','taste の後ろで主語の性質を表す補語には形容詞 good。'],
+['too・enough','The box is too heavy for me ___.','to carry','carry','その箱は重すぎて私には運べない。','too + 形容詞 + for 人 + to do。「〜すぎて…できない」。'],
+['too・enough','She is old ___ to travel alone.','enough','too','彼女は1人で旅行できる年齢だ。','形容詞 + enough + to do。「…できるほど〜」。enough は形容詞の後ろ。'],
+['依頼・指示','My teacher told me ___ harder.','to study','study','先生は私にもっと一生懸命勉強するように言った。','tell + 人 + to do。make / let と形を区別する。'],
+['依頼・指示','My mother asked me ___ late.','not to be','to not being','母は私に遅刻しないよう頼んだ。','ask + 人 + not to do。「〜しないよう頼む」。'],
+['接続詞','___ I was tired, I finished my homework.','Although','Because','疲れていたけれど、宿題を終えた。','疲労と完了の逆接を表す Although。「疲れていたから」では文意が変わる。'],
+['接続詞','I stayed home ___ it was raining.','because','because of','雨が降っていたので家にいた。','後ろが主語 + 動詞なので because。because of の後ろは名詞句。'],
+['仮定法','If I ___ you, I would ask the teacher.','were','am','私があなたなら、先生に聞くだろう。','現実と異なる仮定。If I were you が定型。'],
+['仮定法','I wish I ___ speak French.','could','can','フランス語を話せたらなあ。','今の現実と違う願望は wish + 過去形。can → could。'],
+['主語と動詞','Each of the students ___ a dictionary.','has','have','その生徒たちはそれぞれ辞書を持っている。','主語の中心は単数の Each。students に引かれて have にしない。'],
+['主語と動詞','There ___ some water in the bottle.','is','are','瓶に水がいくらか入っている。','water は不可算名詞なので is。some があっても複数とは限らない。'],
+['経験・過去','I ___ Kyoto last year.','visited','have visited','私は去年京都を訪れた。','last year のような明確な過去の時点には過去形。現在完了は使わない。'],
+['経験・過去','Have you ever ___ to Kyoto?','been','went','京都に行ったことがありますか。','経験は have been to。have の後ろには過去分詞。'],
+['不定代名詞','I have two bags. One is red, and ___ is blue.','the other','another','かばんが2つある。1つは赤で、もう1つは青だ。','2つのうち残りの1つは the other。'],
+['不定代名詞','This shirt is too small. Please show me ___ one.','another','other','このシャツは小さすぎる。別のものを見せてください。','不特定の別の1つは another one。other one には限定詞などが必要。'],
+['間接疑問・whether','I wonder ___ he will come tomorrow.','if','that','彼が明日来るかどうか気になる。','ここで if は「〜かどうか」。条件の if ではないので will を使える。'],
+['間接疑問・whether','I do not know ___ she is at home.','whether','what','彼女が家にいるかどうか分からない。','whether は「〜かどうか」。後ろは完全な文 she is at home。'],
+['付加疑問','You like tennis, ___?','do not you','are not you','あなたはテニスが好きですよね。','一般動詞 like の付加疑問には do を使う。通常は don’t you? と短縮する。'],
+['付加疑問','She is your sister, ___?','is not she','does not she','彼女はあなたの姉（妹）ですよね。','be 動詞 is を受けるので is。通常は isn’t she? と短縮する。']
+];
+// Use natural contractions in the actual questions.
+rows[46][2]="don't you"; rows[46][3]="aren't you";
+rows[47][2]="isn't she"; rows[47][3]="doesn't she";
+rows.push(
+['使役','The funny video made everyone ___.','laugh','to laugh','その面白い動画はみんなを笑わせた。','make + 人 + 動詞の原形。','made everyone','make の後ろで「人に〜させる」ときの動詞の形は？'],
+['使役','Please let me ___ your bag.','carry','to carry','あなたのかばんを運ばせてください。','let + 人 + 動詞の原形。','let me','let + 人 の後ろには、どんな形の動詞が続く？'],
+['使役','The coach made us ___ around the field.','run','ran','コーチは私たちにグラウンドを走らせた。','made が過去形でも、後ろの動詞は原形。','made us','過去を表しているのは made。もう1つの動詞の形は？'],
+['使役','Her parents let her ___ up late on Saturdays.','stay','stays','両親は土曜日に彼女が夜更かしするのを許している。','let her stay。her に合わせて stays にしない。','let her','let + 人 + 動詞 の組み合わせに注目。'],
+['不定詞','I have a lot of homework ___ tonight.','to do','do','今夜やるべき宿題がたくさんある。','名詞の後ろの to do が「やるべき」という説明になる。','homework','「やるべき」が homework を後ろから説明する形は？'],
+['不定詞','She decided ___ a new language.','to learn','learning','彼女は新しい言語を学ぶと決めた。','decide の後ろは to 不定詞。','decided','decide は to do と doing のどちらを続ける？'],
+['不定詞','We hope ___ you soon.','to see','seeing','私たちは近いうちにあなたに会いたいと思っている。','hope + to do。','hope','hope の後ろに続ける形を思い出そう。'],
+['不定詞','It is important ___ breakfast every day.','to eat','eat','毎日朝食を食べることは大切だ。','It is + 形容詞 + to do。It は形式主語。','It is important','「〜することは大切だ」の形にしよう。'],
+['動名詞','Would you mind ___ the window?','opening','to open','窓を開けていただけませんか。','mind の後ろは動名詞。Would you mind doing? は丁寧な依頼。','mind','mind の後ろに置く動詞の形は？'],
+['動名詞','He avoided ___ about the accident.','talking','to talk','彼はその事故について話すのを避けた。','avoid + 動名詞。','avoided','avoid の目的語にする動詞の形を考えよう。'],
+['動名詞','Please keep ___ until I say stop.','walking','to walk','私が止まってと言うまで歩き続けてください。','keep doing で「〜し続ける」。','keep','「し続ける」は keep とどんな形を組み合わせる？'],
+['動名詞','We practiced ___ English together.','speaking','to speak','私たちは一緒に英語を話す練習をした。','practice の後ろは動名詞。','practiced','practice の後ろに続く形に注目。'],
+['前置詞＋動名詞','She is good at ___ pictures.','drawing','draw','彼女は絵を描くのが得意だ。','前置詞 at の後ろは名詞・動名詞。','at','前置詞の後ろに動詞の内容を置くときの形は？'],
+['前置詞＋動名詞','He left without ___ goodbye.','saying','say','彼はさよならを言わずに去った。','without + 動名詞で「〜せずに」。','without','without は前置詞。後ろはどんな形？'],
+['前置詞＋動名詞','I am interested in ___ about space.','learning','learn','私は宇宙について学ぶことに興味がある。','be interested in + 名詞・動名詞。','in','in の後ろには名詞の働きをする形を置く。'],
+['前置詞＋動名詞','Wash your hands before ___ dinner.','eating','eat','夕食を食べる前に手を洗いなさい。','この before の後ろには主語がなく、動名詞を続ける。before you eat なら節になる。','before','今回は before の直後に主語がないね。'],
+['現在完了','She has worked here ___ ten years.','for','since','彼女はここで10年間働いている。','ten years は期間なので for。','ten years','これは期間？ それとも始まった時点？'],
+['現在完了','It has been cold ___ Monday.','since','for','月曜日からずっと寒い。','Monday は開始時点なので since。','Monday','月曜日は「何日間」とは違うね。'],
+['現在完了','We ___ already finished our lunch.','have','are','私たちはもう昼食を食べ終えた。','現在完了は have / has + 過去分詞。','finished','already と過去分詞を使って「もう終えた」を表そう。'],
+['現在完了','He has not done his homework ___.','yet','already','彼はまだ宿題をしていない。','現在完了の否定文で「まだ」は yet。','has not','「まだ〜していない」に合う副詞は？'],
+['時・条件の節','We will leave as soon as he ___.','arrives','will arrive','彼が着いたらすぐに出発する。','as soon as で始まる時の節では未来でも現在形。','as soon as','時を表す節の中。未来の予定でも動詞の形に注意。'],
+['時・条件の節','Wait here until your father ___.','comes','will come','お父さんが来るまでここで待っていて。','until の時の節では未来でも現在形。','until','「〜するまで」の時の節だね。'],
+['時・条件の節','If you ___ early, we can have breakfast together.','get up','will get up','早く起きれば、一緒に朝食を食べられる。','条件を表す if 節では未来でも現在形。','If','この if は「〜かどうか」？ それとも「もし〜なら」？'],
+['時・条件の節','I will finish this before the lesson ___.','starts','will start','授業が始まる前にこれを終わらせる。','before の時の副詞節には現在形を使う。','before','「〜する前に」という時の節に注目。'],
+['受け身','These cookies ___ by my sister yesterday.','were made','made','このクッキーは昨日姉（妹）が作った。','クッキーは作られる側。複数主語なので were made。','by my sister','誰かによって「作られた」側は何？'],
+['受け身','This room must ___ every day.','be cleaned','clean','この部屋は毎日掃除されなければならない。','助動詞 + be + 過去分詞で受け身。','This room','部屋自身が掃除するわけではないね。'],
+['受け身','The picture was ___ by a famous artist.','painted','painting','その絵は有名な画家によって描かれた。','受け身は was + 過去分詞。','was','was と組み合わせて「描かれた」を表そう。'],
+['受け身','Many trees ___ down last year.','were cut','are cutting','去年たくさんの木が切り倒された。','過去の受け身。cut の過去分詞も cut。','last year','過去の出来事で、木は切られる側だね。'],
+['比較','My bicycle is ___ than yours.','cheaper','cheapest','私の自転車はあなたのものより安い。','than があるので比較級 cheaper。','than','2つを比べて「より〜」という形。'],
+['比較','This is the ___ building in our town.','tallest','taller','これは私たちの町で最も高い建物だ。','the + 最上級で、範囲内の「最も〜」。','in our town','町全体の中で一番、という比較だね。'],
+['比較','I can run ___ than I could last year.','faster','fastest','私は去年より速く走れる。','than の前は比較級。fast の比較級は faster。','than','去年の自分と比べているよ。'],
+['比較','This question is not as ___ as that one.','difficult','more difficult','この問題はあれほど難しくない。','not as + 原級 + as。「〜ほど…でない」。','as','as と as の間には原級を置く。'],
+['関係代名詞','The man ___ lives next door is a doctor.','who','which','隣に住む男性は医者だ。','人を先行詞にする主格の関係代名詞は who。','The man','説明されているのは人？ 物？'],
+['関係代名詞','I have a watch ___ was made in Japan.','which','who','私は日本製の時計を持っている。','物を先行詞にする主格の関係代名詞は which。','a watch','後ろから説明する対象が watch だね。'],
+['関係代名詞','She is the student ___ won the speech contest.','who','which','彼女はスピーチ大会で優勝した生徒だ。','先行詞 student は人。who が won の主語になる。','the student','won の主語になる関係代名詞を選ぼう。'],
+['関係代名詞','This is the dog ___ helped the police.','that','what','これが警察を助けた犬だ。','先行詞 the dog があるので that。what は通常、先行詞を含む。','the dog','すでに説明する相手の名詞が前にあるね。'],
+['間接疑問','Can you tell me where ___?','the station is','is the station','駅がどこにあるか教えてくれますか。','間接疑問の中では主語 + 動詞。','tell me','tell me の後ろに埋め込まれた疑問文だよ。'],
+['間接疑問','I know why ___ angry.','he is','is he','私は彼がなぜ怒っているか知っている。','why + 主語 + 動詞の語順。','I know','文全体は疑問文ではないね。'],
+['間接疑問','Do you remember when ___?','her birthday is','is her birthday','彼女の誕生日がいつか覚えていますか。','when に続く間接疑問は主語 + 動詞。','remember','remember の目的語になる部分の語順に注目。'],
+['間接疑問','Please tell me how much ___.','this ticket costs','does this ticket cost','この切符がいくらか教えてください。','how much + 主語 + 動詞。','tell me','疑問の内容を tell me の後ろに入れる形。'],
+['分詞の形容詞','The students were ___ with the long lecture.','bored','boring','生徒たちは長い講義に退屈していた。','退屈させられている人の状態は bored。','The students','退屈している側の気持ちだね。'],
+['分詞の形容詞','The long lecture was ___.','boring','bored','その長い講義は退屈だった。','人を退屈させる講義の性質は boring。','The long lecture','気持ちではなく、講義の性質を説明する。'],
+['分詞の形容詞','I am ___ in the history of castles.','interested','interesting','私は城の歴史に興味がある。','be interested in は「〜に興味がある」。','I am','興味を持っているのは人の側。'],
+['分詞の形容詞','The news about the discovery was ___.','surprising','surprised','その発見の知らせは驚くべきものだった。','人を驚かせる知らせの性質は surprising。','The news','知らせ自体が驚いているわけではないね。'],
+['助動詞','You should ___ a dictionary.','use','used','辞書を使うべきだ。','should の直後は動詞の原形。','should','助動詞の直後に注目。'],
+['助動詞','She may ___ late today.','be','is','彼女は今日遅れるかもしれない。','may の後ろの be 動詞も原形 be。','may','be 動詞も助動詞の後ろでは形が決まる。'],
+['助動詞','My grandfather could ___ very well when he was young.','swim','swam','祖父は若い頃とても上手に泳げた。','could が過去を表し、後ろは原形 swim。','could','過去形にするのはどの動詞？'],
+['助動詞','We will ___ the museum tomorrow.','visit','visiting','私たちは明日博物館を訪れる。','will + 動詞の原形。','will','未来を表す will の後ろに続く形は？'],
+['必要・禁止','You ___ buy a ticket. Admission is free.','do not have to','must not','入場無料なので切符を買う必要はない。','無料なら購入は不要。「禁止」ではない。','Admission is free','無料だから「不要」なのか、「禁止」なのかを考えよう。'],
+['必要・禁止','You ___ touch this painting. It is forbidden.','must not','do not have to','この絵に触れてはいけない。禁止されている。','禁止を表すのは must not。','forbidden','forbidden は「禁止された」という意味。'],
+['必要・禁止','We ___ hurry. We have plenty of time.','do not have to','must not','時間が十分あるので急ぐ必要はない。','必要がないときは do not have to。','plenty of time','時間はたっぷり。急ぐことが禁止なのかな？'],
+['必要・禁止','Students ___ use phones during this test. It is against the rules.','must not','do not have to','この試験中、生徒は携帯を使ってはいけない。規則違反だ。','規則で禁じられているので must not。','against the rules','「規則に反する」が意味の手がかり。'],
+['疑問詞＋不定詞','I cannot decide which book ___.','to buy','buying','どの本を買うべきか決められない。','which + 名詞 + to do。「どの〜を…すべきか」。','which book','「どの本を買うべきか」を1つのまとまりにしよう。'],
+['疑問詞＋不定詞','She taught me how ___ rice.','to cook','cooking','彼女は私にご飯の炊き方を教えた。','how to cook で「炊き方」。','how','「方法」を表す how の後ろの形は？'],
+['疑問詞＋不定詞','We talked about where ___ for lunch.','to go','going','私たちは昼食にどこへ行くか話した。','where to go で「どこへ行くべきか」。','where','about の後ろ全体が where で始まるまとまり。'],
+['疑問詞＋不定詞','Please tell me when ___ the medicine.','to take','taking','いつ薬を飲むべきか教えてください。','when to take で「いつ飲むべきか」。','when','「いつ〜するべきか」の形を選ぼう。'],
+['形容詞・副詞','Please drive ___.','carefully','careful','注意して運転してください。','動詞 drive を修飾するのは副詞 carefully。','drive','運転の仕方を説明する語だよ。'],
+['形容詞・副詞','You look ___ today.','happy','happily','今日はうれしそうだね。','look の後ろで主語の状態を説明する補語には形容詞。','look','「うれしそうに見る」ではなく「うれしそうに見える」。'],
+['形容詞・副詞','The children played ___ in the park.','happily','happy','子どもたちは公園で楽しそうに遊んだ。','動詞 played を修飾する副詞 happily。','played','「遊んだ」様子を説明しよう。'],
+['形容詞・副詞','This flower smells ___.','sweet','sweetly','この花は甘い香りがする。','smell の後ろで主語の性質を表すのは形容詞。','smells','花の性質を述べる補語になるよ。'],
+['too・enough','This tea is ___ hot to drink.','too','enough','このお茶は熱すぎて飲めない。','too + 形容詞 + to do。','hot to drink','「〜すぎて…できない」の形を作ろう。'],
+['too・enough','He was strong enough ___ the box.','to lift','lifting','彼はその箱を持ち上げられるほど力が強かった。','形容詞 + enough + to do。','strong enough','「〜できるほど」の続きに注目。'],
+['too・enough','The bag was light ___ for the child to carry.','enough','too','そのかばんは子どもが運べるほど軽かった。','light enough。enough は形容詞の後ろ。','light','形容詞の後ろに置けるのはどちら？'],
+['too・enough','We arrived too late ___ the first train.','to catch','catching','私たちは到着が遅すぎて始発電車に乗れなかった。','too late to catch。「遅すぎて乗れない」。','too late','too ... to のまとまりを思い出そう。'],
+['依頼・指示','I want you ___ this book.','to read','read','私はあなたにこの本を読んでほしい。','want + 人 + to do。','want you','want の後ろに「人」が来ているね。'],
+['依頼・指示','She asked her brother ___ her.','to help','helping','彼女は兄（弟）に手伝ってくれるよう頼んだ。','ask + 人 + to do。','asked her brother','人に何かをするよう頼む形。'],
+['依頼・指示','The doctor told him ___ more water.','to drink','drinking','医者は彼にもっと水を飲むように言った。','tell + 人 + to do。','told him','「人に〜するよう言う」の形は？'],
+['依頼・指示','Our teacher told us ___ in the hallway.','not to run','not running','先生は廊下を走らないよう私たちに言った。','tell + 人 + not to do。','told us','否定の指示は not を to の前に置く。'],
+['接続詞','I was hungry, ___ I made a sandwich.','so','but','おなかがすいたので、サンドイッチを作った。','原因から結果へ続くので so。','hungry','日本語は「なので」。前後は原因と結果だね。'],
+['接続詞','___ the rain, we stayed inside.','Because of','Because','雨のため、私たちは室内にいた。','後ろが名詞句 the rain なので because of。','the rain','この後ろは文？ それとも名詞だけ？'],
+['接続詞','She likes tea, ___ she does not like coffee.','but','so','彼女はお茶が好きだが、コーヒーは好きではない。','対比は but。','does not like','好きと好きでないを対比しているね。'],
+['接続詞','___ it was snowing, the train arrived on time.','Although','Because','雪が降っていたけれど、電車は時間どおりに着いた。','日本語の「けれど」に合う逆接は although。','on time','日本語の「けれど」と、意外な結果に注目。'],
+['仮定法','If I ___ more money, I would buy that bike.','had','have','もっとお金があれば、その自転車を買うのに。','今の現実と違う仮定は if + 過去形。','would buy','would と対応する if 節の時制は？'],
+['仮定法','I wish I ___ taller.','were','am','もっと背が高ければなあ。','現実と異なる今の願いは wish + 過去形。','I wish','現在の願望でも後ろの形に注意。'],
+['仮定法','If she were here, she ___ help us.','would','will','彼女がここにいれば、私たちを助けてくれるだろう。','仮定法過去では if 節に過去形、主節に would + 原形。','If she were here','現実にはここにいないという仮定だよ。'],
+['仮定法','I wish I ___ a car.','had','have','車を持っていればなあ。','現在持っていない物を願うので wish + had。','I wish','現実と違う願いを表す時制を選ぼう。'],
+['主語と動詞','Everyone in my class ___ music.','likes','like','私のクラスではみんな音楽が好きだ。','everyone は文法上単数。','Everyone','「みんな」でも文法上は単数になる語。'],
+['主語と動詞','The books on the desk ___ mine.','are','is','机の上の本は私のものだ。','主語の中心は複数の books。desk に引かれない。','The books','主語の中心は books と desk のどちら？'],
+['主語と動詞','One of my friends ___ in Canada.','lives','live','友人の1人がカナダに住んでいる。','主語の中心は単数の One。','One','friends ではなく主語の中心の数を考えよう。'],
+['主語と動詞','There ___ two cats under the table.','are','is','テーブルの下に猫が2匹いる。','存在するものが複数の two cats なので are。','two cats','いるものの数に合わせよう。'],
+['経験・過去','We ___ that movie yesterday.','saw','have seen','私たちは昨日その映画を見た。','yesterday は明確な過去の時点。過去形 saw。','yesterday','いつ見たかが過去の一点に決まっているね。'],
+['経験・過去','I have never ___ sushi.','eaten','ate','私は寿司を食べたことがない。','have + 過去分詞。eat の過去分詞は eaten。','have never','経験を表す have の後ろに続く形は？'],
+['経験・過去','She ___ London in 2020.','visited','has visited','彼女は2020年にロンドンを訪れた。','in 2020 のような過去の時点には過去形。','in 2020','明確な過去の年が書いてあるよ。'],
+['経験・過去','Have you ever ___ a horse?','ridden','rode','馬に乗ったことがありますか。','ride の過去形は rode、過去分詞は ridden。','Have you ever','現在完了では過去形？ 過去分詞？'],
+['不定代名詞','I have two sisters. One is a nurse, and ___ is a teacher.','the other','another','姉妹が2人いる。1人は看護師で、もう1人は先生だ。','2人のうち残りの1人は the other。','two sisters','人数は2人に決まっているね。'],
+['不定代名詞','I lost my pen, so I need ___ one.','another','other','ペンをなくしたので、別の1本が必要だ。','不特定の別の1つは another one。','one','別の「1つ」を表す形を選ぼう。'],
+['不定代名詞','Some students like soccer, and ___ like tennis.','others','another','サッカーが好きな生徒もいれば、テニスが好きな生徒もいる。','some ... others ... で「〜もいれば、ほかには〜もいる」。','Some students','ほかの複数の生徒を指したいね。'],
+['不定代名詞','This room is too noisy. Let us find ___ room.','another','other','この部屋はうるさすぎる。別の部屋を探そう。','単数名詞 room の前には another。','room','不特定の別の部屋を1つ探しているよ。'],
+['間接疑問・whether','Please tell me ___ you are ready.','whether','what','準備ができているかどうか教えてください。','whether は「〜かどうか」。you are ready は完全な文。','you are ready','「準備できているかどうか」の二択の疑問。'],
+['間接疑問・whether','I do not know ___ the shop is open.','if','that','その店が開いているかどうか分からない。','know の目的語となる if は「〜かどうか」。','I do not know','「もし」ではなく、「分からないこと」の内容。'],
+['間接疑問・whether','We wonder whether he ___ join us tomorrow.','will','would have','彼が明日私たちに加わるかどうか気になる。','whether の間接疑問では未来の will を使える。','tomorrow','未来について「〜かどうか」と尋ねているね。'],
+['間接疑問・whether','She asked me ___ I liked the plan.','whether','what','彼女はその計画が好きかどうか私に尋ねた。','好きかどうかという yes / no の内容は whether。','I liked the plan','後ろに目的語までそろった文があるね。'],
+['付加疑問','He can swim, ___?','can\'t he','doesn\'t he','彼は泳げますよね。','助動詞 can を付加疑問でも使う。','can','文にある助動詞を受けよう。'],
+['付加疑問','They did not come, ___?','did they','didn\'t they','彼らは来ませんでしたよね。','前が否定なら、付加疑問は肯定。','did not','前半が否定文だね。後ろはどうなる？'],
+['付加疑問','It was cold yesterday, ___?','wasn\'t it','isn\'t it','昨日は寒かったですよね。','前半の be 動詞 was と時制を合わせる。','was','前半と同じ時制を使おう。'],
+['付加疑問','You have finished your homework, ___?','haven\'t you','don\'t you','宿題は終わっていますよね。','現在完了の助動詞 have を付加疑問で受ける。','have finished','have は現在完了を作る助動詞として使われているよ。']
+
+);
+const ORIGINAL_CLUES=[["made me", "make + 人 の後ろの形は？"], ["let us", "let + 人 の後ろの形は？"], ["something", "何か「食べるもの」と、名詞を後ろから説明しよう。"], ["went to the library", "図書館へ行った「目的」を付け足そう。"], ["enjoys", "enjoy の後ろに続く動詞の形は？"], ["finished", "finish の後ろに続く動詞の形は？"], ["looking forward to", "この to は前置詞。後ろの形を考えよう。"], ["for", "前置詞の後ろに動詞の内容を置くときは？"], ["five years", "期間と開始時点、どちら？"], ["2021", "これは開始時点？ それとも期間？"], ["If", "条件を表す節の時制に注目。"], ["when", "時を表す節では未来のことも…？"], ["This bridge", "橋は建てる側？ 建てられる側？"], ["English", "英語は話す側？ 話される側？"], ["than", "2つを比べる「より〜」の形。"], ["as", "as と as の間に置く形は？"], ["a girl", "説明している相手は人だね。"], ["a book", "説明している相手は物だね。"], ["Do you know", "know の後ろに入った疑問文の語順は？"], ["tell me", "間接疑問の語順を思い出そう。"], ["I was", "驚いている人の気持ちを表す形。"], ["The movie", "映画が人をわくわくさせる性質を表そう。"], ["must", "助動詞の直後の形に注目。"], ["can", "主語が he でも、can の後ろは？"], ["optional", "optional は任意。禁止？ それとも不要？"], ["forbidden", "forbidden は禁止されているという意味。"], ["how", "「使い方」を表す形にしよう。"], ["what", "「何をすべきか」というまとまり。"], ["speaks", "「話す」を修飾する語を選ぼう。"], ["tastes", "スープの性質を表す補語になるよ。"], ["too heavy", "「重すぎて〜できない」の形。"], ["old", "enough は形容詞の前？ 後ろ？"], ["told me", "tell + 人 の後ろに続く形は？"], ["asked me", "人に「しないよう頼む」形を作ろう。"], ["I finished my homework", "日本語の「けれど」に合うつながりを選ぼう。"], ["it was raining", "後ろは名詞だけ？ 主語と動詞のある文？"], ["would", "現実と異なる仮定を表しているね。"], ["I wish", "現実と違う今の願いを表す形。"], ["Each", "主語の中心は Each。students に引かれないで。"], ["water", "water は数えられる名詞かな？"], ["last year", "明確な過去の時点があるね。"], ["Have you ever", "経験を表す have の後ろの形は？"], ["two bags", "全部で2つ。そのうち残りの1つだね。"], ["one", "不特定の別の1つを指そう。"], ["I wonder", "「もし〜なら」ではなく「〜かどうか」。"], ["she is at home", "後ろが完全な文。「〜かどうか」を表そう。"], ["like", "一般動詞を受ける付加疑問の形は？"], ["is", "be 動詞を受ける付加疑問の形は？"]];
+const QUESTIONS=rows.map((r,i)=>({id:'q'+String(i+1).padStart(2,'0'),tag:r[0],sentence:r[1],choices:[r[2],r[3]],answer:0,translation:r[4],rule:r[5],clue:r[6]||ORIGINAL_CLUES[i][0],hint:r[7]||ORIGINAL_CLUES[i][1]}));
+
+// Short, question-specific feedback; conditions are preserved.
+const PUNCHES=["make + 人 → 原形！", "let + 人 → 原形！", "something → to + 原形で説明！", "「〜するために」→ to + 原形！", "enjoy → 動詞＋ing！", "finish → 動詞＋ing！", "look forward to → 動詞＋ing！", "前置詞 for → 動詞＋ing！", "期間 → for！", "始まった時点 → since！", "条件の if → 未来でも現在形！", "時の when → 未来でも現在形！", "建てられた → was + 過去分詞！", "話される → is + 過去分詞！", "than → 比較級！", "as と as の間 → 原級！", "人が先行詞 → who！", "物が先行詞 → which！", "間接疑問 → 主語＋動詞！", "間接疑問 → 主語＋動詞！", "驚いた人 → surprised！", "わくわくさせる物 → exciting！", "must の後ろ → 原形！", "can の後ろ → 原形！", "任意 →「しなくてよい」！", "禁止 → must not！", "how to + 原形 →「方法」！", "what to + 原形 →「何をするか」！", "動作の仕方 → 副詞 well！", "taste の補語 → 形容詞 good！", "too ... to → 〜すぎてできない！", "形容詞の後ろ → enough！", "tell + 人 → to + 原形！", "ask + 人 → not to + 原形！", "「けれど」→ Although！", "because + 主語＋動詞！", "現実と違う仮定 → If I were！", "wish + could → できたらなあ！", "Each は単数 → has！", "water は数えない → is！", "last year → 過去形！", "経験 → have been to！", "2つの残り1つ → the other！", "別の1つ → another！", "「〜かどうか」の if → will OK！", "「〜かどうか」→ whether！", "一般動詞 like → don’t you?", "be動詞 is → isn’t she?", "make + 人 → 原形！", "let + 人 → 原形！", "made が過去でも → 原形！", "let her → stay に s なし！", "名詞を説明 → to + 原形！", "decide → to + 原形！", "hope → to + 原形！", "It is 形容詞 → to + 原形！", "mind → 動詞＋ing！", "avoid → 動詞＋ing！", "keep → 動詞＋ing！", "practice → 動詞＋ing！", "前置詞 at → 動詞＋ing！", "without → 動詞＋ing！", "前置詞 in → 動詞＋ing！", "before の後ろに主語なし → ing！", "ten years は期間 → for！", "Monday は開始時点 → since！", "現在完了 → have＋過去分詞！", "まだ〜していない → not ... yet！", "時の as soon as → 現在形！", "時の until → 現在形！", "条件の if → 未来でも現在形！", "時の before → 現在形！", "作られた＋複数 → were made！", "助動詞＋受け身 → be＋過去分詞！", "描かれた → was painted！", "去年・切られた → were cut！", "than → 比較級 cheaper！", "範囲内で一番 → the＋最上級！", "than → 比較級 faster！", "as と as の間 → 原級！", "人を説明 → who！", "時計を説明 → which！", "生徒を説明 → who！", "先行詞あり → that！", "間接疑問 → the station is！", "間接疑問 → he is！", "間接疑問 → 主語＋動詞！", "間接疑問 → this ticket costs！", "退屈した人 → bored！", "退屈させる講義 → boring！", "興味がある人 → interested！", "驚かせる知らせ → surprising！", "should の後ろ → 原形！", "may の後ろ → be！", "could が過去でも → 原形！", "will の後ろ → 原形！", "無料 → 買う必要なし！", "forbidden＝禁止 → must not！", "時間たっぷり → 急ぐ必要なし！", "規則違反＝禁止 → must not！", "which book to buy → どの本を買うか！", "how to cook → 調理の方法！", "where to go → どこへ行くか！", "when to take → いつ飲むか！", "drive を修飾 → carefully！", "look の補語 → happy！", "played を修飾 → happily！", "smell の補語 → sweet！", "too hot to → 熱すぎて飲めない！", "enough to → できるほど！", "形容詞の後ろ → enough！", "too late to → 遅すぎて乗れない！", "want + 人 → to + 原形！", "ask + 人 → to + 原形！", "tell + 人 → to + 原形！", "tell + 人 → not to + 原形！", "原因 → 結果は so！", "because of + 名詞！", "「だが」と対比 → but！", "「けれど」と逆接 → Although！", "今の現実と違う仮定 → 過去形！", "wish + were → だったらなあ！", "If ... were → would + 原形！", "今の願望 → wish + had！", "Everyone は単数 → likes！", "主語は books → are！", "主語は One → lives！", "two cats は複数 → are！", "yesterday → 過去形 saw！", "have の後ろ → 過去分詞 eaten！", "in 2020 → 過去形！", "have の後ろ → 過去分詞 ridden！", "2人の残り1人 → the other！", "別の1本 → another！", "ほかの複数の人 → others！", "別の1部屋 → another！", "「〜かどうか」→ whether！", "know の後ろの if → 〜かどうか！", "「〜かどうか」なら will OK！", "「〜かどうか」→ whether！", "can を受ける → can’t he?", "前半が否定 → 後ろは肯定！", "was を受ける → wasn’t it?", "完了の have → haven’t you?"];
+QUESTIONS.forEach((q,i)=>q.punch=PUNCHES[i]);
+
+
+
+
+
+
+const $=id=>document.getElementById(id), KEY='saru-english-story-v1';
+let saved={xp:0,records:{},muted:false,autoAdvance:true,reduced:matchMedia('(prefers-reduced-motion: reduce)').matches,storySolved:{},storySeen:{},worldCorrect:0};
+try{const raw=JSON.parse(localStorage.getItem(KEY));if(raw&&Number.isFinite(raw.xp)&&raw.records&&typeof raw.records==='object')saved={...saved,...raw};}catch{}
+if(!saved.storySolved||typeof saved.storySolved!=='object')saved.storySolved={};if(!saved.storySeen||typeof saved.storySeen!=='object')saved.storySeen={};saved.worldCorrect=Object.keys(saved.storySolved).length;
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a};
+const byID=new Map(QUESTIONS.map(q=>[q.id,q]));
+if(!Array.isArray(saved.deck)){const unseen=QUESTIONS.filter(q=>!(saved.records[q.id]?.seen>0));saved.deck=shuffle(unseen.length?unseen:QUESTIONS).map(q=>q.id);saved.bankIDs=QUESTIONS.map(q=>q.id);saved.cycle=1;}
+else {saved.deck=[...new Set(saved.deck)].filter(id=>byID.has(id));const known=new Set(saved.bankIDs||Object.keys(saved.records));saved.deck.unshift(...shuffle(QUESTIONS.filter(q=>!known.has(q.id))).map(q=>q.id));saved.bankIDs=QUESTIONS.map(q=>q.id);}
+let storageOK=true;
+function persist(){if(pendingMistakes().length>=5)saved.cleanupUnlocked=true;saved.worldCorrect=Object.keys(saved.storySolved||{}).length;try{localStorage.setItem(KEY,JSON.stringify(saved));}catch{storageOK=false;}$('saveInfo').textContent=storageOK?'端末内に保存':'保存できません';$('deckInfo').textContent=saved.deck.length?`通常出題：${QUESTIONS.length}問 ／ 今の一巡の残り ${saved.deck.length}問`:`第${saved.cycle||1}周・全${QUESTIONS.length}問を一巡！`;$('cycleBadge').textContent=saved.deck.length?`第${saved.cycle||1}周・あと${saved.deck.length}問`:`🏯 第${saved.cycle||1}周 制覇！`;$('start').textContent=saved.deck.length?'いざ、英語で天下取り！':`第${(saved.cycle||1)+1}周へ進む！`;updateRemaining();updateWorldUI();}
+const audio=new AudioEngine();audio.setSong('matsuri');audio.setVolume(.5);audio.setMuted(saved.muted);
+const fx=new FX($('particles'),320),bg=new Backdrop($('background'),$('fallback'));bg.setTheme('festival');
+
+const STORY_ASSETS={
+ saru_base:'assets/b9e4f42cacbf283d5c519c719bfe7a282834b7e27c78ffb9943ee9fd440d16d9.png',saru_samurai:'assets/b2aedbfff62d0783ee8e2cbb893ef3ec375f3c1585f47e3cbaab0681627adcb4.png',saru_warlord:'assets/a9075ca90c47a41cdae345ce9b20f8cca4eb2af6bbee1bcb6f012fa74a66a2cb.png',saru_daimyo:'assets/ab0d231ef9cbebda6eae3f26acbe3031d406bf1c221e8d27db9f218c29a3ffaf.png',saru_kanpaku:'assets/c9d1fb1be6a0d0969e5f5662bd9130ea5c161d884b81a84577fe130f46abf226.png',saru_tenka:'assets/26181313d957aff2833039e84cdfeed36486acf1e7b50a452d603568c963ffac.png',
+ lord_normal:'assets/1797b1173b081c8bd07c7e74b89113674539507e802dfb913134d8eba5e6ffa7.png',lord_smile:'assets/1b08307b8e410f8f72bc0f72851ee6945f1c4113761475b299d99b6abdaa90f5.png',lord_command:'assets/02e8289ef1fb67fb47b055230f62bbb134be94a42f7b28110eb1c4d3d598a9ad.png',lord_serious:'assets/0954f7b3ce2e8587c50535a5b746a89378597a9ab26274eb532d8578821f8fcc.png',event_lord_serious:'assets/39b8d493bded73d44244965426f95061f0b386bdb4ccb7fcd2540d395caa96a1.png',
+ enemy_mob:'assets/3b7bdde1eba61d99b4dacc47ed1c09f0dd0a9ecf7b836e4cd12d3c0d3f508b03.png',enemy1:'assets/bd25fdfc40e67f0e4287cf011017a894ae0b1b4d8e0cafb873e0af1be1660cef.png',enemy2:'assets/725ee16a354cf8b43fa845ab0c572ff0e9eed2117b9a7081ade3f1359cd9fa3c.png',event_saru_surprise:'assets/a2b887a1137ec44e3bf9ec3d286a8546e3ff9e3f5751cb11fdb8f6c8efbb3867.png',
+ bg_day:'assets/4f870be0f44e0494ab5641370668fda13b64f74d86768ffd201858feb5f6666c.png',bg_night:'assets/bfb1c970d090022121c0f17143265e7364051fe1aad82f4e0045118734d73099.png',event_fire_bg:'assets/ff4e79e9e68488a4a58a58cbec5dd9057e12b754d0d8ec0ffa1361672f13ab01.png',town:'assets/c5f97ccdc1ea9daf5ebc691a723ca08ddd5df9adf59297fbec3ed4d1b1da6d78.png'
+};
+const CASTLE1=['assets/13a193ff9991caae6c048ee42a7616a9648484307f8f2ed3891ee0abb4abdc1e.png','assets/97ecb3ad3e65b20f5f9c98f8f4e2fdb92c603322859e3293cffb448353c4a0bd.png','assets/06b63d468c8b5830aea827d3cd82a8b198c5caa843ea9b9fab752d933b17b60b.png','assets/ea3ce9c7d0b72cd2ff6fe0d0de05b1273a9ca6feefd3070287357f52c43dcfe2.png','assets/42f5ca75c342eca49042f4a853cac25d2ade432126b63ba4ac7d9d50701f440f.png','assets/cd2e3989aed8b2a843339021641b639dc6afd7db21c44b00032f6195d34e9e5c.png','assets/52d145ba876d447131be233832904f74f39d3e75fa828ccb291bd05315c8ca4f.png','assets/4616347895f854315c93dd5a44653a5e246acd9367a00837a38c3eef9651ecee.png'];
+const CASTLE1_AT=[6,12,24,36,48,60,66,72];
+const CASTLE2=['assets/f8e77052009b1ca1c1607f4f55cb772de240080724cbc0553253e88e65c971d4.png','assets/e9960a50280a28ea66e0e7974b5109f58b328b83bd362c2f4841c676b8c5d767.png','assets/7b0553c2300470fc9f3bf503279401601576046b61cc1a1a04df32161835c2af.png','assets/9ef88f092fe87f2347cc474dc097e0d9ae5dda1aa26ff12322b5fba14c2cc3e1.png','assets/34a1edb7fbb1d200e1a96dcc4af99c96278128319540ef0daea76e367fb35c0e.png','assets/cd187c219a52a9a8b2c73028fec8c68395fb8bcfd08e51d22111b2e5aca45902.png','assets/d410fad0e99521733e8221496114931fd0b974cb6ecc619959e3ec86f39d775e.png','assets/7705d734225f471e34246c661615bf674bf9d0d610ec8cec63a0568be1baa3c2.png','assets/44cc195b9e1d3c57a3669a53ad9811708ee9d22731a741ed0d1519ab00a80be1.png','assets/cb6771ec397067e410f0d159627242743f716da4cc577ac89e0579cf203ca50b.png'];
+const CASTLE2_AT=[108,112,116,120,124,128,132,136,140,144];
+const DOPA_SARU=['assets/93410aec881e91fa3ff911d1d734e822143f914b91f60f129995c92d42bed4b3.png','assets/c172b9ee09a20eb6235ff1a2792e6c6cb23c120738cd243e68b84dcfc52411ca.png','assets/423a7323223038d18f720ba7924e7fffad1edbd38a43f0a901a8f0dca9c317bb.png','assets/3357f1c7b0814c539c7e65ce5bd1d2341de14e62d340c2f683bcb9e0b139f0b7.png','assets/73996d32c5e3f818dd9ae76931ee717771119c8531c48693959910172363a298.png'];
+const DOPA_FX={sakura:['assets/0e0a4cdeca85ead573b15d7ecffd3b1b9cdf2b754670c999e66390792d7e8d39.png','assets/19334ae62b7200a41a420cdfd79b0fe8a1d32fe40b6c0f40f4dce2f62f2d7ed6.png'],coin:['assets/a4c36dd9bae0a586045cebf203d9d6abaa5e255fc48c50ca8f23b4a91f9298b7.png','assets/8230a1e848e9a74c58a4d372fc472ac3cb259d72b00aa9fc5b1c57672218ab35.png']};
+const STORY_MILESTONES=[
+ {at:1,kicker:'第一幕・出会い',title:'殿と出会った！',text:'殿「見事だ！ おもしろいサルだ。ついてまいれ！」――英語で天下取りが始まる！',left:'saru_base',right:'lord_normal',bg:'bg_day',button:'仕官する！'},
+ {at:15,kicker:'第一幕・初陣',title:'初陣、勝利！',text:'殿「よくやった！サル！」 文法の初陣を勝ち抜いた！',left:'saru_samurai',right:'enemy_mob',vs:'勝！',bg:'bg_day',button:'もっと進む！'},
+ {at:36,kicker:'第一幕・出世',title:'サル武将になった！',text:'殿「見事だ、サル！ 頼もしくなったな！」',left:'saru_warlord',right:'lord_smile',bg:'bg_day',button:'次の戦へ！'},
+ {at:54,kicker:'第一幕・大一番',title:'強敵を撃破！',text:'殿「でかしたぞ、サル！ 大手柄だ！」 城その1も完成へ近づく！',left:'saru_warlord',right:'enemy1',vs:'撃破！',bg:'bg_day',button:'城を完成させる！'},
+ {at:72,kicker:'中間到達！',title:'大名になった！ おめでとう！！！',text:'殿「よくここまで駆け上がった！ あっぱれだ、サル！」 城その1、完成！',left:'saru_daimyo',right:'lord_smile',bg:'bg_day',button:'宴じゃー！！',kind:'victory'},
+ {at:78,kicker:'しかし――',title:'炎上の夜',text:'殿の城が炎に包まれ、殿は炎の中に倒れた――。天下取りは、ここで終わるのか……！？',left:'event_saru_surprise',right:'event_lord_serious',bg:'event_fire_bg',button:'……立ち上がる',kind:'crisis'},
+ {at:79,kicker:'第二幕・夜明け',title:'殿の志を継ぐ！',text:'サル「殿が目指した先へ、今度はオレが進む！ 戦国の世を終わらせる！」',left:'saru_daimyo',right:'',bg:'bg_day',button:'天下へ進む！',kind:'dawn'},
+ {at:90,kicker:'第二幕・反撃',title:'反撃、成功！',text:'サル「ここからはオレの戦いだ！ まだまだ行くぞ！」',left:'saru_daimyo',right:'enemy2',vs:'勝！',bg:'bg_day',button:'さらに進む！',kind:'victory'},
+ {at:108,kicker:'第二幕・大出世',title:'関白になった！',text:'サル「天下が見えてきた！ 城その2を築くぞ！」',left:'saru_kanpaku',right:'',bg:'bg_day',button:'城その2へ！',kind:'victory'},
+ {at:126,kicker:'第二幕・天下目前',title:'城その2が育ってきた！',text:'金の城がどんどん豪華に！ 天下統一まであと少し！',left:'saru_kanpaku',right:'',bg:'bg_day',button:'押し切る！'},
+ {at:138,kicker:'最終決戦',title:'最後の強敵！',text:'サル「戦国の世を終わらせる！ これが最後の戦だ！」',left:'saru_kanpaku',right:'enemy1',vs:'決戦！',bg:'bg_day',button:'天下を取る！',kind:'victory'},
+ {at:144,kicker:'天下統一！',title:'天下人になった！！！',text:'サル「殿、見ていてくれ。天下統一だ！」 城その2も完成！ 天下統一祭りじゃー！！！',left:'saru_tenka',right:'',bg:'town',button:'天下統一祭り！',kind:'victory'}
+];
+let storyOpen=false,storyTimer=0;
+const storyMilestoneAt=n=>STORY_MILESTONES.find(m=>m.at===n);
+function safeAudio(fn){try{fn()}catch(e){console.warn('audio skipped',e)}}
+function buildCastleStages(){const a=$('castle1Stage'),b=$('castle2Stage');if(!a||a.childElementCount)return;CASTLE1.forEach((src,i)=>{const im=new Image();im.src=src;im.dataset.at=CASTLE1_AT[i];a.append(im)});CASTLE2.forEach((src,i)=>{const im=new Image();im.src=src;im.dataset.at=CASTLE2_AT[i];b.append(im)});}
+function worldCount(){return Math.max(0,Math.min(QUESTIONS.length,Object.keys(saved.storySolved||{}).length));}
+function nextStoryText(c=worldCount()){const n=STORY_MILESTONES.find(m=>m.at>c);return n?`${n.at-c}問で「${n.title}」`:'天下統一！';}
+function updateWorldUI(){buildCastleStages();const c=worldCount();saved.worldCorrect=c;const dock=$('castleDock');if(!dock)return;$('castleDockText').textContent=`${c} / ${QUESTIONS.length}`;$('castleNextText').textContent=nextStoryText(c);dock.classList.toggle('crisis',c===78);dock.classList.toggle('dawn',c>=79&&c<108);$('castleMode').textContent=c<78?'🏯 城その1':c===78?'🔥 炎上の夜':c<108?'🌅 再起':c<144?'🏯 城その2':'🏯 天下統一！';const s1=$('castle1Stage'),s2=$('castle2Stage');s1.classList.toggle('faded',c>=79&&c<108);s1.classList.toggle('hiddenStage',c>=108);s2.classList.toggle('active',c>=108);[...s1.children].forEach(im=>im.classList.toggle('on',c>=Number(im.dataset.at)));[...s2.children].forEach(im=>im.classList.toggle('on',c>=Number(im.dataset.at)));$('townGlow').classList.toggle('on',c>=126);const ds=$('dopaSaru');if(ds){ds.classList.toggle('on',c>0);ds.src=DOPA_SARU[c>=144?4:c>=108?3:c>=72?2:c>=36?1:0];}}
+function showStory(m){if(!m||saved.storySeen?.[m.at])return;saved.storySeen[m.at]=true;persist();storyOpen=true;autoPaused=true;const o=$('storyOverlay'),card=$('storyCard');card.classList.toggle('crisis',m.kind==='crisis');card.classList.toggle('dawn',m.kind==='dawn');$('storyKicker').textContent=m.kicker;$('storyTitle').textContent=m.title;$('storyText').textContent=m.text;$('storyNext').textContent=m.button||'進む！';$('storyBg').style.backgroundImage=m.bg?`url(${STORY_ASSETS[m.bg]})`:'';const L=$('storyLeft'),R=$('storyRight');L.src=m.left?STORY_ASSETS[m.left]:'';R.src=m.right?STORY_ASSETS[m.right]:'';L.style.visibility=m.left?'visible':'hidden';R.style.visibility=m.right?'visible':'hidden';$('storyVs').textContent=m.vs||'';o.hidden=false;if(m.kind==='victory'){safeAudio(()=>audio.finale());fx.fireworks(innerWidth,innerHeight,4);dropAsset('sakura',10);dropAsset('coin',8,true)}if(m.kind==='crisis')safeAudio(()=>audio.wrong(.8));}
+function closeStory(){$('storyOverlay').hidden=true;storyOpen=false;autoPaused=false;answerElapsed=0;}
+$('storyNext').onclick=closeStory;
+function registerWorldCorrect(q){if(saved.storySolved[q.id])return false;saved.storySolved[q.id]=true;saved.worldCorrect=worldCount();updateWorldUI();persist();const m=storyMilestoneAt(saved.worldCorrect);if(m){clearTimeout(storyTimer);storyTimer=setTimeout(()=>showStory(m),560)}return true;}
+function dropAsset(kind,count=8,fast=false){if(saved.reduced)return;const bank=DOPA_FX[kind];for(let i=0;i<Math.min(count,24);i++){const e=new Image();e.className='dopaDropImg';e.src=bank[Math.floor(Math.random()*bank.length)];e.style.left=(Math.random()*96)+'vw';e.style.setProperty('--size',(kind==='coin'?22+Math.random()*19:17+Math.random()*18)+'px');e.style.setProperty('--dur',(fast?1.15+Math.random()*.45:1.8+Math.random()*1.4)+'s');e.style.setProperty('--drift',(-70+Math.random()*140)+'px');e.style.setProperty('--spin',((Math.random()<.5?-1:1)*(360+Math.random()*720))+'deg');document.body.append(e);setTimeout(()=>e.remove(),3600)}}
+const LORD_PRAISE=['よくやった！サル！','見事だ！','でかしたぞ！','あっぱれ！','よいぞ、サル！','その調子だ！','よく見抜いた！','冴えておる！'];
+const LORD_COMBO=['見事な連勝だ！','勢いに乗ったな、サル！','頼もしくなったな！','このまま押し切れ！'];
+const SARU_RESOLVE=['やったー！','えへん！','まだまだ行くぞ！','天下へ一歩前進！','殿、見ていてくれ！','戦国の世を終わらせるぞ！'];
+function showPraise(){const c=worldCount();if(c<=1||c>=78)return;const box=$('lordPraise');$('lordPraiseImg').src=STORY_ASSETS[combo>=5?'lord_smile':'lord_normal'];$('lordPraiseBubble').textContent=(combo>=3?LORD_COMBO:LORD_PRAISE)[Math.floor(Math.random()*(combo>=3?LORD_COMBO.length:LORD_PRAISE.length))];box.classList.remove('show');void box.offsetWidth;box.classList.add('show')}
+function dopaCorrect(){document.body.classList.remove('correctPunch');void document.body.offsetWidth;document.body.classList.add('correctPunch');dropAsset('sakura',5+Math.min(10,combo*2));dropAsset('coin',3+Math.min(10,combo),true);if(combo>=2)fx.streamers(innerWidth,innerHeight,Math.min(8,2+combo));if(combo>=3)fx.fireworks(innerWidth,innerHeight,Math.min(5,1+Math.floor(combo/2)));if(worldCount()<78&&!storyMilestoneAt(worldCount()))setTimeout(showPraise,120);}
+function monkeyHint1(q){const c=q.clue||'';const low=c.toLowerCase(),tag=q.tag||'';if(/than/.test(low))return '「than」発見！ 2つを比べてるぞ！';if(/as soon as|until|before/.test(low)&&tag.includes('時'))return `「${c}」は時を表す合図だぞ！`;if(/^if$/i.test(c)&&tag.includes('時'))return 'この if は「もし〜なら」だぞ！';if(/yesterday|last year|in 20\d\d/.test(low))return `「${c}」！ 過去の時点がハッキリ！`;if(/ever|never/.test(low))return `「${c}」！ 経験の話っぽいぞ！`;if(/ten years|five years/.test(low))return `「${c}」は“期間”だぞ！`;if(/monday|2021/.test(low))return `「${c}」は“始まった時点”だぞ！`;if(/must|can|should|may|could|will/.test(low))return `「${c}」のすぐ後ろに注目！`;if(/made|make|let/.test(low))return `「${c}」！ 人の後ろの動詞を見て！`;if(tag==='受け身')return `「${c}」に注目！ する側？ される側？`;if(tag==='間接疑問'||tag.includes('whether'))return `「${c}」の後ろ、語順を見てみよう！`;if(tag==='形容詞・副詞')return `「${c}」を説明する語は何だろう？`;if(tag==='関係代名詞')return `「${c}」は人？ 物？ そこが手がかり！`;return `「${c}」に注目！ ここが決め手だぞ！`;}
+
+const sarus=['assets/60fd6251da5ec2bf7c68e8947cc4c00692744e82d43cc07051612b0edb8e1196.png','assets/32dea862b8761ff2ea64765aa76c598683d6f8892b89944f36c12519f79377f3.png','assets/2366e72137123f538ecdb7ca6fd05958f8d5d9d7ea845aed52aa1c0e7a814d8f.png','assets/f334825e611fae29205da65539905f5b0a7b5eb1acffda90ebee8e17ebdb207a.png'].map(src=>{const image=new Image();image.src=src;return image});fx.sprites=sarus;
+const ranks=['サル','武将','大名','関白','天下人'],thresholds=[0,36,72,108,144],quotes=['英語で、天下を取る。','よし、次も行くぞ！','城も文法も築いてみせる！','天下が見えてきた！','英語天下統一！'];
+let round=[],index=0,phase='main',answered=false,started=false,score=0,combo=0,correct=0,maxCombo=0,celebrations=0,misses=[],retryMiss=[],retryWins=0,extraWins=0,awarded=new Set(),sessionIDs=new Set(),extraUsed=false,reviewUsed=false,current=null,order=[],last=performance.now(),E=.12,mainTotal=10,extraTotal=5,hintLevel=0,thinkingTime=0,roamTime=0,roamBoost=0,answerElapsed=0,lastAnswerCorrect=false,autoPaused=false,lastPoseKey='',suspendedRound=null,cleanupStart=0;
+const rank=()=>thresholds.reduce((r,n,i)=>worldCount()>=n?i:r,0);const visualRank=()=>Math.min(3,rank());
+function growth(){const r=rank(),c=worldCount();$('rank').textContent=ranks[r];paintSaru($('saru'),visualRank(),0);$('quote').textContent=quotes[r];$('rankLine').textContent=r<4?`次の${ranks[r+1]}まで あと${thresholds[r+1]-c}正解`:`天下統一！ ${c} / ${QUESTIONS.length}`;$('growth').style.width=(r===4?100:(c-thresholds[r])/(thresholds[r+1]-thresholds[r])*100)+'%';document.querySelectorAll('.ranks span').forEach((e,i)=>e.classList.toggle('current',i===r));$('weakStart').hidden=!QUESTIONS.some(q=>(saved.records[q.id]?.wrong||0)>(saved.records[q.id]?.recovered||0));updateWorldUI();}
+function settings(){audio.setMuted(saved.muted);fx.reduced=!!saved.reduced;document.body.classList.toggle('reduced',!!saved.reduced);$('sound').textContent=saved.muted?'音 OFF':'音 ON';$('sound').setAttribute('aria-pressed',String(!saved.muted));$('motion').textContent=saved.reduced?'演出 控えめ':'演出 ドパ';$('motion').setAttribute('aria-pressed',String(!!saved.reduced));$('autoBtn').textContent=saved.autoAdvance?'自動 ON':'自動 OFF';$('autoBtn').setAttribute('aria-pressed',String(!!saved.autoAdvance));}
+function playing(on){started=on;document.body.classList.toggle('playing',on);$('roamer').hidden=!on;window.scrollTo(0,0);}
+function banner(text){$('banner').textContent=text;$('banner').classList.remove('show');void $('banner').offsetWidth;if(!saved.reduced)$('banner').classList.add('show');}
+function celebrate(big=false){const b=$('choices').getBoundingClientRect(),x=innerWidth/2,y=Math.min(innerHeight*.7,b.top+30);fx.burst(x,y,{count:25+celebrations*5,speed:360+E*250,kinds:['confetti','star','coin'],up:160});fx.ring(x,y,{color:'#ffcf38',radius:100+E*90});if(big){fx.fireworks(innerWidth,innerHeight,3);fx.streamers(innerWidth,innerHeight,6);audio.clear(Math.min(1,E));}roamBoost=1.2;$('roamer').classList.remove('hop');void $('roamer').offsetWidth;$('roamer').classList.add('hop');}
+function addXP(q,n){if(awarded.has(q.id))return;awarded.add(q.id);saved.xp+=n;growth();persist();}
+function resetCycle(){saved.cycle=(saved.cycle||1)+1;saved.deck=shuffle(QUESTIONS).map(q=>q.id);saved.recent=[];persist();}
+function selectQuestions(weak=false,count=10){if(weak){const pending=QUESTIONS.filter(q=>(saved.records[q.id]?.wrong||0)>(saved.records[q.id]?.recovered||0));if(pending.length)return shuffle(pending).slice(0,count);}const eligible=saved.deck.filter(id=>!sessionIDs.has(id));return eligible.slice(0,count).map(id=>byID.get(id)).filter(Boolean);}
+function start(weak=false){suspendedRound=null;document.body.classList.remove('cleanup');$('resume').hidden=true;$('again').hidden=false;$('back').hidden=false;$('newCycle').hidden=true;$('clearRibbon').hidden=true;if(!weak&&!saved.deck.length)resetCycle();safeAudio(()=>{audio.unlock();audio.startMusic()});phase='main';sessionIDs=new Set();round=selectQuestions(weak);if(!round.length)return;mainTotal=round.length;index=0;score=0;combo=0;correct=0;maxCombo=0;celebrations=0;misses=[];retryMiss=[];retryWins=0;extraWins=0;awarded=new Set();extraUsed=false;reviewUsed=false;E=.12;$('home').hidden=true;$('result').hidden=true;$('play').hidden=false;playing(true);show();}
+function appendClue(parent,text){let at=text.indexOf(current.clue);while(at>=0&&(/[A-Za-z]/.test(text[at-1]||'')||/[A-Za-z]/.test(text[at+current.clue.length]||'')))at=text.indexOf(current.clue,at+1);if(at<0){parent.append(document.createTextNode(text));return;}parent.append(document.createTextNode(text.slice(0,at)));const clue=document.createElement('span');clue.className='clue';clue.textContent=current.clue;parent.append(clue,document.createTextNode(text.slice(at+current.clue.length)));}
+function revealHint(level){if(answered||!started||level<=hintLevel)return;hintLevel=level;$('sentence').querySelectorAll('.clue').forEach(el=>el.classList.add('focused'));const text=level===1?monkeyHint1(current):current.hint;$('hintText').textContent=text;$('hintText').classList.remove('hintFlash');void $('hintText').offsetWidth;$('hintText').classList.add('hintFlash');$('hintButton').textContent=level===1?'もう1こヒント':'ヒント2つ出たよ';$('hintButton').disabled=level===2;$('quote').textContent=level===1?monkeyHint1(current):current.punch;$('mascotLane').classList.add('teaching');}
+function show(){answered=false;hintLevel=0;thinkingTime=0;answerElapsed=0;autoPaused=false;$('explain').open=false;$('mascotLane').classList.remove('teaching','correct','wrong');$('questionCard')?.classList.remove('wrongAnswer');current=round[index];sessionIDs.add(current.id);if(phase!=='review'&&phase!=='cleanup'){saved.deck=saved.deck.filter(id=>id!==current.id);saved.recent=[...(saved.recent||[]).filter(id=>id!==current.id),current.id].slice(-30);persist();}
+ order=shuffle([0,1]);$('phase').textContent=phase==='main'?'本陣':phase==='review'?'再挑戦':phase==='cleanup'?'間違い消化':'FEVER';$('counter').textContent=`残り${round.length-index}問`;$('tag').textContent=current.tag;$('sentence').replaceChildren();const parts=current.sentence.split('___');appendClue($('sentence'),parts[0]);const blank=document.createElement('span');blank.className='blank';blank.textContent=' ? ';$('sentence').append(blank);appendClue($('sentence'),parts[1]||'');$('translation').textContent=current.translation;$('choices').replaceChildren();order.forEach((v,i)=>{const b=document.createElement('button');b.textContent=current.choices[v];b.onclick=()=>answer(i);$('choices').append(b)});$('feedback').hidden=true;$('next').hidden=true;$('choices').hidden=false;$('hintArea').hidden=false;$('hintText').textContent='';$('hintButton').disabled=false;$('hintButton').textContent='手がかりを見る';$('quote').textContent=phase==='review'?'取り返すぞ！':'手がかりは文の中だぞ！';$('reading').scrollTop=0;hud();}
+function hud(){updateRemaining();$('combo').textContent=combo;$('score').textContent=score.toLocaleString();$('heat').style.width=Math.min(100,E/1.1*100)+'%';$('heatLabel').textContent=phase==='cleanup'?`消化コンボ ×${combo}`:`祭り LV ${Math.min(10,1+celebrations)}`;audio.setLevel(phase==='cleanup'?Math.min(10,3+combo*2):Math.min(10,celebrations),112+Math.min(30,(phase==='cleanup'?combo*5:celebrations*3)));}
+function answer(choice){if(answered||!started||storyOpen)return;answered=true;safeAudio(()=>audio.unlock());const ok=order[choice]===current.answer;lastAnswerCorrect=ok;answerElapsed=0;autoPaused=false;const rec=saved.records[current.id]||{seen:0,right:0,wrong:0,recovered:0};saved.records[current.id]=rec;if(phase!=='review'&&phase!=='cleanup')rec.seen++;if(hintLevel>0)rec.hints=(rec.hints||0)+1;
+ if(ok){combo++;maxCombo=Math.max(maxCombo,combo);celebrations++;E=Math.min(1.1,.18+celebrations*.095);const points=Math.round(100*Math.pow(1.48,Math.min(celebrations,18)))*(phase==='extra'?2:1);score+=points;if(phase==='main'){correct++;rec.right++;}else if(phase==='extra'){extraWins++;rec.right++;}else{retryWins++;rec.recovered=rec.wrong;}safeAudio(()=>audio.correct(combo,Math.min(E,1)));celebrate(combo>=3||phase==='extra');const fresh=registerWorldCorrect(current);dopaCorrect();addXP(current,(phase==='review'||phase==='cleanup')?5:10);$('verdict').textContent=(phase==='review'||phase==='cleanup')?'消化成功！ 成長 +5':'正解！';$('quote').textContent=worldCount()>=78?SARU_RESOLVE[Math.floor(Math.random()*SARU_RESOLVE.length)]:['やったー！','えへん！','取った！'][Math.floor(Math.random()*3)];if(phase==='cleanup')cleanupCombo();else if(combo%3===0)banner(`${combo} 連続正解！`);fx.text(innerWidth/2,innerHeight*.28,`+${points.toLocaleString()}`,{size:30,color:'#ffcf38'});
+ }else{combo=0;rec.wrong++;if(phase==='review'||phase==='cleanup')retryMiss.push(current);else if(!misses.some(q=>q.id===current.id))misses.push(current);safeAudio(()=>audio.wrong(E));$('verdict').textContent='ここを押さえよう！';$('quote').textContent=current.punch;}
+ $('mascotLane').classList.add('teaching',ok?'correct':'wrong');$('sentence').querySelectorAll('.clue').forEach(el=>{el.classList.remove('focused');void el.offsetWidth;el.classList.add('focused','answerClue');});const blank=$('sentence').querySelector('.blank');blank.textContent=current.choices[current.answer];$('rule').textContent=current.rule;$('complete').textContent=ok?current.sentence.replace('___',current.choices[current.answer]):`選んだ答え：${current.choices[order[choice]]} ／ 正解：${current.choices[current.answer]}`;$('feedback').hidden=false;$('hintArea').hidden=true;$('choices').hidden=true;$('next').hidden=false;$('next').textContent=ok&&saved.autoAdvance?'正解！ 次へ進む…':index===round.length-1?'戦いの記録を見る':'覚えた！ 次へ';hud();persist();requestAnimationFrame(()=>{const reader=$('reading');reader.scrollTop=0;});
+}
+function finish(){if(phase==='cleanup'){finishCleanup();return;}playing(false);safeAudio(()=>audio.setLevel(2,112));$('play').hidden=true;$('result').hidden=false;const cycleClear=phase==='main'&&saved.deck.length===0;$('clearRibbon').hidden=!cycleClear;$('newCycle').hidden=!cycleClear;$('again').hidden=cycleClear;$('resultTitle').textContent=cycleClear?'一巡制覇！':phase==='review'?'取り返した分だけ、前進。':phase==='extra'?'大祭り、ここに完結！':'本陣クリア！';$('resultNumber').textContent=cycleClear?`${QUESTIONS.length} / ${QUESTIONS.length}`:phase==='main'?`${correct} / ${mainTotal}`:phase==='review'?`${retryWins} / ${round.length}`:`${extraWins} / ${extraTotal}`;$('resultText').textContent=cycleClear?`全${QUESTIONS.length}問を一巡！ 天下への正解 ${worldCount()} / ${QUESTIONS.length}`:`${phase==='main'?'本陣・初回正解':phase==='review'?'再挑戦の正解':'追加問題の正解'}。最高 ${maxCombo} 連続 / お祭り得点 ${score.toLocaleString()}`;const reward=$('resultReward');reward.classList.toggle('cycleReward',cycleClear);const wins=phase==='main'?correct:phase==='review'?retryWins:extraWins;const total=phase==='main'?mainTotal:phase==='review'?round.length:extraTotal;const rate=total?wins/total:0;$('rewardSaru').src=STORY_ASSETS[cycleClear?'saru_tenka':worldCount()>=108?'saru_kanpaku':worldCount()>=72?'saru_daimyo':worldCount()>=36?'saru_warlord':worldCount()>=15?'saru_samurai':'saru_base'];$('rewardTitle').textContent=cycleClear?'🎆 天下統一！！ 🎆':phase==='review'?'✨ 取り返した！':phase==='extra'?'🔥 大祭り完走！':'🎉 本陣突破！';$('rewardStars').textContent=cycleClear?'★★★★★':rate>=1?'★★★':rate>=.8?'★★★':rate>=.6?'★★':'★';$('rewardText').textContent=cycleClear?'サル天下人！ 小判も桜もぜんぶ大放出！':rate>=1?'全問正解！ ごほうび小判ざくざく！':rate>=.8?'大勝利！ この勢いで次の本陣へ！':'よく戦った！ 間違いを取り返してさらに出世！';$('weakness').replaceChildren();const pendingIDs=new Set(pendingMistakes().map(q=>q.id));misses=misses.filter(q=>pendingIDs.has(q.id));const list=phase==='review'?retryMiss:misses;for(const q of list){const d=document.createElement('div');d.className='weakItem';const b=document.createElement('b');b.textContent=q.tag;d.append(b,document.createTextNode(q.rule));$('weakness').append(d)}$('extra').hidden=cycleClear||correct/mainTotal<.8||extraUsed;$('review').hidden=!misses.length||reviewUsed;safeAudio(()=>audio.finale());fx.fireworks(innerWidth,innerHeight,cycleClear?10:5);dropAsset('sakura',cycleClear?22:12);dropAsset('coin',cycleClear?20:10,true);banner(cycleClear?'天下統一！！':'本陣突破！');growth();persist();}
+function advance(){if(!answered||$('evolution').open||storyOpen||!started)return;index++;if(index>=round.length)finish();else show()}
+$('next').onclick=advance;
+$('autoBtn').onclick=()=>{saved.autoAdvance=!saved.autoAdvance;settings();persist();if(answered){autoPaused=true;$('next').textContent='次の問題へ';}};
+$('explain').addEventListener('toggle',()=>{if($('explain').open){autoPaused=true;$('next').textContent='次の問題へ';}});
+function resetAllProgress(){if(!confirm('英語版の記録を全部消して、最初からやり直す？'))return;try{localStorage.removeItem(KEY);}catch{}location.reload();}
+$('start').onclick=()=>start();$('startRibbon').onclick=()=>start();$('weakStart').onclick=()=>start(true);$('again').onclick=()=>start();$('newCycle').onclick=()=>{resetCycle();start();};$('hintButton').onclick=()=>revealHint(Math.min(2,hintLevel+1));$('resetHome').onclick=resetAllProgress;$('resetResult').onclick=resetAllProgress;
+$('extra').onclick=()=>{extraUsed=true;phase='extra';round=selectQuestions(false,5);extraTotal=round.length;index=0;E=1.1;celebrations=Math.max(celebrations,10);$('result').hidden=true;$('play').hidden=false;playing(true);audio.startMusic();audio.reachHit(1);banner('天下取り FEVER！');show()};
+$('review').onclick=()=>{reviewUsed=true;phase='review';round=shuffle(misses);retryMiss=[];retryWins=0;index=0;$('result').hidden=true;$('play').hidden=false;playing(true);audio.startMusic();show()};
+$('back').onclick=()=>{suspendedRound=null;document.body.classList.remove('cleanup');playing(false);audio.stopMusic();$('result').hidden=true;$('home').hidden=false;growth()};
+$('sound').onclick=()=>{audio.unlock();saved.muted=!saved.muted;settings();persist()};$('motion').onclick=()=>{saved.reduced=!saved.reduced;settings();persist()};$('evoClose').onclick=()=>$('evolution').close();
+document.addEventListener('keydown',e=>{if(e.repeat||!started||$('evolution').open||e.target.tagName==='BUTTON')return;if(e.key==='1'||e.key==='2')answer(Number(e.key)-1)});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)audio.stopMusic();else if(started)audio.startMusic();});
+
+function pendingMistakes(){return QUESTIONS.filter(q=>(saved.records[q.id]?.wrong||0)>(saved.records[q.id]?.recovered||0));}
+function updateRemaining(){
+ const pending=pendingMistakes().length;if(pending>=5)saved.cleanupUnlocked=true;
+ const inNormal=started&&phase!=='review'&&phase!=='cleanup';
+ const held=suspendedRound&&!suspendedRound.answered&&!['review','cleanup'].includes(suspendedRound.phase);
+ const left=saved.deck.length+(inNormal&&!answered||held?1:0);
+ $('remainingBank').textContent=left?`あと${left}問`:'一巡制覇！';
+ $('bankProgress').style.width=(100*(1-Math.min(QUESTIONS.length,left)/QUESTIONS.length))+'%';
+ if(started)$('counter').textContent=`残り${Math.max(0,round.length-index-(answered?1:0))}問`;
+ const btn=$('cleanupBtn');btn.disabled=phase==='cleanup'&&started||!saved.cleanupUnlocked||pending===0;
+ btn.classList.toggle('ready',!!saved.cleanupUnlocked&&pending>0);
+ btn.textContent=phase==='cleanup'&&started?`未消化 あと${pending}問`:saved.cleanupUnlocked?(pending?`間違い消化 ${pending}問`:'間違いゼロ！'):`間違い ${pending} / 5`;
+ btn.title=saved.cleanupUnlocked?'正解した問題から間違いを消化':'異なる問題の間違いが5問で解放';
+}
+function startCleanup(){
+ const pending=pendingMistakes();if(!saved.cleanupUnlocked||!pending.length||started&&phase==='cleanup')return;
+ if(started)suspendedRound={round:[...round],index,phase,answered,score,combo,correct,maxCombo,celebrations,misses:[...misses],retryMiss:[...retryMiss],retryWins,extraWins,awarded:new Set(awarded),sessionIDs:new Set(sessionIDs),extraUsed,reviewUsed,E,mainTotal,extraTotal};
+ cleanupStart=pending.length;round=shuffle(pending).slice(0,10);index=0;phase='cleanup';answered=false;combo=0;score=0;maxCombo=0;celebrations=0;retryWins=0;retryMiss=[];awarded=new Set();E=.4;
+ $('home').hidden=true;$('result').hidden=true;$('play').hidden=false;$('resume').hidden=true;document.body.classList.add('cleanup');audio.unlock();audio.startMusic();playing(true);show();banner('間違い消化、開戦！');audio.reachHit(.6);
+}
+function cleanupCombo(){
+ E=Math.min(1.1,.35+combo*.15);const label=combo===1?'1問消化！':combo===2?'2 COMBO！':combo===3?'3 COMBO！ 快進撃！':combo===4?'4 COMBO！ 勢い全開！':`${combo} COMBO！ 無双！`;
+ banner(label);fx.text(innerWidth/2,innerHeight*.4,`消化！ 残り${pendingMistakes().length}問`,{size:22,color:'#ffcf38'});
+ if(combo>=2)fx.streamers(innerWidth,innerHeight,Math.min(10,combo*2));
+ if(combo>=3)fx.fireworks(innerWidth,innerHeight,Math.min(5,combo-1));
+ if(combo===3||combo===5)audio.reachHit(Math.min(1,E));else audio.unit(Math.min(1,E));
+}
+function finishCleanup(){
+ playing(false);document.body.classList.remove('cleanup');audio.setLevel(2,112);$('play').hidden=true;$('result').hidden=false;
+ const pending=pendingMistakes().length;$('resultTitle').textContent=pending===0?'間違い、ぜんぶ消化！':'間違い消化ステージ 完了！';$('resultNumber').textContent=`${retryWins}問 消化`;
+ $('resultText').textContent=`未消化 ${cleanupStart} → ${pending}問 ／ 最高 ${maxCombo} COMBO`;
+ $('weakness').replaceChildren();for(const q of retryMiss){const d=document.createElement('div');d.className='weakItem';d.textContent=q.punch;$('weakness').append(d);}
+ $('extra').hidden=true;$('review').hidden=true;$('resume').hidden=!suspendedRound;$('again').hidden=!!suspendedRound;$('back').hidden=!!suspendedRound;
+ audio.finale();fx.fireworks(innerWidth,innerHeight,pending===0?5:3);growth();persist();
+}
+function resumeRound(){
+ if(!suspendedRound)return;const st=suspendedRound;suspendedRound=null;
+ ({round,index,phase,score,combo,correct,maxCombo,celebrations,misses,retryMiss,retryWins,extraWins,awarded,sessionIDs,extraUsed,reviewUsed,E,mainTotal,extraTotal}=st);
+ $('resume').hidden=true;$('again').hidden=false;$('back').hidden=false;$('result').hidden=true;$('play').hidden=false;
+ playing(true);audio.startMusic();if(st.answered)index++;if(index>=round.length)finish();else show();
+}
+$('cleanupBtn').onclick=startCleanup;$('resume').onclick=resumeRound;
+// Source PNGs are drawn directly as atlases; no generated artwork is modified.
+const CROP=[
+ [[0,0,512,504],[512,0,512,504],[1024,0,512,504],[0,504,512,520],[512,504,512,520],[1024,504,512,520]],
+ [[0,0,530,513],[530,0,500,513],[1030,0,506,513],[0,513,530,511],[530,513,500,511],[1030,513,506,511]],
+ [[0,0,540,492],[540,0,490,492],[1030,0,506,492],[0,492,540,532],[540,492,490,532],[1030,492,506,532]],
+ [[0,0,555,508],[555,0,480,508],[1035,0,501,508],[0,508,555,516],[555,508,480,516],[1035,508,501,516]]
+];
+function paintSaru(canvas,stage,pose){const im=sarus[stage];if(!im?.complete||!im.naturalWidth)return;const c=canvas.getContext('2d');const [x,y,w,h]=CROP[stage][pose];const scale=Math.min(canvas.width/w,canvas.height/h);c.clearRect(0,0,canvas.width,canvas.height);c.drawImage(im,x,y,w,h,(canvas.width-w*scale)/2,canvas.height-h*scale,w*scale,h*scale);}
+sarus.forEach(im=>im.addEventListener('load',()=>{lastPoseKey='';paintSaru($('saru'),visualRank(),0);if($('evolution').open)paintSaru($('evoSaru'),visualRank(),3);}));
+function updateRoamer(dt){if(!started)return;roamBoost=Math.max(0,roamBoost-dt);roamTime+=dt*(roamBoost?2.4:1);const rect=$('mascotLane').getBoundingClientRect(),width=$('roamer').offsetWidth,height=$('roamer').offsetHeight;const teaching=answered||hintLevel>0;const progress=teaching||saved.reduced?0:(Math.sin(roamTime*.95)+1)/2;const x=rect.left+Math.max(0,rect.width-width)*progress,y=rect.bottom-height-(saved.reduced||teaching?0:Math.abs(Math.sin(roamTime*8))*3);$('roamer').style.transform=`translate3d(${x}px,${y}px,0)`;$('quote').style.left=teaching?'100px':progress>.5?'0':'auto';$('quote').style.right=teaching?'0':progress>.5?'auto':'0';let pose=answered?(lastAnswerCorrect?3:answerElapsed<.55?5:4):hintLevel?4:saved.reduced?0:1+Math.floor(roamTime*5)%2;const key=visualRank()+':'+pose;if(key!==lastPoseKey){paintSaru($('saru'),visualRank(),pose);lastPoseKey=key;}$('saru').style.transform=!teaching&&!saved.reduced&&Math.cos(roamTime*.95)<0?'scaleX(-1)':'none';}
+function frame(t){const dt=Math.min(.05,(t-last)/1000);last=t;if(!document.hidden){safeAudio(()=>audio.update());if(started&&!answered&&!storyOpen&&!$('evolution').open){thinkingTime+=dt;if(thinkingTime>=3.6)revealHint(2);else if(thinkingTime>=1.7)revealHint(1);}if(started&&answered&&!storyOpen&&!$('evolution').open){answerElapsed+=dt;if(lastAnswerCorrect&&saved.autoAdvance&&!autoPaused&&answerElapsed>=1.35)advance();}updateRoamer(dt);let pulse={};try{pulse=audio.pulse()||{}}catch{}bg.state.E=saved.reduced?.18:E;bg.state.kick=saved.reduced?0:pulse.kick||0;bg.state.cx=innerWidth/2;bg.state.cy=innerHeight*.42;bg.render(saved.reduced?0:t);fx.update(dt);fx.draw();}requestAnimationFrame(frame)}
+buildCastleStages();growth();settings();persist();updateWorldUI();requestAnimationFrame(frame);
+
+</script></body></html>
